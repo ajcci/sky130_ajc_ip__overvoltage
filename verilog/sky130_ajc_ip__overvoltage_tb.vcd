@@ -1,5 +1,5 @@
 $date
-	Fri Mar 15 22:19:11 2024
+	Sat Mar 16 11:04:22 2024
 $end
 $version
 	Icarus Verilog
@@ -7,7 +7,7 @@ $end
 $timescale
 	1s
 $end
-$scope module tb_overvoltage $end
+$scope module sky130_ajc_ip__overvoltage_tb $end
 $var wire 1 ! avss $end
 $var wire 1 " dvdd $end
 $var wire 1 # dvss $end
@@ -20,7 +20,7 @@ $var real 1 ) avdd $end
 $var real 1 * ibg_200n $end
 $var real 1 + vbg_1v2 $end
 $var real 1 , vin $end
-$scope module overvoltage $end
+$scope module sky130_ajc_ip__overvoltage $end
 $var wire 1 ! avss $end
 $var wire 1 " dvdd $end
 $var wire 1 # dvss $end

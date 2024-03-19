@@ -12,16 +12,16 @@ Apache License, Version 2.0
 
 DATE: 03/14/2024
 
+REVISION: 0
+
 DESCRIPTION:
-Overvoltage detector testbench} -920 570 0 0 0.6 0.6 {}
+Overvoltage detector testbench} -520 50 0 0 0.4 0.4 {}
 N -210 -610 -200 -610 {
-lab=avdd}
+lab=avdd_bg}
 N -200 -660 -200 -610 {
-lab=avdd}
-N -400 -660 -200 -660 {
-lab=avdd}
+lab=avdd_bg}
 N -370 -660 -370 -640 {
-lab=avdd}
+lab=avdd_bg}
 N -330 -610 -250 -610 {
 lab=vbp}
 N -320 -610 -320 -560 {
@@ -35,11 +35,11 @@ lab=avss}
 N -400 -440 -370 -440 {
 lab=avss}
 N -380 -610 -370 -610 {
-lab=avdd}
+lab=avdd_bg}
 N -380 -660 -380 -610 {
-lab=avdd}
+lab=avdd_bg}
 N -210 -660 -210 -640 {
-lab=avdd}
+lab=avdd_bg}
 N -210 -580 -210 -60 {
 lab=ibg_200n}
 N -210 -60 0 -60 {
@@ -52,16 +52,20 @@ N 630 -220 630 -50 {
 lab=ovout}
 N 470 -200 470 -10 {
 lab=itest}
+N -380 -660 -90 -660 {
+lab=avdd_bg}
+N -90 -660 -90 -640 {
+lab=avdd_bg}
 C {devices/vsource.sym} -750 -170 0 0 {name=Vavss value=0 savecurrent=false}
 C {devices/gnd.sym} -750 -140 0 0 {name=l1 lab=GND}
 C {devices/lab_pin.sym} -750 -200 1 0 {name=p1 sig_type=std_logic lab=avss}
 C {devices/gnd.sym} -680 -140 0 0 {name=l2 lab=GND}
 C {devices/lab_pin.sym} -680 -200 1 0 {name=p5 sig_type=std_logic lab=avdd}
-C {devices/vsource.sym} -680 -320 0 0 {name=Vena value="pwl (0 dvdd 500u dvdd 500.01u dvdd 600u dvdd 600.01u dvdd)" savecurrent=false}
+C {devices/vsource.sym} -680 -320 0 0 {name=Vena value="pwl (0 dvdd 500u dvdd 500.01u dvdd 600u dvdd 600.01u dvdd) DC dvdd" savecurrent=false}
 C {devices/gnd.sym} -680 -290 0 0 {name=l3 lab=GND}
 C {devices/lab_pin.sym} -680 -350 1 0 {name=p6 sig_type=std_logic lab=ena}
 C {devices/code.sym} -850 -490 0 0 {name=tb only_toplevel=false value="
-.param avdd=3.3
+.param avdd=3.36
 .param dvdd=1.8
 
 .lib libs.tech/ngspice/sky130.lib.spice tt
@@ -77,20 +81,21 @@ R001 isrc_sel dvss 1e9
 .save @m.xiovr.xiana.xirsmux.xmena.msky130_fd_pr__nfet_g5v0d10v5[id]
 
 .control
-tran 10u 1400u
-plot ovout itest avdd ena vbg_1v2 vin xiovr.xiana.dcomp xiovr.xiana.dcomp_filt
-plot i(Vavdd) i(Vdvdd)
-plot @m.xiovr.xiana.xirsmux.xmena.msky130_fd_pr__nfet_g5v0d10v5[id]
-plot ovout avdd ena*0.5
+op
+print ovout vin
+*tran 10u 1400u
+*plot ovout itest avdd ena vbg_1v2 vin xiovr.xiana.dcomp xiovr.xiana.dcomp_filt
+*plot i(Vavdd) i(Vdvdd)
+*plot @m.xiovr.xiana.xirsmux.xmena.msky130_fd_pr__nfet_g5v0d10v5[id]
+*plot ovout avdd ena*0.5
 .endc
 "}
-C {devices/vsource.sym} -680 -170 0 0 {name=Vavdd value="pwl (0 0 20u 0 400u 3.5 700u 3.2 900u 3.0 1000u 3.3 1200u 3.5)" savecurrent=true}
+C {devices/vsource.sym} -680 -170 0 0 {name=Vavdd value="pwl (0 0 20u 0 400u 3.5 700u 3.2 900u 3.0 1000u 3.3 1200u 3.5) DC avdd" savecurrent=true}
 C {devices/vsource.sym} -820 -170 0 0 {name=Vbg value=1.2 savecurrent=false}
 C {devices/gnd.sym} -820 -140 0 0 {name=l7 lab=GND}
 C {devices/lab_pin.sym} -820 -200 1 0 {name=p11 sig_type=std_logic lab=vbg_1v2}
 C {devices/isource.sym} -370 -480 0 0 {name=Ibias value=200n}
-C {devices/lab_pin.sym} -400 -660 0 0 {name=p3 lab=avdd}
-C {pfet_g5v0d10v5.sym} -230 -610 0 0 {name=M1
+C {xschem/sky130_fd_pr/pfet_g5v0d10v5.sym} -230 -610 0 0 {name=M1
 W=1
 L=4
 nf=1
@@ -104,7 +109,7 @@ sa=0 sb=0 sd=0
 model=pfet_g5v0d10v5
 spiceprefix=X
 }
-C {pfet_g5v0d10v5.sym} -350 -610 0 1 {name=M0
+C {xschem/sky130_fd_pr/pfet_g5v0d10v5.sym} -350 -610 0 1 {name=M0
 W=1
 L=4
 nf=1
@@ -141,7 +146,7 @@ value=20p
 footprint=1206
 device="ceramic capacitor"}
 C {devices/lab_wire.sym} 610 -220 0 0 {name=p12 sig_type=std_logic lab=ovout}
-C {xschem/overvoltage.sym} 150 -140 0 0 {name=xIovr}
+C {xschem/sky130_ajc_ip__overvoltage.sym} 150 -140 0 0 {name=xIovr}
 C {devices/lab_pin.sym} 0 -220 0 0 {name=p9 lab=avdd}
 C {devices/lab_pin.sym} 0 -200 0 0 {name=p15 lab=avss}
 C {devices/lab_pin.sym} 0 -180 0 0 {name=p20 lab=dvdd}
@@ -160,7 +165,9 @@ C {devices/lab_pin.sym} -760 230 1 0 {name=p19 sig_type=std_logic lab=otrip[1]}
 C {devices/gnd.sym} -840 290 0 0 {name=l11 lab=GND}
 C {devices/vsource.sym} -840 260 0 0 {name=Vvotrip2 value="DC 0" savecurrent=true}
 C {devices/lab_pin.sym} -840 230 1 0 {name=p21 sig_type=std_logic lab=otrip[2]}
-C {devices/title-3.sym} -1380 990 0 0 {name=l15 author="Ajacci, Ltd. Co." rev=1.0 lock=false title="Overvoltage detector testbench"}
 C {devices/gnd.sym} -920 290 0 0 {name=l12 lab=GND}
 C {devices/vsource.sym} -920 260 0 0 {name=Vvotrip3 value="DC 0" savecurrent=true}
 C {devices/lab_pin.sym} -920 230 1 0 {name=p8 sig_type=std_logic lab=otrip[3]}
+C {devices/gnd.sym} -90 -580 0 0 {name=l13 lab=GND}
+C {devices/vsource.sym} -90 -610 0 0 {name=Vext value=3.3 savecurrent=true}
+C {devices/lab_wire.sym} -250 -660 0 0 {name=p3 sig_type=std_logic lab=avdd_bg}

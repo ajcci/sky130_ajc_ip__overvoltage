@@ -1,9 +1,9 @@
 v {xschem version=3.4.5 file_version=1.2}
-K {type=subcircuit
+K {type=primitive
 format="@name @pinlist @symname"
 template="name=x1"
 }
-T {@symname} -67.5 -6 0 0 0.3 0.3 {}
+T {@symname} -135 -6 0 0 0.3 0.3 {}
 T {@name} 135 -102 0 0 0.2 0.2 {}
 L 4 -130 -90 130 -90 {}
 L 4 -130 90 130 90 {}

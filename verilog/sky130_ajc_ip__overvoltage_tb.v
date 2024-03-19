@@ -1,5 +1,5 @@
-`include "overvoltage.v"
-module tb_overvoltage();
+`include "sky130_ajc_ip__overvoltage.v"
+module sky130_ajc_ip__overvoltage_tb();
 
 real avdd;
 real vbg_1v2;
@@ -9,7 +9,7 @@ logic isrc_sel;
 real ibg_200n;
 real vin;
 
-overvoltage overvoltage(
+sky130_ajc_ip__overvoltage sky130_ajc_ip__overvoltage(
 //INPUTS
 .avdd(avdd),
 .avss(avss),
@@ -32,8 +32,8 @@ assign dvdd = 1'b1;
 assign dvss = 1'b0;
 
 initial begin
-  $dumpfile("tb_overvoltage.vcd");
-  $dumpvars(0,tb_overvoltage);
+  $dumpfile("sky130_ajc_ip__overvoltage_tb.vcd");
+  $dumpvars(0,sky130_ajc_ip__overvoltage_tb);
 
   //INPUTS
   avdd = 2.0;

@@ -4,7 +4,7 @@
 `include "overvoltage_ana.v"
 `include "overvoltage_dig.v"
 
-module overvoltage(
+module sky130_ajc_ip__overvoltage(
 //INPUTS
 input real avdd,
 input logic avss,

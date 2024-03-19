@@ -100,7 +100,7 @@ set netlist_dir $env(PWD)/netlist
 #### default: empty (use xschem default, [ ])
 # set bus_replacement_char {<>}
 #### for XSPICE: replace square brackets as the are used for XSPICE vector nodes.
-# set bus_replacement_char {__} 
+set bus_replacement_char {__} 
 
 ###########################################################################
 #### SOME DEFAULT BEHAVIOR

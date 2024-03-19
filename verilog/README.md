@@ -1,11 +1,11 @@
 To compile:
 
-`iverilog -g2005-sv -o tb_overvoltage tb_overvoltage.v`
+`iverilog -g2005-sv -o sky130_ajc_ip__overvoltage_tb sky130_ajc_ip__overvoltage_tb.v`
 
 To run:
 
-`vvp tb_overvoltage`
+`vvp sky130_ajc_ip__overvoltage_tb`
 
 To view results:
 
-`gtkwave tb_overvoltage.vcd`
+`gtkwave sky130_ajc_ip__overvoltage_tb.vcd`
