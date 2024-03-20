@@ -16,6 +16,8 @@ cd sky130_ajc_ip_overvoltage
 xschem xschem/sky130_ajc_ip__overvoltage_tb.sch
 ```
 
+![](sky130_ajc_ip__overvoltage_tb.svg)
+
 To run CACE to see simulation results against a set of [specifications](https://github.com/ajcci/sky130_ajc_ip__overvoltage/doc/sky130_ajc_ip__overvoltage.html), run CACE
 at the base (current directory):
 
