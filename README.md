@@ -11,7 +11,8 @@ To clone this repository:
 
 To view a schematic after cloning the repository:
 
-```cd sky130_ajc_ip_overvoltage
+```
+cd sky130_ajc_ip_overvoltage
 xschem xschem/sky130_ajc_ip__overvoltage_tb.sch
 ```
 
