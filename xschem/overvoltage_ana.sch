@@ -6,12 +6,9 @@ V {}
 S {}
 E {}
 T {Copyright 2024 Ajacci, Ltd. Co.
-
-LICENSE: Apache License, Version 2.0 with Addendum, see NOTICE
-
-DATE: 03/14/2024   REVISION: 0
-
-DESCRIPTION: Overvoltage detector (analog section)} 840 -460 0 0 0.4 0.4 {}
+Apache License, Version 2.0 with Addendum, see NOTICE
+Date: 03/14/2024   Rev: 0
+Description: Overvoltage detector (analog section)} 840 -460 0 0 0.4 0.4 {}
 N 590 -60 700 -60 {
 lab=dcomp}
 N 930 -60 930 -30 {

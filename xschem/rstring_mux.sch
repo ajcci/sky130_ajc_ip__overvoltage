@@ -6,12 +6,9 @@ V {}
 S {}
 E {}
 T {Copyright 2024 Ajacci, Ltd. Co.
-
-LICENSE: Apache License, Version 2.0 with Addendum, see NOTICE
-
-DATE: 03/14/2024   REVISION: 0
-
-DESCRIPTION: Trip voltage and analog select mux} 260 960 0 0 0.4 0.4 {}
+Apache License, Version 2.0 with Addendum, see NOTICE
+Date: 03/14/2024   Rev: 0
+Description: Trip voltage and analog select mux} 260 960 0 0 0.4 0.4 {}
 T {4.50V} 320 -680 0 0 0.4 0.4 {}
 T {4.34V} 320 -740 0 0 0.4 0.4 {}
 T {4.20V} 320 -800 0 0 0.4 0.4 {}

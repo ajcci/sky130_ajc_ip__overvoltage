@@ -5,7 +5,7 @@ K {}
 V {}
 S {}
 E {}
-T {REFERENCES:
+T {Reference:
 Philip E. Allen and Douglas R. Holbert, CMOS Analog Circuit Design 2nd Edition, pp. 150, 
 Fig. 4.5-9, New York: Oxford University Press Inc., 2002} 60 110 0 0 0.4 0.4 {}
 T {700n} -470 240 0 0 0.4 0.4 {}
@@ -17,12 +17,9 @@ T {700n} 440 -570 0 0 0.4 0.4 {}
 T {200n(optional)} 1420 240 0 0 0.4 0.4 {}
 T {800n} 1000 240 0 0 0.4 0.4 {}
 T {Copyright 2024 Ajacci, Ltd. Co.
-
-LICENSE: Apache License, Version 2.0 with Addendum, see NOTICE
-
-DATE: 03/6/2024   REVISION: 0
-
-DESCRIPTION: Ibias generator} 140 -80 0 0 0.4 0.4 {}
+Apache License, Version 2.0 with Addendum, see NOTICE
+Date: 03/6/2024   Rev: 0
+Description: Ibias generator} 60 -20 0 0 0.4 0.4 {}
 N -560 -320 -560 -270 {
 lab=#net1}
 N -560 -350 -550 -350 {

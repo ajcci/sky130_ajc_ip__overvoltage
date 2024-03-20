@@ -6,16 +6,9 @@ V {}
 S {}
 E {}
 T {Copyright 2024 Ajacci, Ltd. Co.
-
-LICENSE:
-Apache License, Version 2.0
-
-DATE: 03/14/2024
-
-REVISION: 0
-
-DESCRIPTION:
-Overvoltage detector testbench} -520 50 0 0 0.4 0.4 {}
+Apache License, Version 2.0 with Addendum, see NOTICE
+Date: 03/14/2024   Rev: 0
+Description: Overvoltage detector testbench} -520 50 0 0 0.4 0.4 {}
 N -210 -610 -200 -610 {
 lab=avdd_bg}
 N -200 -660 -200 -610 {
@@ -78,7 +71,6 @@ R001 isrc_sel dvss 1e9
 
 .temp 25
 .save all
-.save @m.xiovr.xiana.xirsmux.xmena.msky130_fd_pr__nfet_g5v0d10v5[id]
 
 .control
 op
@@ -86,7 +78,6 @@ print ovout vin
 *tran 10u 1400u
 *plot ovout itest avdd ena vbg_1v2 vin xiovr.xiana.dcomp xiovr.xiana.dcomp_filt
 *plot i(Vavdd) i(Vdvdd)
-*plot @m.xiovr.xiana.xirsmux.xmena.msky130_fd_pr__nfet_g5v0d10v5[id]
 *plot ovout avdd ena*0.5
 .endc
 "}

@@ -6,12 +6,9 @@ V {}
 S {}
 E {}
 T {Copyright 2024 Ajacci, Ltd. Co.
-
-LICENSE: Apache License, Version 2.0 with Addendum, see NOTICE
-
-DATE: 03/16/2024   REVISION: 0
-
-DESCRIPTION: Overvoltage detector trip voltage testbench} -910 480 0 0 0.4 0.4 {}
+Apache License, Version 2.0 with Addendum, see NOTICE
+Date: 03/16/2024   Rev: 0
+Description: Overvoltage detector trip voltage CACE testbench} -910 480 0 0 0.4 0.4 {}
 N 130 70 140 70 {
 lab=avdd_bg}
 N 140 20 140 70 {

@@ -6,24 +6,17 @@ V {}
 S {}
 E {}
 T {Copyright 2024 Ajacci, Ltd. Co.
+Apache License, Version 2.0 with Addendum, see NOTICE
+Date: 03/6/2024   Rev: 0
+Description: Comparator w/ hysteresis
 
-LICENSE: Apache License, Version 2.0
-
-DATE: 03/6/2024
-
-REVISION: 0
-
-DESCRIPTION:
-Comparator w/ hysteresis} -870 160 0 0 0.4 0.4 {}
+References:
+[1] D. J. Allstot, “A Precision Variable-Supply CMOS Comparator,” IEEE J. Solid-State Circuits, Vol. SC-17, No. 6, pp. 1080-1087, Dec. 1982.
+[2] Philip E. Allen and Douglas R. Holbert, CMOS Analog Circuit Design 2nd Edition, pp. 475, Fig. 8.4-14, New York: Oxford University Press Inc., 2002} -870 200 0 0 0.4 0.4 {}
 T {700n} -400 160 0 0 0.4 0.4 {}
 T {700n} 160 160 0 0 0.4 0.4 {}
 T {~100n} -210 160 0 0 0.4 0.4 {}
 T {~100n} 500 160 0 0 0.4 0.4 {}
-T {REFERENCES:
-[1] D. J. Allstot, “A Precision Variable-Supply CMOS Comparator,” IEEE J. Solid-State Circuits, 
-Vol. SC-17, No. 6, pp. 1080-1087, Dec. 1982.
-[2] Philip E. Allen and Douglas R. Holbert, CMOS Analog Circuit Design 2nd Edition, pp. 475, 
-Fig. 8.4-14, New York: Oxford University Press Inc., 2002} -410 290 0 0 0.4 0.4 {}
 N -380 0 -370 0 {
 lab=avss}
 N 180 -150 180 -30 {
