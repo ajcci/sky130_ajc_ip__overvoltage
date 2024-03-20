@@ -221,11 +221,14 @@ electrical_parameters {
 	}
 	simulate {
 		tool:		ngspice
-		template:	hysteresis.spice
-		format:		ascii .data null result
+		template:	trip_up_down.spice
+		format:		ascii .data result
 		collate:        otrip[3:0]
 	}
-
+        measure {
+                tool:           octave
+                filename:       hysteresis.m
+        }
 	conditions {
 		name: otrip[3:0]
 		enumerate: 0000 1000 1111
@@ -255,7 +258,7 @@ electrical_parameters {
 	}
 	simulate {
 		tool:		ngspice
-		template:	accuracy.spice
+		template:	trip_up_down.spice
 		format:		ascii .data result
 		collate:        otrip[3:0]
 	}
@@ -265,7 +268,7 @@ electrical_parameters {
         }
 	conditions {
 		name: otrip[3:0]
-		enumerate: 0000 1000 1111
+		enumerate: 0000 0001 0010 0011 0100 0101 0110 0111 1000 1001 1010 1011 1100 1101 1110 1111
 
 		+
 		name: temperature
@@ -278,6 +281,40 @@ electrical_parameters {
 		typical: tt
 
 	}
+
+	+
+	name:		response_time
+	status:		skip
+	description:	Check time-delay between step in avdd to ovout assertion (vtrip=3.60V)
+	display:	Response Time
+	unit:		{micro}s
+	spec {
+		minimum:	10	fail
+		typical:	20
+		maximum:	50	fail
+	}
+	simulate {
+		tool:		ngspice
+		template:	response_time.spice
+		format:		ascii .data result
+		collate:        otrip[3:0]
+	}
+	conditions {
+		name: otrip[3:0]
+		typical: 0011
+
+		+
+		name: temperature
+		maximum: 85
+		typical: 27
+		minimum: -40
+
+		+
+		name: corner
+		typical: tt
+
+	}
+
 	+
 	name:		Idd_enabled
 	status:		skip

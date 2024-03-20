@@ -11,7 +11,7 @@ LICENSE: Apache License, Version 2.0 with Addendum, see NOTICE
 
 DATE: 03/16/2024   REVISION: 0
 
-DESCRIPTION: Overvoltage detector trip voltage testbench} -910 450 0 0 0.4 0.4 {}
+DESCRIPTION: Overvoltage detector response-time testbench} -910 540 0 0 0.4 0.4 {}
 N 130 70 140 70 {
 lab=avdd_bg}
 N 140 20 140 70 {
@@ -108,7 +108,7 @@ C {devices/code_shown.sym} -900 -110 0 0 {name=SETUP only_toplevel=false value="
 
 .save all
 "}
-C {devices/vsource.sym} 810 60 0 0 {name=Vavdd value="pwl (0 2 3m 6 6m 2) DC \{Vavdd\}" savecurrent=true}
+C {devices/vsource.sym} 810 60 0 0 {name=Vavdd value="pwl (0 3.3 10u 3.3 10.01u 3.9 100u 3.9 100.01u 3.3) DC \{Vavdd\}" savecurrent=true}
 C {devices/vsource.sym} 400 210 0 0 {name=Vbg1v2 value="DC 1.2" savecurrent=false}
 C {devices/lab_pin.sym} 400 180 2 0 {name=p11 sig_type=std_logic lab=vbg_1v2}
 C {devices/isource.sym} -30 200 0 0 {name=Ibias value=200n}
@@ -185,13 +185,21 @@ C {devices/vsource.sym} 400 130 0 0 {name=Visrc_sel value="DC [\{isrc_sel\}*\{Vd
 C {devices/lab_pin.sym} 400 100 2 0 {name=p10 sig_type=std_logic lab=isrc_sel}
 C {devices/code_shown.sym} -910 170 0 0 {name=CONTROL only_toplevel=false value=".csparam dvdd2=[\{Vdvdd\}/2]
 .control
-tran 10u 6m
-meas tran vtript_r when v(ovout)=$&dvdd2 rise=1
-meas tran vtrip_r find v(avdd) when v(ovout)=$&dvdd2 rise=1
-meas tran vtript_f when v(ovout)=$&dvdd2 fall=1
-meas tran vtrip_f find v(avdd) when v(ovout)=$&dvdd2 fall=1
-let hyst = $&vtrip_r - $&vtrip_f
-echo $&vtript_f $&hyst > \{simpath\}/\{filename\}_\{N\}.data
+tran 1u 150u
+
+meas tran stept_r when v(avdd)=3.6 rise=1
+*meas tran stept_f when v(avdd)=3.6 fall=1
+meas tran tript_r when v(ovout)=$&dvdd2 rise=1
+*meas tran tript_f when v(ovout)=$&dvdd2 fall=1
+
+let prop_r = $&tript_r - $&stept_r
+*let prop_f = $&tript_f - $&stept_f
+
+echo $&stept_r $&tript_r $&prop_r
+*echo $&stept_f $&tript_f $&prop_f
+
+echo $&prop_r > \{simpath\}/\{filename\}_\{N\}.data
+*echo $&prop_f >> \{simpath\}/\{filename\}_\{N\}.data
 quit
 .endc
 "}

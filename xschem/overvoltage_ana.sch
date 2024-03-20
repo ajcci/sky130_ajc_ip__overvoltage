@@ -64,8 +64,8 @@ spiceprefix=X
 mult=1}
 C {devices/lab_pin.sym} 700 50 2 1 {name=p29 lab=avss}
 C {sky130_fd_sc_hvl__lsbufhv2lv_1.sym} 1090 -60 0 0 {name=xIlvls4 LVPWR=dvdd VGND=avss VNB=avss VPB=avdd VPWR=avdd prefix=sky130_fd_sc_hvl__ }
-C {xschem/sky130_fd_pr/cap_mim_m3_1.sym} 800 0 0 0 {name=C1 model=cap_mim_m3_1 W=20 L=20 MF=3 spiceprefix=X}
-C {xschem/sky130_fd_pr/cap_mim_m3_2.sym} 930 0 0 0 {name=C2 model=cap_mim_m3_2 W=20 L=20 MF=3 spiceprefix=X}
+C {xschem/sky130_fd_pr/cap_mim_m3_1.sym} 800 0 0 0 {name=C1 model=cap_mim_m3_1 W=30 L=30 MF=3 spiceprefix=X}
+C {xschem/sky130_fd_pr/cap_mim_m3_2.sym} 930 0 0 0 {name=C2 model=cap_mim_m3_2 W=30 L=30 MF=3 spiceprefix=X}
 C {devices/opin.sym} 1420 -60 0 0 {name=p30 lab=ovout}
 C {devices/lab_pin.sym} 590 -180 0 1 {name=p31 lab=ibias}
 C {devices/opin.sym} 590 -200 0 0 {name=p18 lab=itest}
