@@ -5,7 +5,7 @@
 #
 #Ajacci, Ltd. Co. (c) 2024
 #
-#Adapted from Tim Edwards efabless Corp CACE example:
+#Adapted from Tim Edwards' efabless Corp CACE example:
 #https://github.com/RTimothyEdwards/sky130_ef_ip__rdac3v_8bit
 #
 #Hysteresis is the difference between the postive ramp trip voltage and 
