@@ -180,26 +180,19 @@ C {devices/vsource.sym} 590 60 0 0 {name=Vvotrip3 value="DC [\{otrip[3]\}*\{Vdvd
 C {devices/lab_pin.sym} 590 30 2 0 {name=p8 sig_type=std_logic lab=otrip[3]}
 C {devices/vsource.sym} 400 130 0 0 {name=Visrc_sel value="DC [\{isrc_sel\}*\{Vdvdd\}]" savecurrent=false}
 C {devices/lab_pin.sym} 400 100 2 0 {name=p10 sig_type=std_logic lab=isrc_sel}
-C {devices/code_shown.sym} -910 170 0 0 {name=CONTROL only_toplevel=false value=".csparam dvdd2=[\{Vdvdd\}/2]
+C {devices/code_shown.sym} -910 200 0 0 {name=CONTROL only_toplevel=false value=".csparam dvdd2=[\{Vdvdd\}/2]
 .control
 tran 1u 150u
 
 meas tran stept_r when v(avdd)=3.6 rise=1
-*meas tran stept_f when v(avdd)=3.6 fall=1
 meas tran tript_r when v(ovout)=$&dvdd2 rise=1
-*meas tran tript_f when v(ovout)=$&dvdd2 fall=1
-
 let prop_r = $&tript_r - $&stept_r
-*let prop_f = $&tript_f - $&stept_f
-
 echo $&stept_r $&tript_r $&prop_r
-*echo $&stept_f $&tript_f $&prop_f
 
 echo $&prop_r > \{simpath\}/\{filename\}_\{N\}.data
-*echo $&prop_f >> \{simpath\}/\{filename\}_\{N\}.data
 quit
 .endc
 "}
 C {devices/gnd.sym} -180 130 0 0 {name=l14 lab=GND}
-C {devices/vsource.sym} -180 100 0 0 {name=Vext value="DC 3.3" savecurrent=true}
+C {devices/vsource.sym} -180 100 0 0 {name=Vavdd_bg value="DC 3.3" savecurrent=false}
 C {devices/lab_wire.sym} -70 20 0 0 {name=p3 sig_type=std_logic lab=avdd_bg}

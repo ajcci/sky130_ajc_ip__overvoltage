@@ -273,8 +273,8 @@ electrical_parameters {
 		+
 		name: temperature
 		maximum: 85
-		typical: 27
-		minimum: -40
+		#typical: 27
+		#minimum: -40
 
 		+
 		name: corner

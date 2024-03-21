@@ -54,12 +54,13 @@ C {devices/gnd.sym} -750 -140 0 0 {name=l1 lab=GND}
 C {devices/lab_pin.sym} -750 -200 1 0 {name=p1 sig_type=std_logic lab=avss}
 C {devices/gnd.sym} -680 -140 0 0 {name=l2 lab=GND}
 C {devices/lab_pin.sym} -680 -200 1 0 {name=p5 sig_type=std_logic lab=avdd}
-C {devices/vsource.sym} -680 -320 0 0 {name=Vena value="pwl (0 dvdd 500u dvdd 500.01u dvdd 600u dvdd 600.01u dvdd) DC dvdd" savecurrent=false}
+C {devices/vsource.sym} -680 -320 0 0 {name=Vena value="DC dvdd" savecurrent=false}
 C {devices/gnd.sym} -680 -290 0 0 {name=l3 lab=GND}
 C {devices/lab_pin.sym} -680 -350 1 0 {name=p6 sig_type=std_logic lab=ena}
 C {devices/code.sym} -850 -490 0 0 {name=tb only_toplevel=false value="
-.param avdd=3.36
+.param avdd=3.3
 .param dvdd=1.8
+.csparam dvdd2="dvdd/2"
 
 .lib libs.tech/ngspice/sky130.lib.spice tt
 .include libs.ref/sky130_fd_sc_hvl/spice/sky130_fd_sc_hvl.spice
@@ -69,19 +70,28 @@ C {devices/code.sym} -850 -490 0 0 {name=tb only_toplevel=false value="
 R000 ena dvdd 1e9
 R001 isrc_sel dvss 1e9
 
-.temp 25
+.option reltol 5e-5
+
+.temp 27
 .save all
 
 .control
-op
-print ovout vin
-*tran 10u 1400u
+*op
+*print ovout vin
+tran 2u 6m
 *plot ovout itest avdd ena vbg_1v2 vin xiovr.xiana.dcomp xiovr.xiana.dcomp_filt
 *plot i(Vavdd) i(Vdvdd)
-*plot ovout avdd ena*0.5
+plot ovout avdd ena*0.5
+
+meas tran vtrip_r find v(avdd) when v(ovout)=$&dvdd2 td=100u rise=1
+meas tran vtrip_f find v(avdd) when v(ovout)=$&dvdd2 td=3m fall=1
+let accu = ($&vtrip_r + $&vtrip_f)/2
+let hyst = $&vtrip_r - $&vtrip_f
+print $&accu
+print $&hyst
 .endc
 "}
-C {devices/vsource.sym} -680 -170 0 0 {name=Vavdd value="pwl (0 0 20u 0 400u 3.5 700u 3.2 900u 3.0 1000u 3.3 1200u 3.5) DC avdd" savecurrent=true}
+C {devices/vsource.sym} -680 -170 0 0 {name=Vavdd value="pwl (0 2 3m 6 6m 2) DC avdd" savecurrent=true}
 C {devices/vsource.sym} -820 -170 0 0 {name=Vbg value=1.2 savecurrent=false}
 C {devices/gnd.sym} -820 -140 0 0 {name=l7 lab=GND}
 C {devices/lab_pin.sym} -820 -200 1 0 {name=p11 sig_type=std_logic lab=vbg_1v2}
@@ -148,17 +158,17 @@ C {devices/lab_pin.sym} 0 -100 0 0 {name=p30 lab=ena}
 C {devices/lab_pin.sym} 300 -180 0 1 {name=p32 lab=vin}
 C {devices/lab_pin.sym} 0 -80 0 0 {name=p37 lab=isrc_sel}
 C {devices/gnd.sym} -680 290 0 0 {name=l10 lab=GND}
-C {devices/vsource.sym} -680 260 0 0 {name=Vvotrip0 value="DC 0" savecurrent=true}
+C {devices/vsource.sym} -680 260 0 0 {name=Vvotrip0 value="DC 0" savecurrent=false}
 C {devices/lab_pin.sym} -680 230 1 0 {name=p14 sig_type=std_logic lab=otrip[0]}
 C {devices/gnd.sym} -760 290 0 0 {name=l6 lab=GND}
-C {devices/vsource.sym} -760 260 0 0 {name=Vvotrip1 value="DC 0" savecurrent=true}
+C {devices/vsource.sym} -760 260 0 0 {name=Vvotrip1 value="DC 0" savecurrent=false}
 C {devices/lab_pin.sym} -760 230 1 0 {name=p19 sig_type=std_logic lab=otrip[1]}
 C {devices/gnd.sym} -840 290 0 0 {name=l11 lab=GND}
-C {devices/vsource.sym} -840 260 0 0 {name=Vvotrip2 value="DC 0" savecurrent=true}
+C {devices/vsource.sym} -840 260 0 0 {name=Vvotrip2 value="DC 0" savecurrent=false}
 C {devices/lab_pin.sym} -840 230 1 0 {name=p21 sig_type=std_logic lab=otrip[2]}
 C {devices/gnd.sym} -920 290 0 0 {name=l12 lab=GND}
-C {devices/vsource.sym} -920 260 0 0 {name=Vvotrip3 value="DC 0" savecurrent=true}
+C {devices/vsource.sym} -920 260 0 0 {name=Vvotrip3 value="DC 0" savecurrent=false}
 C {devices/lab_pin.sym} -920 230 1 0 {name=p8 sig_type=std_logic lab=otrip[3]}
 C {devices/gnd.sym} -90 -580 0 0 {name=l13 lab=GND}
-C {devices/vsource.sym} -90 -610 0 0 {name=Vext value=3.3 savecurrent=true}
+C {devices/vsource.sym} -90 -610 0 0 {name=Vavdd_bg value=3.3 savecurrent=true}
 C {devices/lab_wire.sym} -250 -660 0 0 {name=p3 sig_type=std_logic lab=avdd_bg}

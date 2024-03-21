@@ -6,12 +6,9 @@ V {}
 S {}
 E {}
 T {Copyright 2024 Ajacci, Ltd. Co.
-
-LICENSE: Apache License, Version 2.0 with Addendum, see NOTICE
-
-DATE: 03/16/2024   REVISION: 0
-
-DESCRIPTION: Overvoltage detector testbench} -890 640 0 0 0.4 0.4 {}
+Apache License, Version 2.0 with Addendum, see NOTICE
+Date: 03/20/2024   Rev: 0
+Description: Overvoltage detector response time testbench} -890 640 0 0 0.4 0.4 {}
 N 130 70 140 70 {
 lab=avdd_bg}
 N 140 20 140 70 {
@@ -201,8 +198,6 @@ let prop_f = $&tript_f - $&stept_f
 
 echo $&stept_r $&tript_r $&prop_r
 echo $&stept_f $&tript_f $&prop_f
-
-*echo $&vtript_r $&vtrip_r > trip.data
 
 plot avdd ovout*1.1 xiovr.xiana.dcomp i(Vavdd)*1000
 .endc

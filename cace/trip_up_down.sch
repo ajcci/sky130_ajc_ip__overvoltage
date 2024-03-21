@@ -183,19 +183,13 @@ C {devices/lab_pin.sym} 400 100 2 0 {name=p10 sig_type=std_logic lab=isrc_sel}
 C {devices/code_shown.sym} -910 200 0 0 {name=CONTROL only_toplevel=false value=".csparam dvdd2=[\{Vdvdd\}/2]
 .control
 tran 10u 6m
-*meas tran vtript_r when v(ovout)=$&dvdd2 rise=1
-meas tran vtrip_r find v(avdd) when v(ovout)=$&dvdd2 rise=1
-*meas tran vtript_f when v(ovout)=$&dvdd2 fall=1
-meas tran vtrip_f find v(avdd) when v(ovout)=$&dvdd2 fall=1
-let accu = ($&vtrip_r + $&vtrip_f)/2
-*echo $&accu > \{simpath\}/\{filename\}_\{N\}.data
+meas tran vtrip_r find v(avdd) when v(ovout)=$&dvdd2 td=100u rise=1
+meas tran vtrip_f find v(avdd) when v(ovout)=$&dvdd2 td=3m fall=1
 echo $&vtrip_r > \{simpath\}/\{filename\}_\{N\}.data
-*echo $&vtript_r >> \{simpath\}/\{filename\}_\{N\}.data
 echo $&vtrip_f >> \{simpath\}/\{filename\}_\{N\}.data
-*echo $&vtript_f >> \{simpath\}/\{filename\}_\{N\}.data
 quit
 .endc
 "}
 C {devices/gnd.sym} -180 130 0 0 {name=l14 lab=GND}
-C {devices/vsource.sym} -180 100 0 0 {name=Vext value="DC 3.3" savecurrent=true}
+C {devices/vsource.sym} -180 100 0 0 {name=Vavdd_bg value="DC 3.3" savecurrent=false}
 C {devices/lab_wire.sym} -70 20 0 0 {name=p3 sig_type=std_logic lab=avdd_bg}

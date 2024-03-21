@@ -188,5 +188,5 @@ quit
 .endc
 "}
 C {devices/gnd.sym} -180 130 0 0 {name=l14 lab=GND}
-C {devices/vsource.sym} -180 100 0 0 {name=Vext value="DC 3.3" savecurrent=true}
+C {devices/vsource.sym} -180 100 0 0 {name=Vavdd_bg value="DC 3.3" savecurrent=false}
 C {devices/lab_wire.sym} -70 20 0 0 {name=p3 sig_type=std_logic lab=avdd_bg}

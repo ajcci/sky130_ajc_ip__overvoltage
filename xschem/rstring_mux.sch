@@ -799,4 +799,4 @@ L=25
 model=res_xhigh_po
 spiceprefix=X
 mult=1}
-C {xschem/sky130_stdcells/inv_1.sym} 650 -520 0 0 {name=xIinv[15:0] VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hvl__}
+C {xschem/sky130_stdcells/inv_1.sym} 650 -520 0 0 {name=xIinv[15:0] VGND=avss VNB=avss VPB=avdd VPWR=avdd prefix=sky130_fd_sc_hvl__}
