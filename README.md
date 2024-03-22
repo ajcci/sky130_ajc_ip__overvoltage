@@ -18,3 +18,4 @@ Run CACE to see simulation results against a set of specifications:
 
 `cace-gui`
 
+![](sky130_ajc_ip__overvoltage.png)
