@@ -1,3 +1,11 @@
+//############################################################################
+// Copyright 2024 Ajacci, Ltd. Co.
+// License: Apache License, Version 2.0 with Addendum, see NOTICE
+// Date: 22 March, 2024   Rev 0
+// Description: Over-voltage detector, analog model and digital sections
+// combined.
+//############################################################################
+
 `include "behavioral/rstring_mux.v"
 `include "behavioral/comparator.v"
 `include "behavioral/ibias_gen.v"

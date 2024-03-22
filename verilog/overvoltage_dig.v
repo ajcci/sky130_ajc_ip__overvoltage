@@ -1,3 +1,10 @@
+//############################################################################
+// Copyright 2024 Ajacci, Ltd. Co.
+// License: Apache License, Version 2.0 with Addendum, see NOTICE
+// Date: 22 March, 2024   Rev 0
+// Description: Digital section of over-voltage detector, performs decode.
+//############################################################################
+
 module overvoltage_dig(
 //INPUTS
 input logic [3:0] otrip,
