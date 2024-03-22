@@ -11,26 +11,26 @@ Date: 03/14/2024   Rev: 0
 Description: Overvoltage detector (analog section)} 840 -460 0 0 0.4 0.4 {}
 N 590 -60 700 -60 {
 lab=dcomp}
-N 930 -60 930 -30 {
+N 1170 -60 1170 -30 {
 lab=dcomp_filt}
-N 800 -60 800 -30 {
+N 1040 -60 1040 -30 {
 lab=dcomp_filt}
-N 730 -40 730 50 {
+N 970 -40 970 50 {
 lab=avss}
-N 800 30 800 50 {
+N 1040 30 1040 50 {
 lab=avss}
-N 930 30 930 50 {
+N 1170 30 1170 50 {
 lab=avss}
-N 700 50 930 50 {
+N 940 50 1170 50 {
 lab=avss}
-N 760 -60 1000 -60 {
+N 1000 -60 1240 -60 {
 lab=dcomp_filt}
 N 1660 -80 1700 -80 {
 lab=#net1}
 N 1540 -80 1580 -80 {
-lab=#net2}
-N 1300 -80 1360 -80 {
-lab=#net3}
+lab=vsch}
+N 880 -60 940 -60 {
+lab=vl}
 C {devices/lab_pin.sym} 290 -350 0 0 {name=p1 lab=avdd}
 C {devices/lab_pin.sym} 290 -310 0 0 {name=p4 lab=dvdd}
 C {devices/lab_pin.sym} 290 -290 0 0 {name=p5 lab=dvss}
@@ -55,16 +55,16 @@ C {devices/lab_pin.sym} 290 -120 0 0 {name=p17 lab=ena_avdd}
 C {devices/ipin.sym} 290 -180 0 0 {name=p19 lab=ibg_200n}
 C {devices/lab_pin.sym} 290 0 0 0 {name=p28 lab=vbg_1v2}
 C {devices/lab_pin.sym} 290 -20 0 0 {name=p11 lab=ena_avdd}
-C {xschem/sky130_fd_pr/res_xhigh_po.sym} 730 -60 3 0 {name=R1
+C {xschem/sky130_fd_pr/res_xhigh_po.sym} 970 -60 3 0 {name=R1
 W=2
 L=1000
 model=res_xhigh_po
 spiceprefix=X
 mult=1}
-C {devices/lab_pin.sym} 700 50 2 1 {name=p29 lab=avss}
-C {sky130_fd_sc_hvl__lsbufhv2lv_1.sym} 1450 -80 0 0 {name=xIlvls4 LVPWR=dvdd VGND=avss VNB=avss VPB=avdd VPWR=avdd prefix=sky130_fd_sc_hvl__ }
-C {xschem/sky130_fd_pr/cap_mim_m3_1.sym} 800 0 0 0 {name=C1 model=cap_mim_m3_1 W=30 L=30 MF=3 spiceprefix=X}
-C {xschem/sky130_fd_pr/cap_mim_m3_2.sym} 930 0 0 0 {name=C2 model=cap_mim_m3_2 W=30 L=30 MF=3 spiceprefix=X}
+C {devices/lab_pin.sym} 940 50 2 1 {name=p29 lab=avss}
+C {sky130_fd_sc_hvl__lsbufhv2lv_1.sym} 790 -60 0 0 {name=xIlvls4 LVPWR=dvdd VGND=avss VNB=avss VPB=avdd VPWR=avdd prefix=sky130_fd_sc_hvl__ }
+C {xschem/sky130_fd_pr/cap_mim_m3_1.sym} 1040 0 0 0 {name=C1 model=cap_mim_m3_1 W=30 L=30 MF=3 spiceprefix=X}
+C {xschem/sky130_fd_pr/cap_mim_m3_2.sym} 1170 0 0 0 {name=C2 model=cap_mim_m3_2 W=30 L=30 MF=3 spiceprefix=X}
 C {devices/opin.sym} 1780 -80 0 0 {name=p30 lab=ovout}
 C {devices/lab_pin.sym} 590 -180 0 1 {name=p31 lab=ibias}
 C {devices/opin.sym} 590 -200 0 0 {name=p18 lab=itest}
@@ -80,12 +80,12 @@ C {rstring_mux.sym} 440 -300 0 0 {name=xIrsmux}
 C {comparator.sym} 440 -10 0 0 {name=xIcomp}
 C {ibias_gen.sym} 440 -150 0 0 {name=xIbiasgen}
 C {devices/lab_wire.sym} 680 -60 0 0 {name=p10 sig_type=std_logic lab=dcomp}
-C {devices/lab_wire.sym} 900 -60 0 0 {name=p40 sig_type=std_logic lab=dcomp_filt}
+C {devices/lab_wire.sym} 1140 -60 0 0 {name=p40 sig_type=std_logic lab=dcomp_filt}
 C {xschem/sky130_stdcells/inv_4.sym} 1620 -80 0 0 {name=xIinv3 VGND=dvss VNB=dvss VPB=dvdd VPWR=dvdd prefix=sky130_fd_sc_hd__ }
 C {xschem/sky130_stdcells/inv_16.sym} 1740 -80 0 0 {name=xIinv4 VGND=dvss VNB=dvss VPB=dvdd VPWR=dvdd prefix=sky130_fd_sc_hd__ }
 C {devices/opin.sym} 590 -350 0 0 {name=p43 lab=vin}
-C {xschem/schmitt_trigger.sym} 1150 -60 0 0 {name=xIschimitt}
-C {devices/lab_pin.sym} 1000 -80 0 0 {name=p2 lab=avdd}
-C {devices/lab_pin.sym} 1000 -40 0 0 {name=p32 lab=avss}
-C {devices/lab_wire.sym} 1350 -80 0 0 {name=p33 sig_type=std_logic lab=vsch}
-C {devices/lab_wire.sym} 1570 -80 0 0 {name=p34 sig_type=std_logic lab=vl}
+C {xschem/schmitt_trigger.sym} 1390 -60 0 0 {name=xIschimitt}
+C {devices/lab_pin.sym} 1240 -80 0 0 {name=p2 lab=dvdd}
+C {devices/lab_pin.sym} 1240 -40 0 0 {name=p32 lab=dvss}
+C {devices/lab_wire.sym} 1580 -80 0 0 {name=p33 sig_type=std_logic lab=vsch}
+C {devices/lab_wire.sym} 930 -60 0 0 {name=p34 sig_type=std_logic lab=vl}

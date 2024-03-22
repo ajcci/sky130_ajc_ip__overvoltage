@@ -42,7 +42,7 @@ N 120 -1030 300 -1030 {
 lab=vtrip4}
 N 120 -1090 300 -1090 {
 lab=vtrip3}
-N -380 -970 -260 -970 {
+N -380 -1030 -260 -1030 {
 lab=avdd}
 N 120 1010 120 1060 {
 lab=#net1}
@@ -98,27 +98,21 @@ N -360 1220 120 1220 {
 lab=avss}
 N -90 -940 -90 1220 {
 lab=avss}
-N -280 -940 -280 1220 {
-lab=avss}
 N -140 -970 -140 1030 {
 lab=#net2}
 N -140 -970 -70 -970 {
 lab=#net2}
+N -280 -1000 -280 1220 {
+lab=avss}
 C {xschem/sky130_fd_pr/res_xhigh_po.sym} 120 920 0 0 {name=R1
 W=2
 L=25
 model=res_xhigh_po
 spiceprefix=X
 mult=1}
-C {devices/ipin.sym} -380 -970 2 1 {name=p34 lab=avdd}
+C {devices/ipin.sym} -380 -1030 2 1 {name=p34 lab=avdd}
 C {devices/ipin.sym} -360 1220 2 1 {name=p35 lab=avss}
 C {xschem/sky130_fd_pr/res_xhigh_po.sym} 120 860 0 0 {name=R2
-W=2
-L=25
-model=res_xhigh_po
-spiceprefix=X
-mult=1}
-C {xschem/sky130_fd_pr/res_xhigh_po.sym} 120 980 0 0 {name=R0
 W=2
 L=25
 model=res_xhigh_po
@@ -800,3 +794,15 @@ model=res_xhigh_po
 spiceprefix=X
 mult=1}
 C {xschem/sky130_stdcells/inv_1.sym} 650 -520 0 0 {name=xIinv[15:0] VGND=avss VNB=avss VPB=avdd VPWR=avdd prefix=sky130_fd_sc_hvl__}
+C {xschem/sky130_fd_pr/res_xhigh_po.sym} 120 980 0 0 {name=R0
+W=2
+L=25
+model=res_xhigh_po
+spiceprefix=X
+mult=1}
+C {xschem/sky130_fd_pr/res_xhigh_po.sym} -260 -1000 0 0 {name=R104
+W=2
+L=25
+model=res_xhigh_po
+spiceprefix=X
+mult=1}

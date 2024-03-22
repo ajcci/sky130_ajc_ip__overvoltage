@@ -83,7 +83,7 @@ tran 2u 6m
 *plot i(Vavdd) i(Vdvdd)
 plot ovout avdd ena*0.5
 
-meas tran vtrip_r find v(avdd) when v(ovout)=$&dvdd2 td=100u rise=1
+meas tran vtrip_r find v(avdd) when v(ovout)=$&dvdd2 td=300u rise=1
 meas tran vtrip_f find v(avdd) when v(ovout)=$&dvdd2 td=3m fall=1
 let accu = ($&vtrip_r + $&vtrip_f)/2
 let hyst = $&vtrip_r - $&vtrip_f
