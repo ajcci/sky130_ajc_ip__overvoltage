@@ -1,7 +1,7 @@
 # sky130_ajc_ip__overvoltage
 Overvoltage detector for SKY130
 
-This circuit is designed to produce an alarm signal `ovout` (asserted high) when the power supply `avdd` is rises above a selectable trip voltage via `otp[3:0]`, ranging from 3.3V to 5.5V.
+This circuit is designed to produce an alarm signal `ovout` (asserted high) when the power supply `avdd` is rises above a selectable trip voltage via `otrip[3:0]`, ranging from 3.3V to 5.5V.
 
 To clone this repository:
 
