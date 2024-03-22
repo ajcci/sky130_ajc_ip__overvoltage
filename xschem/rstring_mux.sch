@@ -17,7 +17,6 @@ T {3.94V} 320 -920 0 0 0.4 0.4 {}
 T {3.82V} 320 -980 0 0 0.4 0.4 {}
 T {3.71V} 320 -1040 0 0 0.4 0.4 {}
 T {3.60V} 320 -1100 0 0 0.4 0.4 {}
-T {~750nA-1500nA} 30 1230 0 0 0.4 0.4 {}
 T {5.48V} 320 -380 0 0 0.4 0.4 {}
 T {5.25V} 320 -440 0 0 0.4 0.4 {}
 T {5.04V} 320 -500 0 0 0.4 0.4 {}
@@ -42,10 +41,6 @@ N 120 -1030 300 -1030 {
 lab=vtrip4}
 N 120 -1090 300 -1090 {
 lab=vtrip3}
-N -380 -1030 -260 -1030 {
-lab=avdd}
-N 120 1010 120 1060 {
-lab=#net1}
 N -70 1010 -70 1030 {
 lab=vtrip0}
 N -70 1030 50 1030 {
@@ -60,12 +55,6 @@ N 830 -1010 870 -1010 {
 lab=otrip_decoded_b_avdd[15:0]}
 N 830 -1010 830 -990 {
 lab=otrip_decoded_b_avdd[15:0]}
-N 110 1090 120 1090 {
-lab=avss}
-N 120 1120 120 1220 {
-lab=avss}
-N 110 1090 110 1220 {
-lab=avss}
 N 800 -950 800 -790 {
 lab=vtrip15,vtrip14,vtrip13,vtrip12,vtrip11,vtrip10,vtrip9,vtrip8,vtrip7,vtrip6,vtrip5,vtrip4,vtrip3,vtrip2,vtrip1,vtrip0}
 N 120 -370 300 -370 {
@@ -91,27 +80,43 @@ lab=vtrip0}
 N 50 -1270 50 1030 {
 lab=vtrip0}
 N -260 1010 -260 1030 {
-lab=#net2}
+lab=#net1}
 N -260 1030 -140 1030 {
-lab=#net2}
-N -360 1220 120 1220 {
-lab=avss}
+lab=#net1}
 N -90 -940 -90 1220 {
 lab=avss}
 N -140 -970 -140 1030 {
-lab=#net2}
+lab=#net1}
 N -140 -970 -70 -970 {
-lab=#net2}
+lab=#net1}
 N -280 -1000 -280 1220 {
 lab=avss}
+N -400 1090 -390 1090 {
+lab=avss}
+N -390 1120 -390 1220 {
+lab=avss}
+N -400 1090 -400 1220 {
+lab=avss}
+N -510 -1090 -470 -1090 {
+lab=ena_b}
+N -510 -1090 -510 -1070 {
+lab=ena_b}
+N -580 -1030 -540 -1030 {
+lab=avdd}
+N 120 1010 120 1220 {
+lab=avss}
+N -420 1220 120 1220 {
+lab=avss}
+N -480 -1030 -260 -1030 {
+lab=#net2}
+N -390 -1030 -390 1060 {
+lab=#net2}
 C {xschem/sky130_fd_pr/res_xhigh_po.sym} 120 920 0 0 {name=R1
 W=2
 L=25
 model=res_xhigh_po
 spiceprefix=X
 mult=1}
-C {devices/ipin.sym} -380 -1030 2 1 {name=p34 lab=avdd}
-C {devices/ipin.sym} -360 1220 2 1 {name=p35 lab=avss}
 C {xschem/sky130_fd_pr/res_xhigh_po.sym} 120 860 0 0 {name=R2
 W=2
 L=25
@@ -559,24 +564,9 @@ spiceprefix=X
 }
 C {devices/lab_pin.sym} 830 -790 1 1 {name=p54 sig_type=std_logic lab=avss}
 C {devices/lab_pin.sym} 870 -850 2 0 {name=p55 sig_type=std_logic lab=otrip_decoded_avdd[15:0]}
-C {xschem/sky130_fd_pr/nfet_g5v0d10v5.sym} 140 1090 0 1 {name=Mena
-W=5
-L=0.6
-nf=1
-mult=16
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=nfet_g5v0d10v5
-spiceprefix=X
-}
 C {devices/lab_pin.sym} 870 -1010 2 0 {name=p52 sig_type=std_logic lab=otrip_decoded_b_avdd[15:0]}
 C {devices/lab_wire.sym} 800 -880 0 0 {name=p56 sig_type=std_logic lab=vtrip15,vtrip14,vtrip13,vtrip12,vtrip11,vtrip10,vtrip9,vtrip8,vtrip7,vtrip6,vtrip5,vtrip4,vtrip3,vtrip2,vtrip1,vtrip0}
 C {devices/opin.sym} 860 -890 2 1 {name=p57 lab=vout}
-C {devices/ipin.sym} 160 1090 2 0 {name=p1 lab=ena}
 C {devices/ipin.sym} 610 -520 2 1 {name=p2 lab=otrip_decoded_avdd[15:0]}
 C {devices/lab_pin.sym} 690 -520 2 0 {name=p5 sig_type=std_logic lab=otrip_decoded_b_avdd[15:0]}
 C {devices/ipin.sym} 590 -400 2 1 {name=p6 lab=dvss}
@@ -806,3 +796,39 @@ L=25
 model=res_xhigh_po
 spiceprefix=X
 mult=1}
+C {devices/ipin.sym} -580 -1030 2 1 {name=p14 lab=avdd}
+C {devices/ipin.sym} -420 1220 2 1 {name=p16 lab=avss}
+C {xschem/sky130_fd_pr/nfet_g5v0d10v5.sym} -370 1090 0 1 {name=Mpdn
+W=1
+L=1
+nf=1
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=nfet_g5v0d10v5
+spiceprefix=X
+}
+C {xschem/sky130_fd_pr/pfet_g5v0d10v5.sym} -510 -1050 1 0 {name=Mpdp
+W=5
+L=0.6
+nf=1
+mult=16
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=pfet_g5v0d10v5
+spiceprefix=X
+}
+C {devices/lab_pin.sym} -510 -1030 1 1 {name=p17 sig_type=std_logic lab=avdd}
+C {devices/lab_pin.sym} -470 -1090 2 0 {name=p18 sig_type=std_logic lab=ena_b}
+C {devices/lab_pin.sym} -350 1090 2 0 {name=p19 sig_type=std_logic lab=ena_b}
+C {xschem/sky130_stdcells/inv_1.sym} 650 -580 0 0 {name=xIinv1 VGND=avss VNB=avss VPB=avdd VPWR=avdd prefix=sky130_fd_sc_hvl__}
+C {devices/ipin.sym} 610 -580 2 1 {name=p1 lab=ena}
+C {devices/lab_pin.sym} 690 -580 2 0 {name=p15 sig_type=std_logic lab=ena_b}
