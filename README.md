@@ -11,7 +11,7 @@ To view a schematic after cloning the repository:
 
 ```
 cd sky130_ajc_ip__overvoltage
-xschem xschem/sky130_ajc_ip__overvoltage_tb.sch
+xschem cace/dccurrent_avdd.sch
 ```
 
 Run CACE to see simulation results against a set of specifications:
