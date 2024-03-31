@@ -1,0 +1,1 @@
+magic -d XR -rcfile sky130A.magicrc comparator_separate_dnw.mag
