@@ -21,7 +21,7 @@ Apache License, Version 2.0 with Addendum, see NOTICE
 Date: 03/6/2024   Rev: 0
 Description: Ibias generator} 60 -20 0 0 0.4 0.4 {}
 N -560 -320 -560 -270 {
-lab=#net1}
+lab=vstart}
 N -560 -350 -550 -350 {
 lab=avdd}
 N -630 -240 -600 -240 {
@@ -31,7 +31,7 @@ lab=avss}
 N -450 140 -450 220 {
 lab=avss}
 N -450 0 -450 80 {
-lab=#net2}
+lab=#net1}
 N -450 -370 -450 -60 {
 lab=vn0}
 N -460 -400 -450 -400 {
@@ -55,7 +55,7 @@ lab=vn0}
 N -560 -180 -450 -180 {
 lab=vn0}
 N -60 0 -60 80 {
-lab=#net3}
+lab=#net2}
 N -60 140 -60 220 {
 lab=avss}
 N -80 110 -80 220 {
@@ -241,7 +241,7 @@ lab=avss}
 N -560 -450 -550 -450 {
 lab=avdd}
 N -560 -420 -560 -380 {
-lab=#net4}
+lab=vstartena}
 N -560 -530 -560 -480 {
 lab=avdd}
 N -1000 -530 -1000 -430 {
@@ -292,12 +292,6 @@ N 460 -370 460 -320 {
 lab=itest}
 N 420 -400 420 -350 {
 lab=vp}
-C {xschem/sky130_fd_pr/res_xhigh_po.sym} -60 110 0 0 {name=R1
-W=2
-L=1000
-model=res_xhigh_po
-spiceprefix=X
-mult=1}
 C {xschem/sky130_fd_pr/pnp_05v5.sym} -430 110 0 1 {name=Q1
 model=pnp_05v5_W0p68L0p68
 m=1
@@ -808,3 +802,11 @@ model=pfet_g5v0d10v5
 spiceprefix=X
 }
 C {devices/opin.sym} 460 -320 1 0 {name=p43 lab=itest}
+C {devices/lab_wire.sym} -560 -290 0 0 {name=p44 sig_type=std_logic lab=vstart}
+C {devices/lab_wire.sym} -560 -390 0 0 {name=p45 sig_type=std_logic lab=vstartena}
+C {xschem/sky130_fd_pr/res_xhigh_po_1p41.sym} -60 110 0 0 {name=R1
+L=700
+model=res_xhigh_po_1p41
+spiceprefix=X
+mult=1
+m=1}
