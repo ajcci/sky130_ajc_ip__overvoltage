@@ -1,6 +1,6 @@
 Layout of sky130_ajc_ip__overvoltage:
 
-!(sky130_ajc_ip__overvoltage_layout.png)
+![](sky130_ajc_ip__overvoltage_layout.png)
 
 
 To perform LVS:
