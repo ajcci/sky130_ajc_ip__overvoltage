@@ -640,7 +640,7 @@ spiceprefix=X
 C {devices/lab_pin.sym} 1130 40 2 0 {name=p20 sig_type=std_logic lab=vt}
 C {devices/lab_pin.sym} 1090 40 2 1 {name=p21 sig_type=std_logic lab=avss}
 C {devices/lab_wire.sym} 1130 10 0 0 {name=p22 sig_type=std_logic lab=vnn}
-C {devices/lab_wire.sym} 1130 70 2 0 {name=p23 sig_type=std_logic lab=avss}
+C {devices/lab_wire.sym} 1130 70 2 0 {name=p23 sig_type=std_logic lab=vt}
 C {xschem/sky130_fd_pr/nfet_g5v0d10v5.sym} 1340 40 0 0 {name=Mdum1
 W=1
 L=8
