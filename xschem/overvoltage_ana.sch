@@ -23,6 +23,16 @@ N 1540 -80 1580 -80 {
 lab=vsch}
 N 880 -60 940 -60 {
 lab=vl}
+N 30 -100 290 -100 {
+lab=#net2}
+N 30 -100 30 -70 {
+lab=#net2}
+N 30 -10 30 20 {
+lab=avss}
+N -50 20 30 20 {
+lab=avss}
+N -10 -40 -10 20 {
+lab=avss}
 C {devices/lab_pin.sym} 290 -350 0 0 {name=p1 lab=avdd}
 C {devices/lab_pin.sym} 290 -330 0 0 {name=p6 lab=ena_avdd}
 C {devices/lab_pin.sym} 290 -290 0 0 {name=p7 lab=avss}
@@ -33,7 +43,7 @@ C {devices/lab_pin.sym} 290 40 0 0 {name=p14 lab=avss}
 C {devices/lab_pin.sym} 290 -200 0 0 {name=p15 lab=avdd}
 C {devices/lab_pin.sym} 290 -140 0 0 {name=p16 lab=isrc_sel_avdd}
 C {devices/lab_pin.sym} 290 -160 0 0 {name=p20 lab=vbg_1v2}
-C {devices/lab_pin.sym} 290 -100 0 0 {name=p21 lab=avss}
+C {devices/lab_pin.sym} 290 -80 0 0 {name=p21 lab=avss}
 C {devices/ipin.sym} 110 -470 0 0 {name=p12 lab=vbg_1v2}
 C {devices/ipin.sym} 110 -450 0 0 {name=p22 lab=avdd}
 C {devices/ipin.sym} 110 -430 0 0 {name=p23 lab=avss}
@@ -64,7 +74,7 @@ C {devices/lab_pin.sym} 520 -400 0 1 {name=p39 lab=isrc_sel_avdd}
 C {devices/lab_pin.sym} 290 -310 0 0 {name=p27 lab=otrip_decoded_avdd[15:0]}
 C {rstring_mux.sym} 440 -320 0 0 {name=xIrsmux}
 C {comparator.sym} 440 -10 0 0 {name=xIcomp}
-C {ibias_gen.sym} 440 -150 0 0 {name=xIbiasgen}
+C {ibias_gen.sym} 440 -140 0 0 {name=xIbiasgen}
 C {devices/lab_wire.sym} 680 -60 0 0 {name=p10 sig_type=std_logic lab=dcomp}
 C {devices/lab_wire.sym} 1140 -60 0 0 {name=p40 sig_type=std_logic lab=dcomp_filt}
 C {xschem/sky130_stdcells/inv_4.sym} 1620 -80 0 0 {name=xIinv3 VGND=dvss VNB=dvss VPB=dvdd VPWR=dvdd prefix=sky130_fd_sc_hd__ }
@@ -78,3 +88,10 @@ C {devices/lab_wire.sym} 930 -60 0 0 {name=p34 sig_type=std_logic lab=vl}
 C {xschem/sky130_fd_sc_hvl__lsbufhv2lv_1.sym} 790 -60 0 0 {name=xIlvls4 LVPWR=dvdd VGND=dvss VNB=dvss VPB=avdd VPWR=avdd prefix=sky130_fd_sc_hvl__ }
 C {devices/lab_pin.sym} 970 -40 1 1 {name=p4 lab=avss}
 C {xschem/sky130_fd_pr/cap_mim_m3_2.sym} 1170 0 0 0 {name=C1 model=cap_mim_m3_2 W=30 L=30 MF=6 spiceprefix=X}
+C {xschem/sky130_fd_pr/pnp_05v5.sym} 10 -40 0 0 {name=Q1
+model=pnp_05v5_W0p68L0p68
+m=1
+spiceprefix=X
+}
+C {devices/lab_pin.sym} -50 20 0 0 {name=p5 lab=avss}
+C {devices/lab_wire.sym} 120 -100 0 0 {name=p35 sig_type=std_logic lab=ve}

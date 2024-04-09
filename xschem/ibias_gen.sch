@@ -26,12 +26,6 @@ N -560 -350 -550 -350 {
 lab=avdd}
 N -630 -240 -600 -240 {
 lab=vbg_1v2}
-N -410 110 -410 220 {
-lab=avss}
-N -450 140 -450 220 {
-lab=avss}
-N -450 0 -450 80 {
-lab=ve}
 N -450 -370 -450 -60 {
 lab=vn0}
 N -460 -400 -450 -400 {
@@ -304,11 +298,10 @@ N 1600 170 1620 170 {
 lab=avss}
 N 1450 220 1620 220 {
 lab=avss}
-C {xschem/sky130_fd_pr/pnp_05v5.sym} -430 110 0 1 {name=Q1
-model=pnp_05v5_W0p68L0p68
-m=1
-spiceprefix=X
-}
+N -450 100 -440 100 {
+lab=ve}
+N -450 0 -450 100 {
+lab=ve}
 C {xschem/sky130_fd_pr/nfet_g5v0d10v5.sym} -580 -240 0 0 {name=M17
 W=5
 L=0.6
@@ -1016,7 +1009,6 @@ C {devices/lab_wire.sym} 2760 40 0 0 {name=p82 sig_type=std_logic lab=avss}
 C {devices/lab_wire.sym} 2760 100 2 0 {name=p83 sig_type=std_logic lab=ve}
 C {devices/lab_pin.sym} 2760 70 2 0 {name=p84 sig_type=std_logic lab=avss}
 C {devices/lab_pin.sym} 2720 70 2 1 {name=p85 sig_type=std_logic lab=avss}
-C {devices/lab_wire.sym} -450 50 0 1 {name=p86 sig_type=std_logic lab=ve}
 C {devices/lab_wire.sym} -60 50 0 1 {name=p87 sig_type=std_logic lab=vr}
 C {xschem/sky130_fd_pr/nfet_g5v0d10v5.sym} 2740 180 0 0 {name=Mdum11
 W=5
@@ -1054,3 +1046,4 @@ C {devices/lab_wire.sym} 2930 40 0 0 {name=p92 sig_type=std_logic lab=vr}
 C {devices/lab_wire.sym} 2930 100 2 0 {name=p93 sig_type=std_logic lab=avss}
 C {devices/lab_pin.sym} 2930 70 2 0 {name=p94 sig_type=std_logic lab=avss}
 C {devices/lab_pin.sym} 2890 70 2 1 {name=p95 sig_type=std_logic lab=avss}
+C {devices/ipin.sym} -440 100 2 0 {name=p96 lab=ve}
