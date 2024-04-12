@@ -22,9 +22,25 @@ lab=otrip[1]}
 N -860 -350 -850 -350 {
 lab=otrip[1]}
 N -710 -350 -710 -330 {
-lab=otrip[1]}
+lab=otrip[0]}
 N -720 -350 -710 -350 {
-lab=otrip[1]}
+lab=otrip[0]}
+N -1630 -350 -1630 -330 {
+lab=vbg_1v2}
+N -1640 -350 -1630 -350 {
+lab=vbg_1v2}
+N -1460 -350 -1460 -330 {
+lab=ena}
+N -1470 -350 -1460 -350 {
+lab=ena}
+N -1310 -350 -1310 -330 {
+lab=isrc_sel}
+N -1320 -350 -1310 -350 {
+lab=isrc_sel}
+N -1810 -350 -1810 -330 {
+lab=vin}
+N -1820 -350 -1810 -350 {
+lab=vin}
 C {xschem/overvoltage_ana.sym} 0 -20 0 0 {name=xIana}
 C {devices/ipin.sym} -430 -420 2 1 {name=p1 lab=avdd}
 C {devices/ipin.sym} -430 -400 2 1 {name=p2 lab=avss}
@@ -127,3 +143,75 @@ C {devices/lab_pin.sym} -750 -300 0 0 {name=p41 lab=dvss}
 C {devices/lab_pin.sym} -710 -270 3 0 {name=p42 lab=dvss}
 C {devices/lab_pin.sym} -710 -300 0 1 {name=p43 lab=dvss}
 C {devices/lab_pin.sym} -720 -350 0 0 {name=p44 lab=otrip[0]}
+C {xschem/sky130_fd_pr/nfet_01v8.sym} -1650 -300 0 0 {name=Mdiode4
+W=1
+L=0.5
+nf=1 
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=nfet_01v8
+spiceprefix=X
+}
+C {devices/lab_pin.sym} -1670 -300 0 0 {name=p45 lab=dvss}
+C {devices/lab_pin.sym} -1630 -270 3 0 {name=p46 lab=dvss}
+C {devices/lab_pin.sym} -1630 -300 0 1 {name=p47 lab=dvss}
+C {devices/lab_pin.sym} -1640 -350 0 0 {name=p48 lab=vbg_1v2}
+C {xschem/sky130_fd_pr/nfet_01v8.sym} -1480 -300 0 0 {name=Mdiode5
+W=1
+L=0.5
+nf=1 
+mult=2
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=nfet_01v8
+spiceprefix=X
+}
+C {devices/lab_pin.sym} -1500 -300 0 0 {name=p49 lab=dvss}
+C {devices/lab_pin.sym} -1460 -270 3 0 {name=p50 lab=dvss}
+C {devices/lab_pin.sym} -1460 -300 0 1 {name=p51 lab=dvss}
+C {devices/lab_pin.sym} -1470 -350 0 0 {name=p52 lab=ena}
+C {xschem/sky130_fd_pr/nfet_01v8.sym} -1330 -300 0 0 {name=Mdiode6
+W=1
+L=0.5
+nf=1 
+mult=2
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=nfet_01v8
+spiceprefix=X
+}
+C {devices/lab_pin.sym} -1350 -300 0 0 {name=p53 lab=dvss}
+C {devices/lab_pin.sym} -1310 -270 3 0 {name=p54 lab=dvss}
+C {devices/lab_pin.sym} -1310 -300 0 1 {name=p55 lab=dvss}
+C {devices/lab_pin.sym} -1320 -350 0 0 {name=p56 lab=isrc_sel}
+C {xschem/sky130_fd_pr/nfet_01v8.sym} -1830 -300 0 0 {name=Mdiode7
+W=1
+L=0.5
+nf=1 
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=nfet_01v8
+spiceprefix=X
+}
+C {devices/lab_pin.sym} -1850 -300 0 0 {name=p57 lab=dvss}
+C {devices/lab_pin.sym} -1810 -270 3 0 {name=p58 lab=dvss}
+C {devices/lab_pin.sym} -1810 -300 0 1 {name=p59 lab=dvss}
+C {devices/lab_pin.sym} -1820 -350 0 0 {name=p60 lab=vin}
