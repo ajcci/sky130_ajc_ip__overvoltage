@@ -1,0 +1,6 @@
+set layout [readnet spice sky130_ajc_ip__overvoltage.spice]
+set source [readnet spice sky130_ajc_ip__overvoltage_lvs.xschem]
+#readlib spice /usr/local/share/pdk/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice $layout
+readlib spice /usr/local/share/pdk/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice $source
+readnet verilog overvoltage_dig.v $source
+lvs "$layout sky130_ajc_ip__overvoltage" "$source sky130_ajc_ip__overvoltage" /usr/local/share/pdk/sky130A/libs.tech/netgen/sky130A_setup.tcl lvs.report

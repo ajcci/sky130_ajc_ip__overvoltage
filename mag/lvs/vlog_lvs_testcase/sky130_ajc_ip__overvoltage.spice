@@ -1,0 +1,9 @@
+*
+.subckt sky130_ajc_ip__overvoltage dvdd dvss otrip otrip_decoded
+xidig dvdd dvss otrip otrip_decoded overvoltage_dig
+.ends
+
+*.subckt overvoltage_dig VPWR VGND otrip otrip_decoded
+*xbuf2 otrip VGND VGND VPWR VPWR otrip_decoded sky130_fd_sc_hd__buf_2
+*.ends
+

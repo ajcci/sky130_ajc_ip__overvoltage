@@ -1,0 +1,40 @@
+
+Warning: Equate pins:  cell overvoltage_dig is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: overvoltage_dig                 |Circuit 2: overvoltage_dig                 
+-------------------------------------------|-------------------------------------------
+1                                          |proxy1                                     
+2                                          |proxy2                                     
+3                                          |proxy3                                     
+4                                          |proxy4                                     
+(no matching pin)                          |VPWR                                       
+(no matching pin)                          |VGND                                       
+(no matching pin)                          |otrip                                      
+(no matching pin)                          |otrip_decoded                              
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes overvoltage_dig and overvoltage_dig are equivalent.
+
+Subcircuit summary:
+Circuit 1: sky130_ajc_ip__overvoltage      |Circuit 2: sky130_ajc_ip__overvoltage      
+-------------------------------------------|-------------------------------------------
+overvoltage_dig (1)                        |overvoltage_dig (1)                        
+Number of devices: 1                       |Number of devices: 1                       
+Number of nets: 8                          |Number of nets: 8                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: sky130_ajc_ip__overvoltage      |Circuit 2: sky130_ajc_ip__overvoltage      
+-------------------------------------------|-------------------------------------------
+dvdd                                       |dvdd                                       
+dvss                                       |dvss                                       
+otrip                                      |otrip                                      
+otrip_decoded                              |otrip_decoded                              
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_ajc_ip__overvoltage and sky130_ajc_ip__overvoltage are equivalent.
+
+Final result: Circuits match uniquely.
+.
