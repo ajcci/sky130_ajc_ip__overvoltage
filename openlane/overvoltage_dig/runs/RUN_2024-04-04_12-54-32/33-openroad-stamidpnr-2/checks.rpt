@@ -1,0 +1,129 @@
+
+===========================================================================
+report_checks -unconstrained
+===========================================================================
+======================= nom_tt_025C_1v80 Corner ===================================
+
+Startpoint: otrip[3] (input port clocked by __VIRTUAL_CLK__)
+Endpoint: otrip_decoded[1] (output port clocked by __VIRTUAL_CLK__)
+Path Group: __VIRTUAL_CLK__
+Path Type: max
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                      0.000000    0.000000    0.000000   clock __VIRTUAL_CLK__ (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  2.000000    2.000000 v input external delay
+     1    0.002010    0.007066    0.003080    2.003080 v otrip[3] (in)
+                                                         otrip[3] (net)
+                      0.007066    0.000000    2.003080 v input4/A (sky130_fd_sc_hd__clkbuf_1)
+     2    0.004080    0.034175    0.077863    2.080943 v input4/X (sky130_fd_sc_hd__clkbuf_1)
+                                                         net4 (net)
+                      0.034175    0.000000    2.080943 v fanout21/A (sky130_fd_sc_hd__clkbuf_2)
+    10    0.017884    0.075526    0.138966    2.219909 v fanout21/X (sky130_fd_sc_hd__clkbuf_2)
+                                                         net21 (net)
+                      0.075526    0.000000    2.219909 v _01_/A (sky130_fd_sc_hd__nor4b_1)
+     1    0.001807    0.202659    0.264931    2.484840 ^ _01_/Y (sky130_fd_sc_hd__nor4b_1)
+                                                         net12 (net)
+                      0.202659    0.000000    2.484840 ^ output12/A (sky130_fd_sc_hd__buf_2)
+     1    0.033442    0.169430    0.246047    2.730887 ^ output12/X (sky130_fd_sc_hd__buf_2)
+                                                         otrip_decoded[1] (net)
+                      0.169430    0.000000    2.730887 ^ otrip_decoded[1] (out)
+                                              2.730887   data arrival time
+
+                      0.000000   10.000000   10.000000   clock __VIRTUAL_CLK__ (rise edge)
+                                  0.000000   10.000000   clock network delay (ideal)
+                                 -0.250000    9.750000   clock uncertainty
+                                  0.000000    9.750000   clock reconvergence pessimism
+                                 -2.000000    7.750000   output external delay
+                                              7.750000   data required time
+---------------------------------------------------------------------------------------------
+                                              7.750000   data required time
+                                             -2.730887   data arrival time
+---------------------------------------------------------------------------------------------
+                                              5.019113   slack (MET)
+
+
+
+
+===========================================================================
+report_checks --slack_max -0.01
+============================================================================
+======================= nom_tt_025C_1v80 Corner ===================================
+
+No paths found.
+
+
+===========================================================================
+ report_check_types -max_slew -max_cap -max_fanout -violators
+============================================================================
+======================= nom_tt_025C_1v80 Corner ===================================
+
+
+
+===========================================================================
+report_parasitic_annotation -report_unannotated
+============================================================================
+Found 48 unannotated drivers.
+ otrip[0]
+ otrip[1]
+ otrip[2]
+ otrip[3]
+ _00_/Y
+ _01_/Y
+ _02_/Y
+ _03_/X
+ _04_/Y
+ _05_/X
+ _06_/X
+ _07_/X
+ _08_/Y
+ _09_/X
+ _10_/X
+ _11_/X
+ _12_/X
+ _13_/X
+ _14_/X
+ _15_/X
+ fanout21/X
+ fanout22/X
+ fanout23/X
+ fanout24/X
+ fanout25/X
+ fanout26/X
+ fanout27/X
+ fanout28/X
+ input1/X
+ input2/X
+ input3/X
+ input4/X
+ output10/X
+ output11/X
+ output12/X
+ output13/X
+ output14/X
+ output15/X
+ output16/X
+ output17/X
+ output18/X
+ output19/X
+ output20/X
+ output5/X
+ output6/X
+ output7/X
+ output8/X
+ output9/X
+Found 0 partially unannotated drivers.
+
+===========================================================================
+max slew violation count 0
+Writing metric design__max_slew_violation__count__corner:nom_tt_025C_1v80: 0
+max fanout violation count 0
+Writing metric design__max_fanout_violation__count__corner:nom_tt_025C_1v80: 0
+max cap violation count 0
+Writing metric design__max_cap_violation__count__corner:nom_tt_025C_1v80: 0
+============================================================================
+
+===========================================================================
+check_setup -verbose -unconstrained_endpoints -multiple_clock -no_clock -no_input_delay -loops -generated_clocks
+===========================================================================

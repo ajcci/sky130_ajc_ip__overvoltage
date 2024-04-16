@@ -1,0 +1,56 @@
+** sch_path: /home/rtsang/chipalooza/sky130_ajc_ip__overvoltage/xschem/sky130_ajc_ip__overvoltage.sch
+.subckt sky130_ajc_ip__overvoltage avdd avss dvdd dvss vbg_1v2 ovout itest otrip[3] otrip[2] otrip[1] otrip[0] vin ena isrc_sel
++ ibg_200n
+*.PININFO avdd:I avss:I dvdd:I dvss:I vbg_1v2:I otrip[3:0]:I ena:I isrc_sel:I ibg_200n:I vin:O ovout:O itest:O
+xIana otrip_decoded_15_ otrip_decoded_14_ otrip_decoded_13_ otrip_decoded_12_ otrip_decoded_11_ otrip_decoded_10_ otrip_decoded_9_
++ otrip_decoded_8_ otrip_decoded_7_ otrip_decoded_6_ otrip_decoded_5_ otrip_decoded_4_ otrip_decoded_3_ otrip_decoded_2_ otrip_decoded_1_
++ otrip_decoded_0_ vbg_1v2 ena avdd avss dvdd isrc_sel dvss vin itest ibg_200n ovout overvoltage_ana_rcx
+**** begin user architecture code
+
+
+
+*XSPICE CO-SIM netlist
+.include overvoltage_dig.out.spice
+
+r0 otrip[0] otrip0 1
+r1 otrip[1] otrip1 1
+r2 otrip[2] otrip2 1
+r3 otrip[3] otrip3 1
+
+xiovervoltage_dig dvss dvdd
++otrip0 otrip1 otrip2 otrip3
++otrip_decoded_0_
++otrip_decoded_10_ otrip_decoded_11_ otrip_decoded_12_ otrip_decoded_13_ otrip_decoded_14_ otrip_decoded_15_
++otrip_decoded_1_ otrip_decoded_2_ otrip_decoded_3_ otrip_decoded_4_ otrip_decoded_5_ otrip_decoded_6_ otrip_decoded_7_
++otrip_decoded_8_ otrip_decoded_9_
++overvoltage_dig
+
+
+
+**** end user architecture code
+.ends
+
+* expanding   symbol:  xschem/overvoltage_ana_rcx.sym # of pins=12
+** sym_path: /home/rtsang/chipalooza/sky130_ajc_ip__overvoltage/xschem/overvoltage_ana_rcx.sym
+** sch_path: /home/rtsang/chipalooza/sky130_ajc_ip__overvoltage/xschem/overvoltage_ana_rcx.sch
+.subckt overvoltage_ana_rcx otrip_decoded[15] otrip_decoded[14] otrip_decoded[13] otrip_decoded[12] otrip_decoded[11]
++ otrip_decoded[10] otrip_decoded[9] otrip_decoded[8] otrip_decoded[7] otrip_decoded[6] otrip_decoded[5] otrip_decoded[4] otrip_decoded[3]
++ otrip_decoded[2] otrip_decoded[1] otrip_decoded[0] vbg_1v2 ena avdd avss dvdd isrc_sel dvss vin itest ibg_200n ovout
+*.PININFO vbg_1v2:I avdd:I avss:I dvdd:I dvss:I ena:I isrc_sel:I ibg_200n:I ovout:O itest:O otrip_decoded[15:0]:I vin:O
+**** begin user architecture code
+
+
+
+.include mag/rcx/overvoltage_ana_rcx.spice
+
+xIana otrip_decoded[14] otrip_decoded[13] otrip_decoded[11]
++ otrip_decoded[10] otrip_decoded[1] otrip_decoded[0] ena itest ibg_200n otrip_decoded[7]
++ otrip_decoded[4] vbg_1v2 vin isrc_sel otrip_decoded[5] otrip_decoded[8] otrip_decoded[2]
++ ovout otrip_decoded[15] otrip_decoded[9] otrip_decoded[12] otrip_decoded[3] otrip_decoded[6]
++ avss dvdd dvss avdd overvoltage_ana_rcx
+
+
+**** end user architecture code
+.ends
+
+.end

@@ -1,0 +1,7 @@
+* SPICE3 file created from comparator_wip_flattened.ext - technology: sky130A
+
+.subckt comparator_wip_flattened avdd
+X0 s g d sky130_fd_pr__nfet_01v8_7XH9KL_0/VSUBS sky130_fd_pr__nfet_01v8 ad=0.1218 pd=1.42 as=0.1218 ps=1.42 w=0.42 l=0.15
+C0 avdd vt 1.02054p
+C1 avdd avss 1.12261p
+.ends

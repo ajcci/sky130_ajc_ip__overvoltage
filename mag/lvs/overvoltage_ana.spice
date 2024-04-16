@@ -1,0 +1,22 @@
+* SPICE3 file created from overvoltage_ana.ext - technology: sky130A
+
+Xrstring_mux_0 avdd vin ibias_gen_0/ena rstring_mux_0/otrip_decoded_avdd[15] rstring_mux_0/otrip_decoded_avdd[14] rstring_mux_0/otrip_decoded_avdd[13] rstring_mux_0/otrip_decoded_avdd[12] rstring_mux_0/otrip_decoded_avdd[11] rstring_mux_0/otrip_decoded_avdd[10] rstring_mux_0/otrip_decoded_avdd[9] rstring_mux_0/otrip_decoded_avdd[8] rstring_mux_0/otrip_decoded_avdd[7] rstring_mux_0/otrip_decoded_avdd[6] rstring_mux_0/otrip_decoded_avdd[5] rstring_mux_0/otrip_decoded_avdd[4] rstring_mux_0/otrip_decoded_avdd[3] rstring_mux_0/otrip_decoded_avdd[2] rstring_mux_0/otrip_decoded_avdd[1] rstring_mux_0/otrip_decoded_avdd[0] avss rstring_mux
+Xsky130_fd_sc_hvl__lsbuflv2hv_1_0[0|0] otrip_decoded[0] dvdd avss avss avdd avdd rstring_mux_0/otrip_decoded_avdd[0] sky130_fd_sc_hvl__lsbuflv2hv_1
+Xsky130_fd_sc_hvl__lsbuflv2hv_1_0[1|0] otrip_decoded[1] dvdd avss avss avdd avdd rstring_mux_0/otrip_decoded_avdd[1] sky130_fd_sc_hvl__lsbuflv2hv_1
+Xsky130_fd_sc_hvl__lsbuflv2hv_1_0[0|1] otrip_decoded[2] dvdd avss avss avdd avdd rstring_mux_0/otrip_decoded_avdd[2] sky130_fd_sc_hvl__lsbuflv2hv_1
+Xsky130_fd_sc_hvl__lsbuflv2hv_1_0[1|1] otrip_decoded[3] dvdd avss avss avdd avdd rstring_mux_0/otrip_decoded_avdd[3] sky130_fd_sc_hvl__lsbuflv2hv_1
+Xsky130_fd_sc_hvl__lsbuflv2hv_1_0[0|2] otrip_decoded[4] dvdd avss avss avdd avdd rstring_mux_0/otrip_decoded_avdd[4] sky130_fd_sc_hvl__lsbuflv2hv_1
+Xsky130_fd_sc_hvl__lsbuflv2hv_1_0[1|2] otrip_decoded[5] dvdd avss avss avdd avdd rstring_mux_0/otrip_decoded_avdd[5] sky130_fd_sc_hvl__lsbuflv2hv_1
+Xsky130_fd_sc_hvl__lsbuflv2hv_1_0[0|3] otrip_decoded[6] dvdd avss avss avdd avdd rstring_mux_0/otrip_decoded_avdd[6] sky130_fd_sc_hvl__lsbuflv2hv_1
+Xsky130_fd_sc_hvl__lsbuflv2hv_1_0[1|3] otrip_decoded[7] dvdd avss avss avdd avdd rstring_mux_0/otrip_decoded_avdd[7] sky130_fd_sc_hvl__lsbuflv2hv_1
+Xsky130_fd_sc_hvl__lsbuflv2hv_1_0[0|4] otrip_decoded[8] dvdd avss avss avdd avdd rstring_mux_0/otrip_decoded_avdd[8] sky130_fd_sc_hvl__lsbuflv2hv_1
+Xsky130_fd_sc_hvl__lsbuflv2hv_1_0[1|4] otrip_decoded[9] dvdd avss avss avdd avdd rstring_mux_0/otrip_decoded_avdd[9] sky130_fd_sc_hvl__lsbuflv2hv_1
+Xsky130_fd_sc_hvl__lsbuflv2hv_1_0[0|5] otrip_decoded[10] dvdd avss avss avdd avdd rstring_mux_0/otrip_decoded_avdd[10] sky130_fd_sc_hvl__lsbuflv2hv_1
+Xsky130_fd_sc_hvl__lsbuflv2hv_1_0[1|5] otrip_decoded[11] dvdd avss avss avdd avdd rstring_mux_0/otrip_decoded_avdd[11] sky130_fd_sc_hvl__lsbuflv2hv_1
+Xsky130_fd_sc_hvl__lsbuflv2hv_1_0[0|6] otrip_decoded[12] dvdd avss avss avdd avdd rstring_mux_0/otrip_decoded_avdd[12] sky130_fd_sc_hvl__lsbuflv2hv_1
+Xsky130_fd_sc_hvl__lsbuflv2hv_1_0[1|6] otrip_decoded[13] dvdd avss avss avdd avdd rstring_mux_0/otrip_decoded_avdd[13] sky130_fd_sc_hvl__lsbuflv2hv_1
+Xsky130_fd_sc_hvl__lsbuflv2hv_1_0[0|7] otrip_decoded[14] dvdd avss avss avdd avdd rstring_mux_0/otrip_decoded_avdd[14] sky130_fd_sc_hvl__lsbuflv2hv_1
+Xsky130_fd_sc_hvl__lsbuflv2hv_1_0[1|7] otrip_decoded[15] dvdd avss avss avdd avdd rstring_mux_0/otrip_decoded_avdd[15] sky130_fd_sc_hvl__lsbuflv2hv_1
+Xsky130_fd_sc_hvl__lsbuflv2hv_1_0[0|8] ena dvdd avss avss avdd avdd ibias_gen_0/ena sky130_fd_sc_hvl__lsbuflv2hv_1
+Xsky130_fd_sc_hvl__lsbuflv2hv_1_0[1|8] isrc_sel dvdd avss avss avdd avdd ibias_gen_0/isrc_sel sky130_fd_sc_hvl__lsbuflv2hv_1
+Xibias_gen_0 avdd itest ibias_gen_0/ibias ibg_200n vbg_1v2 ibias_gen_0/isrc_sel ibias_gen_0/ena avss ibias_gen

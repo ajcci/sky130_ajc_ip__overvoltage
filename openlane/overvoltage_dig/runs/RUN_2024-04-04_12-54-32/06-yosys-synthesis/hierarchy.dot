@@ -1,0 +1,11 @@
+digraph "overvoltage_dig" {
+label="overvoltage_dig";
+rankdir="LR";
+remincross=true;
+n3 [ shape=octagon, label="otrip_decoded", color="black", fontcolor="black" ];
+n4 [ shape=octagon, label="otrip", color="black", fontcolor="black" ];
+p0 [shape=box, style=rounded, label="PROC $1\n/home/rtsang/chipalooza/sky130_ajc_ip__overvoltage/openlane/overvoltage_dig/overvoltage_dig.v:9.3-28.6", ];
+p0:e -> n3:w [color="black", fontcolor="black", style="setlinewidth(3)", label=""];
+n3:e -> p0:w [color="black", fontcolor="black", style="setlinewidth(3)", label=""];
+n4:e -> p0:w [color="black", fontcolor="black", style="setlinewidth(3)", label=""];
+}

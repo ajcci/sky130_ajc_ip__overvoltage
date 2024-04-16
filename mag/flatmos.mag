@@ -1,0 +1,38 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1711689624
+<< error_s >>
+rect 20344 -4904 20362 -4890
+rect 20362 -4924 20378 -4904
+<< pwell >>
+rect 19634 -5518 20560 -4674
+<< mvpsubdiff >>
+rect 20278 -4904 20384 -4802
+rect 20278 -4924 20344 -4904
+rect 20362 -4924 20384 -4904
+rect 20278 -4998 20384 -4924
+<< mvpsubdiffcont >>
+rect 20344 -4924 20362 -4904
+<< locali >>
+rect 20248 -4904 20403 -4889
+rect 20248 -4924 20344 -4904
+rect 20362 -4924 20403 -4904
+rect 20248 -4936 20403 -4924
+<< metal1 >>
+rect 19985 -5067 19989 -5021
+rect 19933 -5099 19979 -5095
+rect 20091 -5099 20137 -5095
+use sky130_fd_pr__nfet_g5v0d10v5_NQ4AEW  sky130_fd_pr__nfet_g5v0d10v5_NQ4AEW_0
+timestamp 1711684482
+transform 1 0 20035 0 1 -5141
+box -108 -130 108 130
+<< labels >>
+rlabel metal1 20131 -5095 20131 -5095 3 d
+port 5 e
+rlabel metal1 19939 -5095 19939 -5095 7 s
+port 6 w
+rlabel metal1 19985 -5027 19985 -5027 1 g
+port 7 n
+rlabel locali 20403 -4936 20403 -4936 3 vt
+<< end >>

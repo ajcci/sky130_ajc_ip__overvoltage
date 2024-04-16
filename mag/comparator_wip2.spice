@@ -1,0 +1,7 @@
+* SPICE3 file created from comparator_wip2.ext - technology: sky130A
+
+.subckt comparator_wip2 avdd
+X0 s g d vt sky130_fd_pr__nfet_g5v0d10v5 ad=0.1218 pd=1.42 as=0.1218 ps=1.42 w=0.42 l=0.5
+C0 vt avdd 1.02054p
+C1 avdd avss 1.12261p
+.ends

@@ -1,0 +1,15 @@
+5/4 NS 5.64  EW 4.29
+5/0.6 NS 5.55 EW 0.89
+
+5/8 NS 5.78 EW 8.29
+5/2 EW 2.29
+
+R-string
+1p41res
+EW 3.78
+
+tgate switches
+EW 2.67
+
+lv2hv
+NS 8.67 EW 10.56

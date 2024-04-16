@@ -1,0 +1,82 @@
+* SPICE3 file created from ibias_gen.ext - technology: sky130A
+
+*.subckt ibias_gen avss avdd ibias itest vbg_1v2 isrc_sel ena ibias_200n
+X0 avss ena_b vn1 avss sky130_fd_pr__nfet_g5v0d10v5 w=5e-06 l=2e-06
+X1 vn0 ena_b avss avss sky130_fd_pr__nfet_g5v0d10v5 w=5e-06 l=2e-06
+X2 avss isrc_sel vn0 avss sky130_fd_pr__nfet_g5v0d10v5 w=5e-06 l=2e-06
+X3 vn1 isrc_sel_b avss avss sky130_fd_pr__nfet_g5v0d10v5 w=5e-06 l=2e-06
+X4 vp ena avdd avdd sky130_fd_pr__pfet_g5v0d10v5 w=5e-06 l=2e-06
+X5 vp0 ena avdd avdd sky130_fd_pr__pfet_g5v0d10v5 w=5e-06 l=2e-06
+X6 vp1 isrc_sel avdd avdd sky130_fd_pr__pfet_g5v0d10v5 w=5e-06 l=2e-06
+X7 avdd isrc_sel_b vp0 avdd sky130_fd_pr__pfet_g5v0d10v5 w=5e-06 l=2e-06
+X8 avdd ena vp1 avdd sky130_fd_pr__pfet_g5v0d10v5 w=5e-06 l=2e-06
+X10 ena_b ena avss avss sky130_fd_pr__nfet_g5v0d10v5 w=5e-06 l=1e-06
+X11 avss isrc_sel isrc_sel_b avss sky130_fd_pr__nfet_g5v0d10v5 w=5e-06 l=1e-06
+X13 vstart vbg_1v2 vn0 avss sky130_fd_pr__nfet_g5v0d10v5 w=5e-06 l=6e-07
+X14 sky130_fd_pr__nfet_g5v0d10v5_EC8RE7_1/a_1306_n500# isrc_sel vn1 avss sky130_fd_pr__nfet_g5v0d10v5 w=5e-06 l=6e-07
+X15 vstart vbg_1v2 vn0 avss sky130_fd_pr__nfet_g5v0d10v5 w=5e-06 l=6e-07
+X16 vn0 vbg_1v2 vstart avss sky130_fd_pr__nfet_g5v0d10v5 w=5e-06 l=6e-07
+X18 vn0 vbg_1v2 vstart avss sky130_fd_pr__nfet_g5v0d10v5 w=5e-06 l=6e-07
+X20 vn0 vbg_1v2 vstart avss sky130_fd_pr__nfet_g5v0d10v5 w=5e-06 l=6e-07
+X21 vstart vbg_1v2 vn0 avss sky130_fd_pr__nfet_g5v0d10v5 w=5e-06 l=6e-07
+X22 vstart vbg_1v2 vn0 avss sky130_fd_pr__nfet_g5v0d10v5 w=5e-06 l=6e-07
+X23 vp isrc_sel_b vp0 avss sky130_fd_pr__nfet_g5v0d10v5 w=5e-06 l=6e-07
+X24 vstart vbg_1v2 vn0 avss sky130_fd_pr__nfet_g5v0d10v5 w=5e-06 l=6e-07
+X25 ibias_200n ena sky130_fd_pr__nfet_g5v0d10v5_EC8RE7_1/a_1306_n500# avss sky130_fd_pr__nfet_g5v0d10v5 w=5e-06 l=6e-07
+X26 vp1 isrc_sel vp avss sky130_fd_pr__nfet_g5v0d10v5 w=5e-06 l=6e-07
+X27 vn0 vbg_1v2 vstart avss sky130_fd_pr__nfet_g5v0d10v5 w=5e-06 l=6e-07
+X28 vn0 vbg_1v2 vstart avss sky130_fd_pr__nfet_g5v0d10v5 w=5e-06 l=6e-07
+X29 avdd isrc_sel isrc_sel_b avdd sky130_fd_pr__pfet_g5v0d10v5 w=5e-06 l=1e-06
+X31 ena_b ena avdd avdd sky130_fd_pr__pfet_g5v0d10v5 w=5e-06 l=1e-06
+X32 avdd vp itest avdd sky130_fd_pr__pfet_g5v0d10v5 w=5e-06 l=4e-06
+X35 itest vp avdd avdd sky130_fd_pr__pfet_g5v0d10v5 w=5e-06 l=4e-06
+X36 vp1 vp1 avdd avdd sky130_fd_pr__pfet_g5v0d10v5 w=5e-06 l=4e-06
+X37 vn0 vp0 avdd avdd sky130_fd_pr__pfet_g5v0d10v5 w=5e-06 l=4e-06
+X38 ibias vp avdd avdd sky130_fd_pr__pfet_g5v0d10v5 w=5e-06 l=4e-06
+X40 avdd vp ibias avdd sky130_fd_pr__pfet_g5v0d10v5 w=5e-06 l=4e-06
+X41 avdd vp1 vp1 avdd sky130_fd_pr__pfet_g5v0d10v5 w=5e-06 l=4e-06
+X42 avdd vp0 vn0 avdd sky130_fd_pr__pfet_g5v0d10v5 w=5e-06 l=4e-06
+X43 vp0 vp0 avdd avdd sky130_fd_pr__pfet_g5v0d10v5 w=5e-06 l=4e-06
+X45 avdd vp0 vp0 avdd sky130_fd_pr__pfet_g5v0d10v5 w=5e-06 l=4e-06
+X47 vp0 vn0 vr avss sky130_fd_pr__nfet_g5v0d10v5 w=5e-06 l=4e-06
+X48 vn0 vn0 ve avss sky130_fd_pr__nfet_g5v0d10v5 w=5e-06 l=4e-06
+X49 ve vn0 vn0 avss sky130_fd_pr__nfet_g5v0d10v5 w=5e-06 l=4e-06
+X50 vr vn0 vp0 avss sky130_fd_pr__nfet_g5v0d10v5 w=5e-06 l=4e-06
+X53 m1_3787_7518# m1_3409_119# avss sky130_fd_pr__res_xhigh_po_1p41 l=3.5e-05
+X54 m1_6811_7518# m1_7189_119# avss sky130_fd_pr__res_xhigh_po_1p41 l=3.5e-05
+X55 m1_6055_7518# m1_6433_119# avss sky130_fd_pr__res_xhigh_po_1p41 l=3.5e-05
+X56 m1_3031_7518# m1_2653_119# avss sky130_fd_pr__res_xhigh_po_1p41 l=3.5e-05
+X57 m1_763_7518# m1_385_119# avss sky130_fd_pr__res_xhigh_po_1p41 l=3.5e-05
+X58 m1_1519_7518# m1_1897_119# avss sky130_fd_pr__res_xhigh_po_1p41 l=3.5e-05
+X59 m1_6055_7518# m1_5677_119# avss sky130_fd_pr__res_xhigh_po_1p41 l=3.5e-05
+X60 m1_6811_7518# m1_6433_119# avss sky130_fd_pr__res_xhigh_po_1p41 l=3.5e-05
+X61 m1_5299_7518# m1_5677_119# avss sky130_fd_pr__res_xhigh_po_1p41 l=3.5e-05
+X62 m1_763_7518# m1_1141_119# avss sky130_fd_pr__res_xhigh_po_1p41 l=3.5e-05
+X63 m1_3787_7518# m1_4165_119# avss sky130_fd_pr__res_xhigh_po_1p41 l=3.5e-05
+X64 m1_2275_7518# m1_1897_119# avss sky130_fd_pr__res_xhigh_po_1p41 l=3.5e-05
+X65 m1_4543_7518# m1_4921_119# avss sky130_fd_pr__res_xhigh_po_1p41 l=3.5e-05
+X66 m1_3031_7518# m1_3409_119# avss sky130_fd_pr__res_xhigh_po_1p41 l=3.5e-05
+X67 m1_5299_7518# m1_4921_119# avss sky130_fd_pr__res_xhigh_po_1p41 l=3.5e-05
+X68 m1_1519_7518# m1_1141_119# avss sky130_fd_pr__res_xhigh_po_1p41 l=3.5e-05
+X69 vr m1_7189_119# avss sky130_fd_pr__res_xhigh_po_1p41 l=3.5e-05
+X70 avss m1_385_119# avss sky130_fd_pr__res_xhigh_po_1p41 l=3.5e-05
+X71 m1_2275_7518# m1_2653_119# avss sky130_fd_pr__res_xhigh_po_1p41 l=3.5e-05
+X72 m1_4543_7518# m1_4165_119# avss sky130_fd_pr__res_xhigh_po_1p41 l=3.5e-05
+X73 avdd isrc_sel sky130_fd_pr__pfet_g5v0d10v5_7JLQGA_0/a_n652_n500# avdd sky130_fd_pr__pfet_g5v0d10v5 w=5e-06 l=6e-07
+X76 vp1 isrc_sel_b vp avdd sky130_fd_pr__pfet_g5v0d10v5 w=5e-06 l=6e-07
+X77 ibias_200n ena_b sky130_fd_pr__pfet_g5v0d10v5_7JLQGA_0/a_594_n500# avdd sky130_fd_pr__pfet_g5v0d10v5 w=5e-06 l=6e-07
+X78 vp isrc_sel vp0 avdd sky130_fd_pr__pfet_g5v0d10v5 w=5e-06 l=6e-07
+X79 sky130_fd_pr__pfet_g5v0d10v5_7JLQGA_0/a_n652_n500# ena_b vstart avdd sky130_fd_pr__pfet_g5v0d10v5 w=5e-06 l=6e-07
+X80 sky130_fd_pr__pfet_g5v0d10v5_7JLQGA_0/a_594_n500# isrc_sel_b vn1 avdd sky130_fd_pr__pfet_g5v0d10v5 w=5e-06 l=6e-07
+X83 avss vn1 vn1 avss sky130_fd_pr__nfet_g5v0d10v5 w=5e-06 l=8e-06
+X84 avss vn1 vp1 avss sky130_fd_pr__nfet_g5v0d10v5 w=5e-06 l=8e-06
+X88 vp1 vn1 avss avss sky130_fd_pr__nfet_g5v0d10v5 w=5e-06 l=8e-06
+X91 avss vn1 vp1 avss sky130_fd_pr__nfet_g5v0d10v5 w=5e-06 l=8e-06
+X94 avss vn1 vp1 avss sky130_fd_pr__nfet_g5v0d10v5 w=5e-06 l=8e-06
+X95 avss vn1 vp1 avss sky130_fd_pr__nfet_g5v0d10v5 w=5e-06 l=8e-06
+X97 vn1 vn1 avss avss sky130_fd_pr__nfet_g5v0d10v5 w=5e-06 l=8e-06
+X99 vp1 vn1 avss avss sky130_fd_pr__nfet_g5v0d10v5 w=5e-06 l=8e-06
+X100 vp1 vn1 avss avss sky130_fd_pr__nfet_g5v0d10v5 w=5e-06 l=8e-06
+X101 vp1 vn1 avss avss sky130_fd_pr__nfet_g5v0d10v5 w=5e-06 l=8e-06
+Xsky130_fd_pr__rf_pnp_05v5_W0p68L0p68_0 avss avss ve sky130_fd_pr__pnp_05v5_W0p68L0p68
+*.ends

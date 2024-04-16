@@ -1,0 +1,14 @@
+* SPICE3 file created from diffpair.ext - technology: sky130A
+
+X0 vt vinn vnn vt sky130_fd_pr__nfet_g5v0d10v5 ad=0.1218 pd=1.42 as=0.0609 ps=0.71 w=0.42 l=8
+X1 vt vinp vpp vt sky130_fd_pr__nfet_g5v0d10v5 ad=0.1218 pd=1.42 as=0.0609 ps=0.71 w=0.42 l=8
+X2 vnn vinn vt vt sky130_fd_pr__nfet_g5v0d10v5 ad=0.0609 pd=0.71 as=0.1218 ps=1.42 w=0.42 l=8
+X3 vpp vinp vt vt sky130_fd_pr__nfet_g5v0d10v5 ad=0.0609 pd=0.71 as=0.1218 ps=1.42 w=0.42 l=8
+X4 ss gg dd avss sky130_fd_pr__nfet_g5v0d10v5 ad=0.1218 pd=1.42 as=0.1218 ps=1.42 w=0.42 l=0.5
+C0 vt vinn 2.737872f
+C1 vinp vt 2.666607f
+C2 vt avdd 0.519532p
+C3 vinp vinn 2.394634f
+C4 avdd avss 0.583752p
+C5 vinp avss 2.738847f **FLOATING
+C6 vinn avss 3.000234f **FLOATING

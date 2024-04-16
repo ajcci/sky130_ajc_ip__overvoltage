@@ -1,0 +1,251 @@
+* NGSPICE file created from comparator.ext - technology: sky130A
+
+.subckt sky130_fd_pr__nfet_g5v0d10v5_GLAJGT m2_n5000_n839# a_3287_n673# a_1629_47#
++ a_1687_21# a_3287_527# a_1687_741# m2_n26_n839# m2_n1684_n839# a_n5003_n673# a_n1629_261#
++ m2_3290_n839# a_n29_n913# a_n1687_n673# a_n3345_n433# a_n1687_47# a_n3287_741# a_1629_n433#
++ a_3345_261# a_n1687_767# a_n29_n193# a_3345_n699# a_3345_n219# a_n3345_287# a_29_261#
++ a_1629_527# a_n5003_527# a_n1629_n939# a_1687_n459# a_n1629_741# a_n3345_n913# a_n29_287#
++ a_1629_n913# a_29_n459# a_n29_47# a_3287_287# a_3345_741# a_29_21# a_n3287_21# m2_4948_n839#
++ a_n29_n673# a_n3345_n193# a_1629_n193# a_n3345_767# a_29_741# a_1687_n939# a_n3287_n459#
++ a_n5003_47# a_1629_287# a_n5003_287# a_n1629_n699# a_n1629_n219# a_n29_767# a_29_n939#
++ a_3287_n433# a_1687_501# a_3287_767# m2_n3342_n839# a_n5003_n433# a_n3345_n673#
++ a_n1629_21# a_n3287_501# a_1629_n673# a_n1687_n433# a_n1687_527# a_n5137_n1073#
++ m2_1632_n839# a_n3287_n939# a_3345_n459# a_1629_767# a_n5003_767# a_1687_n699# a_1687_n219#
++ a_3345_21# a_3287_n913# a_n5003_n913# a_3287_47# a_n3345_47# a_n1629_501# a_n1687_n913#
++ a_29_n699# a_29_n219# a_1687_261# a_3345_501# a_3287_n193# a_n5003_n193# a_n29_n433#
++ a_n3287_261# a_3345_n939# a_n1687_n193# a_n1687_287# a_n3345_527# a_29_501# a_n3287_n699#
++ a_n3287_n219# a_n1629_n459# a_n29_527#
+X0 a_n1687_527# a_n3287_501# a_n3345_527# a_n5137_n1073# sky130_fd_pr__nfet_g5v0d10v5 ad=0.0609 pd=0.71 as=0.0609 ps=0.71 w=0.42 l=8
+X1 a_1629_47# a_29_21# a_n29_47# a_n5137_n1073# sky130_fd_pr__nfet_g5v0d10v5 ad=0.0609 pd=0.71 as=0.0609 ps=0.71 w=0.42 l=8
+X2 a_1629_n913# a_29_n939# a_n29_n913# a_n5137_n1073# sky130_fd_pr__nfet_g5v0d10v5 ad=0.0609 pd=0.71 as=0.0609 ps=0.71 w=0.42 l=8
+X3 a_1629_n193# a_29_n219# a_n29_n193# a_n5137_n1073# sky130_fd_pr__nfet_g5v0d10v5 ad=0.0609 pd=0.71 as=0.0609 ps=0.71 w=0.42 l=8
+X4 a_n3345_n433# a_n5003_n433# a_n5003_n433# a_n5137_n1073# sky130_fd_pr__nfet_g5v0d10v5 ad=0.0609 pd=0.71 as=0.1218 ps=1.42 w=0.42 l=8
+X5 a_n1687_287# a_n3287_261# a_n3345_287# a_n5137_n1073# sky130_fd_pr__nfet_g5v0d10v5 ad=0.0609 pd=0.71 as=0.0609 ps=0.71 w=0.42 l=8
+X6 a_3287_n433# a_1687_n459# a_1629_n433# a_n5137_n1073# sky130_fd_pr__nfet_g5v0d10v5 ad=0.0609 pd=0.71 as=0.0609 ps=0.71 w=0.42 l=8
+X7 a_1629_n673# a_29_n699# a_n29_n673# a_n5137_n1073# sky130_fd_pr__nfet_g5v0d10v5 ad=0.0609 pd=0.71 as=0.0609 ps=0.71 w=0.42 l=8
+X8 a_n3345_n913# a_n5003_n913# a_n5003_n913# a_n5137_n1073# sky130_fd_pr__nfet_g5v0d10v5 ad=0.0609 pd=0.71 as=0.1218 ps=1.42 w=0.42 l=8
+X9 a_n1687_767# a_n3287_741# a_n3345_767# a_n5137_n1073# sky130_fd_pr__nfet_g5v0d10v5 ad=0.0609 pd=0.71 as=0.0609 ps=0.71 w=0.42 l=8
+X10 a_n3345_n193# a_n5003_n193# a_n5003_n193# a_n5137_n1073# sky130_fd_pr__nfet_g5v0d10v5 ad=0.0609 pd=0.71 as=0.1218 ps=1.42 w=0.42 l=8
+X11 a_n1687_n433# a_n3287_n459# a_n3345_n433# a_n5137_n1073# sky130_fd_pr__nfet_g5v0d10v5 ad=0.0609 pd=0.71 as=0.0609 ps=0.71 w=0.42 l=8
+X12 a_n29_527# a_n1629_501# a_n1687_527# a_n5137_n1073# sky130_fd_pr__nfet_g5v0d10v5 ad=0.0609 pd=0.71 as=0.0609 ps=0.71 w=0.42 l=8
+X13 a_n1687_47# a_n3287_21# a_n3345_47# a_n5137_n1073# sky130_fd_pr__nfet_g5v0d10v5 ad=0.0609 pd=0.71 as=0.0609 ps=0.71 w=0.42 l=8
+X14 a_3345_21# a_3345_21# a_3287_47# a_n5137_n1073# sky130_fd_pr__nfet_g5v0d10v5 ad=0.1218 pd=1.42 as=0.0609 ps=0.71 w=0.42 l=8
+X15 a_3287_n193# a_1687_n219# a_1629_n193# a_n5137_n1073# sky130_fd_pr__nfet_g5v0d10v5 ad=0.0609 pd=0.71 as=0.0609 ps=0.71 w=0.42 l=8
+X16 a_3287_n913# a_1687_n939# a_1629_n913# a_n5137_n1073# sky130_fd_pr__nfet_g5v0d10v5 ad=0.0609 pd=0.71 as=0.0609 ps=0.71 w=0.42 l=8
+X17 a_n1687_n193# a_n3287_n219# a_n3345_n193# a_n5137_n1073# sky130_fd_pr__nfet_g5v0d10v5 ad=0.0609 pd=0.71 as=0.0609 ps=0.71 w=0.42 l=8
+X18 a_n3345_n673# a_n5003_n673# a_n5003_n673# a_n5137_n1073# sky130_fd_pr__nfet_g5v0d10v5 ad=0.0609 pd=0.71 as=0.1218 ps=1.42 w=0.42 l=8
+X19 a_n1687_n913# a_n3287_n939# a_n3345_n913# a_n5137_n1073# sky130_fd_pr__nfet_g5v0d10v5 ad=0.0609 pd=0.71 as=0.0609 ps=0.71 w=0.42 l=8
+X20 a_n29_287# a_n1629_261# a_n1687_287# a_n5137_n1073# sky130_fd_pr__nfet_g5v0d10v5 ad=0.0609 pd=0.71 as=0.0609 ps=0.71 w=0.42 l=8
+X21 a_3287_n673# a_1687_n699# a_1629_n673# a_n5137_n1073# sky130_fd_pr__nfet_g5v0d10v5 ad=0.0609 pd=0.71 as=0.0609 ps=0.71 w=0.42 l=8
+X22 a_n3345_527# a_n5003_527# a_n5003_527# a_n5137_n1073# sky130_fd_pr__nfet_g5v0d10v5 ad=0.0609 pd=0.71 as=0.1218 ps=1.42 w=0.42 l=8
+X23 a_n1687_n673# a_n3287_n699# a_n3345_n673# a_n5137_n1073# sky130_fd_pr__nfet_g5v0d10v5 ad=0.0609 pd=0.71 as=0.0609 ps=0.71 w=0.42 l=8
+X24 a_n29_767# a_n1629_741# a_n1687_767# a_n5137_n1073# sky130_fd_pr__nfet_g5v0d10v5 ad=0.0609 pd=0.71 as=0.0609 ps=0.71 w=0.42 l=8
+X25 a_3345_n459# a_3345_n459# a_3287_n433# a_n5137_n1073# sky130_fd_pr__nfet_g5v0d10v5 ad=0.1218 pd=1.42 as=0.0609 ps=0.71 w=0.42 l=8
+X26 a_n3345_287# a_n5003_287# a_n5003_287# a_n5137_n1073# sky130_fd_pr__nfet_g5v0d10v5 ad=0.0609 pd=0.71 as=0.1218 ps=1.42 w=0.42 l=8
+X27 a_3345_n219# a_3345_n219# a_3287_n193# a_n5137_n1073# sky130_fd_pr__nfet_g5v0d10v5 ad=0.1218 pd=1.42 as=0.0609 ps=0.71 w=0.42 l=8
+X28 a_3345_n939# a_3345_n939# a_3287_n913# a_n5137_n1073# sky130_fd_pr__nfet_g5v0d10v5 ad=0.1218 pd=1.42 as=0.0609 ps=0.71 w=0.42 l=8
+X29 a_n3345_767# a_n5003_767# a_n5003_767# a_n5137_n1073# sky130_fd_pr__nfet_g5v0d10v5 ad=0.0609 pd=0.71 as=0.1218 ps=1.42 w=0.42 l=8
+X30 a_n3345_47# a_n5003_47# a_n5003_47# a_n5137_n1073# sky130_fd_pr__nfet_g5v0d10v5 ad=0.0609 pd=0.71 as=0.1218 ps=1.42 w=0.42 l=8
+X31 a_1629_527# a_29_501# a_n29_527# a_n5137_n1073# sky130_fd_pr__nfet_g5v0d10v5 ad=0.0609 pd=0.71 as=0.0609 ps=0.71 w=0.42 l=8
+X32 a_3345_n699# a_3345_n699# a_3287_n673# a_n5137_n1073# sky130_fd_pr__nfet_g5v0d10v5 ad=0.1218 pd=1.42 as=0.0609 ps=0.71 w=0.42 l=8
+X33 a_3287_527# a_1687_501# a_1629_527# a_n5137_n1073# sky130_fd_pr__nfet_g5v0d10v5 ad=0.0609 pd=0.71 as=0.0609 ps=0.71 w=0.42 l=8
+X34 a_1629_287# a_29_261# a_n29_287# a_n5137_n1073# sky130_fd_pr__nfet_g5v0d10v5 ad=0.0609 pd=0.71 as=0.0609 ps=0.71 w=0.42 l=8
+X35 a_3345_501# a_3345_501# a_3287_527# a_n5137_n1073# sky130_fd_pr__nfet_g5v0d10v5 ad=0.1218 pd=1.42 as=0.0609 ps=0.71 w=0.42 l=8
+X36 a_3287_287# a_1687_261# a_1629_287# a_n5137_n1073# sky130_fd_pr__nfet_g5v0d10v5 ad=0.0609 pd=0.71 as=0.0609 ps=0.71 w=0.42 l=8
+X37 a_n29_47# a_n1629_21# a_n1687_47# a_n5137_n1073# sky130_fd_pr__nfet_g5v0d10v5 ad=0.0609 pd=0.71 as=0.0609 ps=0.71 w=0.42 l=8
+X38 a_1629_767# a_29_741# a_n29_767# a_n5137_n1073# sky130_fd_pr__nfet_g5v0d10v5 ad=0.0609 pd=0.71 as=0.0609 ps=0.71 w=0.42 l=8
+X39 a_n29_n433# a_n1629_n459# a_n1687_n433# a_n5137_n1073# sky130_fd_pr__nfet_g5v0d10v5 ad=0.0609 pd=0.71 as=0.0609 ps=0.71 w=0.42 l=8
+X40 a_3287_47# a_1687_21# a_1629_47# a_n5137_n1073# sky130_fd_pr__nfet_g5v0d10v5 ad=0.0609 pd=0.71 as=0.0609 ps=0.71 w=0.42 l=8
+X41 a_3287_767# a_1687_741# a_1629_767# a_n5137_n1073# sky130_fd_pr__nfet_g5v0d10v5 ad=0.0609 pd=0.71 as=0.0609 ps=0.71 w=0.42 l=8
+X42 a_3345_261# a_3345_261# a_3287_287# a_n5137_n1073# sky130_fd_pr__nfet_g5v0d10v5 ad=0.1218 pd=1.42 as=0.0609 ps=0.71 w=0.42 l=8
+X43 a_n29_n193# a_n1629_n219# a_n1687_n193# a_n5137_n1073# sky130_fd_pr__nfet_g5v0d10v5 ad=0.0609 pd=0.71 as=0.0609 ps=0.71 w=0.42 l=8
+X44 a_n29_n913# a_n1629_n939# a_n1687_n913# a_n5137_n1073# sky130_fd_pr__nfet_g5v0d10v5 ad=0.0609 pd=0.71 as=0.0609 ps=0.71 w=0.42 l=8
+X45 a_3345_741# a_3345_741# a_3287_767# a_n5137_n1073# sky130_fd_pr__nfet_g5v0d10v5 ad=0.1218 pd=1.42 as=0.0609 ps=0.71 w=0.42 l=8
+X46 a_n29_n673# a_n1629_n699# a_n1687_n673# a_n5137_n1073# sky130_fd_pr__nfet_g5v0d10v5 ad=0.0609 pd=0.71 as=0.0609 ps=0.71 w=0.42 l=8
+X47 a_1629_n433# a_29_n459# a_n29_n433# a_n5137_n1073# sky130_fd_pr__nfet_g5v0d10v5 ad=0.0609 pd=0.71 as=0.0609 ps=0.71 w=0.42 l=8
+.ends
+
+.subckt sky130_fd_pr__nfet_g5v0d10v5_T82T27 a_1629_47# a_1687_21# a_n1687_47# a_4945_n309#
++ a_n1629_n335# a_n5137_n469# a_n4945_n335# a_n29_47# a_29_21# a_n3287_21# a_1687_n335#
++ a_3287_n309# a_n5003_n309# a_29_n335# a_n1687_n309# a_n5003_47# a_n4945_21# a_n3287_n335#
++ a_n1629_21# a_3345_21# a_n29_n309# a_3287_47# a_n3345_47# a_3345_n335# a_n3345_n309#
++ a_1629_n309# a_4945_47#
+X0 a_1629_47# a_29_21# a_n29_47# a_n5137_n469# sky130_fd_pr__nfet_g5v0d10v5 ad=0.145 pd=1.29 as=0.145 ps=1.29 w=1 l=8
+X1 a_n1687_47# a_n3287_21# a_n3345_47# a_n5137_n469# sky130_fd_pr__nfet_g5v0d10v5 ad=0.145 pd=1.29 as=0.145 ps=1.29 w=1 l=8
+X2 a_4945_47# a_3345_21# a_3287_47# a_n5137_n469# sky130_fd_pr__nfet_g5v0d10v5 ad=0.29 pd=2.58 as=0.145 ps=1.29 w=1 l=8
+X3 a_1629_n309# a_29_n335# a_n29_n309# a_n5137_n469# sky130_fd_pr__nfet_g5v0d10v5 ad=0.145 pd=1.29 as=0.145 ps=1.29 w=1 l=8
+X4 a_n3345_n309# a_n4945_n335# a_n5003_n309# a_n5137_n469# sky130_fd_pr__nfet_g5v0d10v5 ad=0.145 pd=1.29 as=0.29 ps=2.58 w=1 l=8
+X5 a_3287_n309# a_1687_n335# a_1629_n309# a_n5137_n469# sky130_fd_pr__nfet_g5v0d10v5 ad=0.145 pd=1.29 as=0.145 ps=1.29 w=1 l=8
+X6 a_n1687_n309# a_n3287_n335# a_n3345_n309# a_n5137_n469# sky130_fd_pr__nfet_g5v0d10v5 ad=0.145 pd=1.29 as=0.145 ps=1.29 w=1 l=8
+X7 a_n3345_47# a_n4945_21# a_n5003_47# a_n5137_n469# sky130_fd_pr__nfet_g5v0d10v5 ad=0.145 pd=1.29 as=0.29 ps=2.58 w=1 l=8
+X8 a_n29_47# a_n1629_21# a_n1687_47# a_n5137_n469# sky130_fd_pr__nfet_g5v0d10v5 ad=0.145 pd=1.29 as=0.145 ps=1.29 w=1 l=8
+X9 a_4945_n309# a_3345_n335# a_3287_n309# a_n5137_n469# sky130_fd_pr__nfet_g5v0d10v5 ad=0.29 pd=2.58 as=0.145 ps=1.29 w=1 l=8
+X10 a_3287_47# a_1687_21# a_1629_47# a_n5137_n469# sky130_fd_pr__nfet_g5v0d10v5 ad=0.145 pd=1.29 as=0.145 ps=1.29 w=1 l=8
+X11 a_n29_n309# a_n1629_n335# a_n1687_n309# a_n5137_n469# sky130_fd_pr__nfet_g5v0d10v5 ad=0.145 pd=1.29 as=0.145 ps=1.29 w=1 l=8
+.ends
+
+.subckt sky130_fd_pr__pfet_g5v0d10v5_3HV7M9 a_3345_n161# a_n1687_n64# a_n1629_n161#
++ a_n4945_n161# w_n5203_n362# a_1687_n161# a_n3345_n64# a_29_n161# a_3287_n64# a_n29_n64#
++ a_n3287_n161# a_1629_n64# a_n5003_n64# a_4945_n64#
+X0 a_n29_n64# a_n1629_n161# a_n1687_n64# w_n5203_n362# sky130_fd_pr__pfet_g5v0d10v5 ad=0.145 pd=1.29 as=0.145 ps=1.29 w=1 l=8
+X1 a_n3345_n64# a_n4945_n161# a_n5003_n64# w_n5203_n362# sky130_fd_pr__pfet_g5v0d10v5 ad=0.145 pd=1.29 as=0.29 ps=2.58 w=1 l=8
+X2 a_1629_n64# a_29_n161# a_n29_n64# w_n5203_n362# sky130_fd_pr__pfet_g5v0d10v5 ad=0.145 pd=1.29 as=0.145 ps=1.29 w=1 l=8
+X3 a_3287_n64# a_1687_n161# a_1629_n64# w_n5203_n362# sky130_fd_pr__pfet_g5v0d10v5 ad=0.145 pd=1.29 as=0.145 ps=1.29 w=1 l=8
+X4 a_4945_n64# a_3345_n161# a_3287_n64# w_n5203_n362# sky130_fd_pr__pfet_g5v0d10v5 ad=0.29 pd=2.58 as=0.145 ps=1.29 w=1 l=8
+X5 a_n1687_n64# a_n3287_n161# a_n3345_n64# w_n5203_n362# sky130_fd_pr__pfet_g5v0d10v5 ad=0.145 pd=1.29 as=0.145 ps=1.29 w=1 l=8
+.ends
+
+.subckt sky130_fd_pr__pfet_g5v0d10v5_5H9LZ4 a_n100_n344# a_n158_118# a_n100_21# a_100_n612#
++ a_100_483# a_n100_n709# a_100_n247# a_n158_n612# a_n100_386# a_n158_n247# a_100_118#
++ w_n358_n909# a_n158_483#
+X0 a_100_118# a_n100_21# a_n158_118# w_n358_n909# sky130_fd_pr__pfet_g5v0d10v5 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=1
+X1 a_100_483# a_n100_386# a_n158_483# w_n358_n909# sky130_fd_pr__pfet_g5v0d10v5 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=1
+X2 a_100_n247# a_n100_n344# a_n158_n247# w_n358_n909# sky130_fd_pr__pfet_g5v0d10v5 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=1
+X3 a_100_n612# a_n100_n709# a_n158_n612# w_n358_n909# sky130_fd_pr__pfet_g5v0d10v5 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=1
+.ends
+
+.subckt sky130_fd_pr__nfet_g5v0d10v5_GG9S2Z a_n100_199# a_100_n487# a_100_581# a_100_n131#
++ a_n158_n487# a_n100_n157# a_n100_555# a_100_n843# a_n158_n131# a_n158_225# a_n100_n869#
++ a_n158_581# a_n158_n843# a_n100_n513# a_n292_n1003# a_100_225#
+X0 a_100_n131# a_n100_n157# a_n158_n131# a_n292_n1003# sky130_fd_pr__nfet_g5v0d10v5 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=1
+X1 a_100_581# a_n100_555# a_n158_581# a_n292_n1003# sky130_fd_pr__nfet_g5v0d10v5 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=1
+X2 a_100_n843# a_n100_n869# a_n158_n843# a_n292_n1003# sky130_fd_pr__nfet_g5v0d10v5 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=1
+X3 a_100_225# a_n100_199# a_n158_225# a_n292_n1003# sky130_fd_pr__nfet_g5v0d10v5 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=1
+X4 a_100_n487# a_n100_n513# a_n158_n487# a_n292_n1003# sky130_fd_pr__nfet_g5v0d10v5 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=1
+.ends
+
+.subckt sky130_fd_pr__nfet_g5v0d10v5_HZHY2Z a_861_n131# a_207_n157# a_n861_n157# a_n563_n131#
++ a_683_n131# a_n919_n131# a_29_n157# a_n683_n157# a_n385_n131# a_n1053_n291# a_741_n157#
++ a_505_n131# a_n505_n157# a_563_n157# a_n207_n131# a_327_n131# a_n327_n157# a_385_n157#
++ a_n29_n131# a_149_n131# a_n741_n131# a_n149_n157#
+X0 a_n563_n131# a_n683_n157# a_n741_n131# a_n1053_n291# sky130_fd_pr__nfet_g5v0d10v5 ad=0.145 pd=1.29 as=0.145 ps=1.29 w=1 l=0.6
+X1 a_505_n131# a_385_n157# a_327_n131# a_n1053_n291# sky130_fd_pr__nfet_g5v0d10v5 ad=0.145 pd=1.29 as=0.145 ps=1.29 w=1 l=0.6
+X2 a_n385_n131# a_n505_n157# a_n563_n131# a_n1053_n291# sky130_fd_pr__nfet_g5v0d10v5 ad=0.145 pd=1.29 as=0.145 ps=1.29 w=1 l=0.6
+X3 a_327_n131# a_207_n157# a_149_n131# a_n1053_n291# sky130_fd_pr__nfet_g5v0d10v5 ad=0.145 pd=1.29 as=0.145 ps=1.29 w=1 l=0.6
+X4 a_149_n131# a_29_n157# a_n29_n131# a_n1053_n291# sky130_fd_pr__nfet_g5v0d10v5 ad=0.145 pd=1.29 as=0.145 ps=1.29 w=1 l=0.6
+X5 a_861_n131# a_741_n157# a_683_n131# a_n1053_n291# sky130_fd_pr__nfet_g5v0d10v5 ad=0.29 pd=2.58 as=0.145 ps=1.29 w=1 l=0.6
+X6 a_n207_n131# a_n327_n157# a_n385_n131# a_n1053_n291# sky130_fd_pr__nfet_g5v0d10v5 ad=0.145 pd=1.29 as=0.145 ps=1.29 w=1 l=0.6
+X7 a_n741_n131# a_n861_n157# a_n919_n131# a_n1053_n291# sky130_fd_pr__nfet_g5v0d10v5 ad=0.145 pd=1.29 as=0.29 ps=2.58 w=1 l=0.6
+X8 a_683_n131# a_563_n157# a_505_n131# a_n1053_n291# sky130_fd_pr__nfet_g5v0d10v5 ad=0.145 pd=1.29 as=0.145 ps=1.29 w=1 l=0.6
+X9 a_n29_n131# a_n149_n157# a_n207_n131# a_n1053_n291# sky130_fd_pr__nfet_g5v0d10v5 ad=0.145 pd=1.29 as=0.145 ps=1.29 w=1 l=0.6
+.ends
+
+.subckt sky130_fd_pr__pfet_g5v0d10v5_8FRRWQ a_n5003_n7# a_n29_n1003# a_3345_n602#
++ a_3345_n851# a_n3345_740# a_4945_n256# a_1629_n1003# a_n4945_n1100# a_n5003_989#
++ a_n5003_242# a_1629_989# a_1629_242# a_n1629_n104# a_n3345_n505# a_n5003_491# a_1629_491#
++ a_n1629_n353# a_1687_145# a_n3345_n754# a_1687_394# a_1629_n505# a_1629_n754# a_n29_740#
++ a_3287_740# a_4945_242# a_4945_989# a_n3287_145# a_n3287_394# a_4945_491# a_n1629_n1100#
++ a_3287_n1003# a_n4945_n104# a_n3345_n7# a_3287_n7# a_n4945_n353# a_4945_n505# a_4945_n754#
++ a_1687_n104# a_3287_n256# a_1687_n353# a_1629_740# a_n1629_145# a_n5003_n256# a_n1629_n602#
++ a_n5003_740# a_n1629_394# a_n1629_n851# a_1687_643# a_1687_892# a_n1687_n256# a_n5003_n1003#
++ a_3345_145# a_29_n104# w_n5203_n1300# a_4945_740# a_n4945_145# a_n3287_n1100# a_n3287_643#
++ a_3345_394# a_29_n353# a_n4945_394# a_n3287_892# a_3345_n1100# a_n3345_n1003# a_29_145#
++ a_4945_n7# a_29_394# a_n4945_n602# a_n1687_989# a_n1687_242# a_n4945_n851# a_n1687_491#
++ a_n3287_n104# a_1629_n7# a_n3287_n353# a_1687_n1100# a_n1687_n1003# a_1687_n602#
++ a_3287_n505# a_n5003_n505# a_n1687_n7# a_1687_n851# a_3287_n754# a_n5003_n754# a_n1629_643#
++ a_n1629_892# a_n1687_n505# a_n1687_n754# a_n29_n256# a_29_n602# a_3345_643# a_29_n851#
++ a_n4945_643# a_3345_892# a_n4945_892# a_29_643# a_29_892# a_n1687_740# a_29_n1100#
++ a_n3287_n602# a_3345_n104# a_n3287_n851# a_n3345_242# a_3345_n353# a_n3345_989#
++ a_n29_n7# a_n3345_491# a_n3345_n256# a_n29_n505# a_1629_n256# a_n29_n754# a_n29_989#
++ a_n29_242# a_3287_989# a_n29_491# a_3287_242# a_4945_n1003# a_3287_491#
+X0 a_n1687_n7# a_n3287_n104# a_n3345_n7# w_n5203_n1300# sky130_fd_pr__pfet_g5v0d10v5 ad=0.0609 pd=0.71 as=0.0609 ps=0.71 w=0.42 l=8
+X1 a_4945_n7# a_3345_n104# a_3287_n7# w_n5203_n1300# sky130_fd_pr__pfet_g5v0d10v5 ad=0.1218 pd=1.42 as=0.0609 ps=0.71 w=0.42 l=8
+X2 a_1629_n256# a_29_n353# a_n29_n256# w_n5203_n1300# sky130_fd_pr__pfet_g5v0d10v5 ad=0.0609 pd=0.71 as=0.0609 ps=0.71 w=0.42 l=8
+X3 a_4945_740# a_3345_643# a_3287_740# w_n5203_n1300# sky130_fd_pr__pfet_g5v0d10v5 ad=0.1218 pd=1.42 as=0.0609 ps=0.71 w=0.42 l=8
+X4 a_n3345_n1003# a_n4945_n1100# a_n5003_n1003# w_n5203_n1300# sky130_fd_pr__pfet_g5v0d10v5 ad=0.0609 pd=0.71 as=0.1218 ps=1.42 w=0.42 l=8
+X5 a_n3345_n256# a_n4945_n353# a_n5003_n256# w_n5203_n1300# sky130_fd_pr__pfet_g5v0d10v5 ad=0.0609 pd=0.71 as=0.1218 ps=1.42 w=0.42 l=8
+X6 a_1629_989# a_29_892# a_n29_989# w_n5203_n1300# sky130_fd_pr__pfet_g5v0d10v5 ad=0.0609 pd=0.71 as=0.0609 ps=0.71 w=0.42 l=8
+X7 a_n1687_491# a_n3287_394# a_n3345_491# w_n5203_n1300# sky130_fd_pr__pfet_g5v0d10v5 ad=0.0609 pd=0.71 as=0.0609 ps=0.71 w=0.42 l=8
+X8 a_1629_242# a_29_145# a_n29_242# w_n5203_n1300# sky130_fd_pr__pfet_g5v0d10v5 ad=0.0609 pd=0.71 as=0.0609 ps=0.71 w=0.42 l=8
+X9 a_3287_n256# a_1687_n353# a_1629_n256# w_n5203_n1300# sky130_fd_pr__pfet_g5v0d10v5 ad=0.0609 pd=0.71 as=0.0609 ps=0.71 w=0.42 l=8
+X10 a_3287_989# a_1687_892# a_1629_989# w_n5203_n1300# sky130_fd_pr__pfet_g5v0d10v5 ad=0.0609 pd=0.71 as=0.0609 ps=0.71 w=0.42 l=8
+X11 a_3287_242# a_1687_145# a_1629_242# w_n5203_n1300# sky130_fd_pr__pfet_g5v0d10v5 ad=0.0609 pd=0.71 as=0.0609 ps=0.71 w=0.42 l=8
+X12 a_n1687_n256# a_n3287_n353# a_n3345_n256# w_n5203_n1300# sky130_fd_pr__pfet_g5v0d10v5 ad=0.0609 pd=0.71 as=0.0609 ps=0.71 w=0.42 l=8
+X13 a_4945_n754# a_3345_n851# a_3287_n754# w_n5203_n1300# sky130_fd_pr__pfet_g5v0d10v5 ad=0.1218 pd=1.42 as=0.0609 ps=0.71 w=0.42 l=8
+X14 a_n1687_n1003# a_n3287_n1100# a_n3345_n1003# w_n5203_n1300# sky130_fd_pr__pfet_g5v0d10v5 ad=0.0609 pd=0.71 as=0.0609 ps=0.71 w=0.42 l=8
+X15 a_4945_n1003# a_3345_n1100# a_3287_n1003# w_n5203_n1300# sky130_fd_pr__pfet_g5v0d10v5 ad=0.1218 pd=1.42 as=0.0609 ps=0.71 w=0.42 l=8
+X16 a_4945_989# a_3345_892# a_3287_989# w_n5203_n1300# sky130_fd_pr__pfet_g5v0d10v5 ad=0.1218 pd=1.42 as=0.0609 ps=0.71 w=0.42 l=8
+X17 a_4945_242# a_3345_145# a_3287_242# w_n5203_n1300# sky130_fd_pr__pfet_g5v0d10v5 ad=0.1218 pd=1.42 as=0.0609 ps=0.71 w=0.42 l=8
+X18 a_1629_n505# a_29_n602# a_n29_n505# w_n5203_n1300# sky130_fd_pr__pfet_g5v0d10v5 ad=0.0609 pd=0.71 as=0.0609 ps=0.71 w=0.42 l=8
+X19 a_1629_n1003# a_29_n1100# a_n29_n1003# w_n5203_n1300# sky130_fd_pr__pfet_g5v0d10v5 ad=0.0609 pd=0.71 as=0.0609 ps=0.71 w=0.42 l=8
+X20 a_n29_491# a_n1629_394# a_n1687_491# w_n5203_n1300# sky130_fd_pr__pfet_g5v0d10v5 ad=0.0609 pd=0.71 as=0.0609 ps=0.71 w=0.42 l=8
+X21 a_n3345_n7# a_n4945_n104# a_n5003_n7# w_n5203_n1300# sky130_fd_pr__pfet_g5v0d10v5 ad=0.0609 pd=0.71 as=0.1218 ps=1.42 w=0.42 l=8
+X22 a_n3345_n505# a_n4945_n602# a_n5003_n505# w_n5203_n1300# sky130_fd_pr__pfet_g5v0d10v5 ad=0.0609 pd=0.71 as=0.1218 ps=1.42 w=0.42 l=8
+X23 a_n1687_740# a_n3287_643# a_n3345_740# w_n5203_n1300# sky130_fd_pr__pfet_g5v0d10v5 ad=0.0609 pd=0.71 as=0.0609 ps=0.71 w=0.42 l=8
+X24 a_4945_n256# a_3345_n353# a_3287_n256# w_n5203_n1300# sky130_fd_pr__pfet_g5v0d10v5 ad=0.1218 pd=1.42 as=0.0609 ps=0.71 w=0.42 l=8
+X25 a_3287_n1003# a_1687_n1100# a_1629_n1003# w_n5203_n1300# sky130_fd_pr__pfet_g5v0d10v5 ad=0.0609 pd=0.71 as=0.0609 ps=0.71 w=0.42 l=8
+X26 a_3287_n505# a_1687_n602# a_1629_n505# w_n5203_n1300# sky130_fd_pr__pfet_g5v0d10v5 ad=0.0609 pd=0.71 as=0.0609 ps=0.71 w=0.42 l=8
+X27 a_n3345_491# a_n4945_394# a_n5003_491# w_n5203_n1300# sky130_fd_pr__pfet_g5v0d10v5 ad=0.0609 pd=0.71 as=0.1218 ps=1.42 w=0.42 l=8
+X28 a_n29_n7# a_n1629_n104# a_n1687_n7# w_n5203_n1300# sky130_fd_pr__pfet_g5v0d10v5 ad=0.0609 pd=0.71 as=0.0609 ps=0.71 w=0.42 l=8
+X29 a_n1687_n505# a_n3287_n602# a_n3345_n505# w_n5203_n1300# sky130_fd_pr__pfet_g5v0d10v5 ad=0.0609 pd=0.71 as=0.0609 ps=0.71 w=0.42 l=8
+X30 a_n29_n754# a_n1629_n851# a_n1687_n754# w_n5203_n1300# sky130_fd_pr__pfet_g5v0d10v5 ad=0.0609 pd=0.71 as=0.0609 ps=0.71 w=0.42 l=8
+X31 a_3287_n7# a_1687_n104# a_1629_n7# w_n5203_n1300# sky130_fd_pr__pfet_g5v0d10v5 ad=0.0609 pd=0.71 as=0.0609 ps=0.71 w=0.42 l=8
+X32 a_n29_740# a_n1629_643# a_n1687_740# w_n5203_n1300# sky130_fd_pr__pfet_g5v0d10v5 ad=0.0609 pd=0.71 as=0.0609 ps=0.71 w=0.42 l=8
+X33 a_n1687_989# a_n3287_892# a_n3345_989# w_n5203_n1300# sky130_fd_pr__pfet_g5v0d10v5 ad=0.0609 pd=0.71 as=0.0609 ps=0.71 w=0.42 l=8
+X34 a_n1687_242# a_n3287_145# a_n3345_242# w_n5203_n1300# sky130_fd_pr__pfet_g5v0d10v5 ad=0.0609 pd=0.71 as=0.0609 ps=0.71 w=0.42 l=8
+X35 a_1629_491# a_29_394# a_n29_491# w_n5203_n1300# sky130_fd_pr__pfet_g5v0d10v5 ad=0.0609 pd=0.71 as=0.0609 ps=0.71 w=0.42 l=8
+X36 a_n29_n256# a_n1629_n353# a_n1687_n256# w_n5203_n1300# sky130_fd_pr__pfet_g5v0d10v5 ad=0.0609 pd=0.71 as=0.0609 ps=0.71 w=0.42 l=8
+X37 a_4945_n505# a_3345_n602# a_3287_n505# w_n5203_n1300# sky130_fd_pr__pfet_g5v0d10v5 ad=0.1218 pd=1.42 as=0.0609 ps=0.71 w=0.42 l=8
+X38 a_3287_491# a_1687_394# a_1629_491# w_n5203_n1300# sky130_fd_pr__pfet_g5v0d10v5 ad=0.0609 pd=0.71 as=0.0609 ps=0.71 w=0.42 l=8
+X39 a_n29_n1003# a_n1629_n1100# a_n1687_n1003# w_n5203_n1300# sky130_fd_pr__pfet_g5v0d10v5 ad=0.0609 pd=0.71 as=0.0609 ps=0.71 w=0.42 l=8
+X40 a_n3345_740# a_n4945_643# a_n5003_740# w_n5203_n1300# sky130_fd_pr__pfet_g5v0d10v5 ad=0.0609 pd=0.71 as=0.1218 ps=1.42 w=0.42 l=8
+X41 a_4945_491# a_3345_394# a_3287_491# w_n5203_n1300# sky130_fd_pr__pfet_g5v0d10v5 ad=0.1218 pd=1.42 as=0.0609 ps=0.71 w=0.42 l=8
+X42 a_n29_989# a_n1629_892# a_n1687_989# w_n5203_n1300# sky130_fd_pr__pfet_g5v0d10v5 ad=0.0609 pd=0.71 as=0.0609 ps=0.71 w=0.42 l=8
+X43 a_n29_242# a_n1629_145# a_n1687_242# w_n5203_n1300# sky130_fd_pr__pfet_g5v0d10v5 ad=0.0609 pd=0.71 as=0.0609 ps=0.71 w=0.42 l=8
+X44 a_1629_n754# a_29_n851# a_n29_n754# w_n5203_n1300# sky130_fd_pr__pfet_g5v0d10v5 ad=0.0609 pd=0.71 as=0.0609 ps=0.71 w=0.42 l=8
+X45 a_1629_n7# a_29_n104# a_n29_n7# w_n5203_n1300# sky130_fd_pr__pfet_g5v0d10v5 ad=0.0609 pd=0.71 as=0.0609 ps=0.71 w=0.42 l=8
+X46 a_n3345_n754# a_n4945_n851# a_n5003_n754# w_n5203_n1300# sky130_fd_pr__pfet_g5v0d10v5 ad=0.0609 pd=0.71 as=0.1218 ps=1.42 w=0.42 l=8
+X47 a_1629_740# a_29_643# a_n29_740# w_n5203_n1300# sky130_fd_pr__pfet_g5v0d10v5 ad=0.0609 pd=0.71 as=0.0609 ps=0.71 w=0.42 l=8
+X48 a_3287_n754# a_1687_n851# a_1629_n754# w_n5203_n1300# sky130_fd_pr__pfet_g5v0d10v5 ad=0.0609 pd=0.71 as=0.0609 ps=0.71 w=0.42 l=8
+X49 a_n3345_989# a_n4945_892# a_n5003_989# w_n5203_n1300# sky130_fd_pr__pfet_g5v0d10v5 ad=0.0609 pd=0.71 as=0.1218 ps=1.42 w=0.42 l=8
+X50 a_3287_740# a_1687_643# a_1629_740# w_n5203_n1300# sky130_fd_pr__pfet_g5v0d10v5 ad=0.0609 pd=0.71 as=0.0609 ps=0.71 w=0.42 l=8
+X51 a_n3345_242# a_n4945_145# a_n5003_242# w_n5203_n1300# sky130_fd_pr__pfet_g5v0d10v5 ad=0.0609 pd=0.71 as=0.1218 ps=1.42 w=0.42 l=8
+X52 a_n29_n505# a_n1629_n602# a_n1687_n505# w_n5203_n1300# sky130_fd_pr__pfet_g5v0d10v5 ad=0.0609 pd=0.71 as=0.0609 ps=0.71 w=0.42 l=8
+X53 a_n1687_n754# a_n3287_n851# a_n3345_n754# w_n5203_n1300# sky130_fd_pr__pfet_g5v0d10v5 ad=0.0609 pd=0.71 as=0.0609 ps=0.71 w=0.42 l=8
+.ends
+
+.subckt sky130_fd_pr__pfet_g5v0d10v5_W8MWAU a_n741_n136# w_n1119_n362# a_861_n136#
++ a_n327_n162# a_385_n162# a_n563_n136# a_683_n136# a_n149_n162# a_n919_n136# a_207_n162#
++ a_n385_n136# a_n861_n162# a_505_n136# a_29_n162# a_n207_n136# a_n683_n162# a_741_n162#
++ a_327_n136# a_n505_n162# a_n29_n136# a_563_n162# a_149_n136#
+X0 a_861_n136# a_741_n162# a_683_n136# w_n1119_n362# sky130_fd_pr__pfet_g5v0d10v5 ad=0.29 pd=2.58 as=0.145 ps=1.29 w=1 l=0.6
+X1 a_n207_n136# a_n327_n162# a_n385_n136# w_n1119_n362# sky130_fd_pr__pfet_g5v0d10v5 ad=0.145 pd=1.29 as=0.145 ps=1.29 w=1 l=0.6
+X2 a_n741_n136# a_n861_n162# a_n919_n136# w_n1119_n362# sky130_fd_pr__pfet_g5v0d10v5 ad=0.145 pd=1.29 as=0.29 ps=2.58 w=1 l=0.6
+X3 a_683_n136# a_563_n162# a_505_n136# w_n1119_n362# sky130_fd_pr__pfet_g5v0d10v5 ad=0.145 pd=1.29 as=0.145 ps=1.29 w=1 l=0.6
+X4 a_n29_n136# a_n149_n162# a_n207_n136# w_n1119_n362# sky130_fd_pr__pfet_g5v0d10v5 ad=0.145 pd=1.29 as=0.145 ps=1.29 w=1 l=0.6
+X5 a_n563_n136# a_n683_n162# a_n741_n136# w_n1119_n362# sky130_fd_pr__pfet_g5v0d10v5 ad=0.145 pd=1.29 as=0.145 ps=1.29 w=1 l=0.6
+X6 a_505_n136# a_385_n162# a_327_n136# w_n1119_n362# sky130_fd_pr__pfet_g5v0d10v5 ad=0.145 pd=1.29 as=0.145 ps=1.29 w=1 l=0.6
+X7 a_n385_n136# a_n505_n162# a_n563_n136# w_n1119_n362# sky130_fd_pr__pfet_g5v0d10v5 ad=0.145 pd=1.29 as=0.145 ps=1.29 w=1 l=0.6
+X8 a_327_n136# a_207_n162# a_149_n136# w_n1119_n362# sky130_fd_pr__pfet_g5v0d10v5 ad=0.145 pd=1.29 as=0.145 ps=1.29 w=1 l=0.6
+X9 a_149_n136# a_29_n162# a_n29_n136# w_n1119_n362# sky130_fd_pr__pfet_g5v0d10v5 ad=0.145 pd=1.29 as=0.145 ps=1.29 w=1 l=0.6
+.ends
+
+.subckt comparator avdd ibias out ena vinn vinp avss
+Xsky130_fd_pr__nfet_g5v0d10v5_GLAJGT_1 avss vnn vt vinn vnn vinn vpp vt avss vinp
++ vnn vpp vt vnn vt vinn vt avss vt vpp avss avss vnn vinp vt avss vinp vinn vinp
++ vnn vpp vt vinp vpp vnn avss vinp vinn avss vpp vnn vt vnn vinp vinn vinn avss vt
++ avss vinp vinp vpp vinp vnn vinn vnn vnn avss vnn vinp vinn vt vt vt vt vt vinn
++ avss vt avss vinn vinn avss vnn avss vnn vnn vinp vt vinp vinp vinn avss vnn avss
++ vpp vinn avss vt vt vnn vinp vinn vinn vinp vpp sky130_fd_pr__nfet_g5v0d10v5_GLAJGT
+Xsky130_fd_pr__nfet_g5v0d10v5_T82T27_1 n0 vm vm avss vn avss avss avss vm vm vn avss
++ avss vn vn avss avss vn vm avss avss avss avss avss avss vt avss sky130_fd_pr__nfet_g5v0d10v5_T82T27
+Xsky130_fd_pr__pfet_g5v0d10v5_3HV7M9_0 avdd vm vnn avdd avdd vpp avdd vpp avdd avdd
++ vnn n0 avdd avdd sky130_fd_pr__pfet_g5v0d10v5_3HV7M9
+Xsky130_fd_pr__pfet_g5v0d10v5_5H9LZ4_0 ena avdd ena vn vpp ena_b ena_b ibias ena avdd
++ vnn avdd avdd sky130_fd_pr__pfet_g5v0d10v5_5H9LZ4
+Xsky130_fd_pr__nfet_g5v0d10v5_GG9S2Z_0 ena vm vn vn avss ena_b ena n0 avss avss ena_b
++ ibias avss ena_b avss ena_b sky130_fd_pr__nfet_g5v0d10v5_GG9S2Z
+Xsky130_fd_pr__nfet_g5v0d10v5_HZHY2Z_0 avss n1 n1 avss n1 avss n1 n1 out avss n0 avss
++ n1 n0 avss out n1 n1 out avss out n1 sky130_fd_pr__nfet_g5v0d10v5_HZHY2Z
+Xsky130_fd_pr__pfet_g5v0d10v5_8FRRWQ_0 avdd avdd avdd avdd avdd avdd vnn avdd avdd
++ avdd vnn vnn vnn avdd avdd vnn vnn vnn avdd vnn vnn vnn avdd avdd avdd avdd vpp
++ vpp avdd vnn avdd avdd avdd avdd avdd avdd avdd vpp avdd vpp vnn vpp avdd vnn avdd
++ vpp vnn vnn vnn vpp avdd avdd vpp avdd avdd avdd vnn vpp avdd vpp avdd vpp avdd
++ avdd vnn avdd vnn avdd vpp vpp avdd vpp vnn vnn vnn vpp vpp vpp avdd avdd vpp vpp
++ avdd avdd vpp vpp vpp vpp avdd vpp avdd vpp avdd avdd avdd vnn vnn vpp vpp vnn avdd
++ vnn avdd avdd avdd avdd avdd avdd avdd vnn avdd avdd avdd avdd avdd avdd avdd avdd
++ sky130_fd_pr__pfet_g5v0d10v5_8FRRWQ
+Xsky130_fd_pr__pfet_g5v0d10v5_W8MWAU_0 out avdd avdd n1 n1 avdd n1 n1 avdd n1 out
++ n1 avdd n1 avdd n1 n0 out n1 out n0 avdd sky130_fd_pr__pfet_g5v0d10v5_W8MWAU
+.ends
+

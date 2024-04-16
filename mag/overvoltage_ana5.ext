@@ -1,0 +1,446 @@
+timestamp 1712335977
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+use rstring_mux rstring_mux_0 1 0 28241 0 1 -15265
+node "m3_48718_n8259#" 0 50.3013 48718 -8259 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3600 240 0 0 0 0 0 0
+node "m2_39906_n8077#" 1 189.865 39906 -8077 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 33408 1172 0 0 0 0 0 0 0 0
+node "m2_40604_n8259#" 3 809.138 40604 -8259 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 56132 1992 72016 2636 0 0 0 0 0 0
+node "m2_48955_n6687#" 0 60.2903 48955 -6687 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 9088 412 0 0 0 0 0 0 0 0
+node "m2_48795_n6665#" 1 124.25 48795 -6665 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14680 588 4036 274 0 0 0 0 0 0
+node "m2_48265_n6665#" 1 162.472 48265 -6665 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 24088 882 4036 274 0 0 0 0 0 0
+node "m2_47737_n6687#" 1 207.225 47737 -6687 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 37272 1294 4036 274 0 0 0 0 0 0
+node "m2_47195_n6679#" 1 149.755 47195 -6679 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 39552 1364 0 0 0 0 0 0 0 0
+node "m2_46659_n6672#" 1 144.254 46659 -6672 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 39104 1350 0 0 0 0 0 0 0 0
+node "m2_46130_n6629#" 1 134.328 46130 -6629 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 36352 1264 0 0 0 0 0 0 0 0
+node "m2_45587_n6664#" 1 142.005 45587 -6664 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 38592 1334 0 0 0 0 0 0 0 0
+node "m2_45066_n6671#" 1 157.797 45066 -6671 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 39040 1348 0 0 0 0 0 0 0 0
+node "m2_43974_n6492#" 2 449.387 43974 -6492 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 44952 1662 40552 1392 0 0 0 0 0 0
+node "m2_43815_n6664#" 2 163.343 43815 -6664 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 50624 1710 0 0 0 0 0 0 0 0
+node "m2_43461_n6671#" 1 129.023 43461 -6671 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 39488 1362 0 0 0 0 0 0 0 0
+node "m2_40782_n6664#" 1 131.288 40782 -6664 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4144 260 44420 1516 0 0 0 0 0 0
+node "m2_41324_n6668#" 1 245.528 41324 -6668 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14296 576 79364 2608 0 0 0 0 0 0
+node "m2_41848_n6679#" 2 295.729 41848 -6679 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 23832 874 112900 3656 0 0 0 0 0 0
+node "m2_42376_n6671#" 3 649.914 42376 -6671 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 32152 1134 146692 4712 0 0 0 0 0 0
+node "m2_41703_n6080#" 5 579.438 41703 -6080 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 41152 1542 22162 2602 0 0 0 0 0 0
+node "m1_35387_n10577#" 3 1868.04 35387 -10577 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 994000 10340 0 0 0 0 0 0 0 0 0 0
+node "m1_35387_n10321#" 4 2186.03 35387 -10321 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 979344 10592 140200 1802 0 0 0 0 0 0 0 0
+node "m1_40420_n6997#" 1 619.455 40420 -6997 v 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 25568 648 189800 2298 0 0 0 0 0 0 0 0
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "m2_45587_n6664#" "m2_46659_n6672#" 1.63858
+cap "m2_43974_n6492#" "m2_43815_n6664#" 184.022
+cap "m2_41703_n6080#" "m2_43815_n6664#" 0.0385378
+cap "m2_47737_n6687#" "m2_46659_n6672#" 0.0986535
+cap "m2_46659_n6672#" "m2_45066_n6671#" 0.220264
+cap "m2_45587_n6664#" "m2_45066_n6671#" 58.3172
+cap "m2_48265_n6665#" "m2_46659_n6672#" 0.0405185
+cap "m2_39906_n8077#" "m2_40604_n8259#" 37.6081
+cap "m1_35387_n10577#" "m1_35387_n10321#" 2045.05
+cap "m2_47737_n6687#" "m2_48955_n6687#" 0.906096
+cap "m2_47195_n6679#" "m2_48795_n6665#" 0.0441506
+cap "m2_47737_n6687#" "m2_48265_n6665#" 36.3978
+cap "m2_41848_n6679#" "m2_43461_n6671#" 0.0355507
+cap "m2_42376_n6671#" "m2_40604_n8259#" 0.0410818
+cap "m2_46130_n6629#" "m2_43974_n6492#" 0.0405185
+cap "m2_42376_n6671#" "m2_43974_n6492#" 0.0941445
+cap "m2_42376_n6671#" "m1_40420_n6997#" 112.333
+cap "m2_42376_n6671#" "m2_41703_n6080#" 354.48
+cap "m2_42376_n6671#" "m2_41324_n6668#" 1.06224
+cap "m2_42376_n6671#" "m2_40782_n6664#" 0.410027
+cap "m2_40604_n8259#" "m1_40420_n6997#" 9.85686
+cap "m2_43974_n6492#" "m2_41703_n6080#" 0.142383
+cap "m2_41703_n6080#" "m1_40420_n6997#" 1.21369
+cap "m2_40604_n8259#" "m2_41324_n6668#" 0.0716054
+cap "m2_40604_n8259#" "m2_40782_n6664#" 58.5737
+cap "m2_43815_n6664#" "m2_43461_n6671#" 87.1429
+cap "m2_41324_n6668#" "m1_40420_n6997#" 113.147
+cap "m2_41703_n6080#" "m2_41324_n6668#" 0.0448886
+cap "m1_40420_n6997#" "m2_40782_n6664#" 145.895
+cap "m2_41324_n6668#" "m2_40782_n6664#" 326.12
+cap "m2_47195_n6679#" "m2_46659_n6672#" 57.4248
+cap "m2_46130_n6629#" "m2_46659_n6672#" 54.0952
+cap "m2_46130_n6629#" "m2_45587_n6664#" 52.6902
+cap "m2_47195_n6679#" "m2_47737_n6687#" 53.8412
+cap "m2_46130_n6629#" "m2_47737_n6687#" 0.0398061
+cap "m2_42376_n6671#" "m2_43461_n6671#" 0.0973596
+cap "m2_45587_n6664#" "m2_43974_n6492#" 0.106167
+cap "m2_47195_n6679#" "m2_48265_n6665#" 0.100164
+cap "m2_42376_n6671#" "m2_41848_n6679#" 885.302
+cap "m2_47737_n6687#" "m2_48795_n6665#" 0.102495
+cap "m2_43974_n6492#" "m2_43461_n6671#" 0.841471
+cap "m2_41848_n6679#" "m2_40604_n8259#" 0.0532174
+cap "m2_41703_n6080#" "m2_43461_n6671#" 56.6092
+cap "m2_41848_n6679#" "m1_40420_n6997#" 107.661
+cap "m2_43974_n6492#" "m2_45066_n6671#" 40.5214
+cap "m2_48955_n6687#" "m2_48795_n6665#" 38.4615
+cap "m2_41703_n6080#" "m2_41848_n6679#" 1.16736
+cap "m2_48265_n6665#" "m2_48795_n6665#" 22.2844
+cap "m2_41848_n6679#" "m2_41324_n6668#" 620.226
+cap "m2_41848_n6679#" "m2_40782_n6664#" 0.898124
+cap "m2_42376_n6671#" "m2_43815_n6664#" 0.0547739
+cap "m1_35387_n10321#" "rstring_mux_0/vtop" 62.2549
+cap "rstring_mux_0/sky130_fd_pr__res_xhigh_po_1p41_CZUCEE_0/a_n19927_n2306#" "rstring_mux_0/vtop" -26.2762
+cap "rstring_mux_0/sky130_fd_pr__res_xhigh_po_1p41_CZUCEE_0/a_n19927_n2306#" "m1_35387_n10577#" 328.8
+cap "rstring_mux_0/vtop" "m1_35387_n10577#" 145.993
+cap "rstring_mux_0/sky130_fd_pr__pfet_g5v0d10v5_WY4TLZ_0/a_n1395_n562#" "rstring_mux_0/vtop" -1.68482
+cap "rstring_mux_0/sky130_fd_pr__pfet_g5v0d10v5_WY4TLZ_0/w_n1653_n762#" "m1_35387_n10321#" 90.469
+cap "rstring_mux_0/sky130_fd_pr__pfet_g5v0d10v5_WY4TLZ_0/a_n1395_n562#" "rstring_mux_0/sky130_fd_pr__res_xhigh_po_1p41_CZUCEE_0/a_n19927_n2306#" -7.72747
+cap "rstring_mux_0/vtop" "m1_35387_n10321#" 364.79
+cap "m1_35387_n10577#" "rstring_mux_0/sky130_fd_pr__pfet_g5v0d10v5_WY4TLZ_0/w_n1653_n762#" 0.754592
+cap "rstring_mux_0/vtop" "rstring_mux_0/sky130_fd_pr__pfet_g5v0d10v5_WY4TLZ_0/w_n1653_n762#" -0.862133
+cap "rstring_mux_0/sky130_fd_pr__pfet_g5v0d10v5_WY4TLZ_0/a_n1395_n562#" "m1_35387_n10321#" 39.5837
+cap "rstring_mux_0/sky130_fd_pr__pfet_g5v0d10v5_WY4TLZ_0/w_n1653_n762#" "rstring_mux_0/sky130_fd_pr__res_xhigh_po_1p41_CZUCEE_0/a_n19927_n2306#" -22.6274
+cap "rstring_mux_0/vtop" "m1_35387_n10577#" 433.581
+cap "m1_35387_n10577#" "rstring_mux_0/sky130_fd_pr__res_xhigh_po_1p41_CZUCEE_0/a_n19927_n2306#" 560
+cap "rstring_mux_0/vtop" "rstring_mux_0/sky130_fd_pr__res_xhigh_po_1p41_CZUCEE_0/a_n19927_n2306#" -55.9554
+cap "rstring_mux_0/sky130_fd_pr__pfet_g5v0d10v5_WY4TLZ_0/a_n1395_n562#" "m1_35387_n10577#" 2.09396
+cap "rstring_mux_0/vtop" "rstring_mux_0/sky130_fd_sc_hvl__inv_1_1/VGND" 19.0238
+cap "rstring_mux_0/avdd" "rstring_mux_0/sky130_fd_sc_hvl__inv_1_1/VGND" 653.508
+cap "rstring_mux_0/sky130_fd_pr__pfet_g5v0d10v5_WY4TLZ_0/a_n1395_n562#" "rstring_mux_0/sky130_fd_sc_hvl__inv_1_1/VGND" 80.5269
+cap "rstring_mux_0/sky130_fd_pr__pfet_g5v0d10v5_WY4TLZ_0/a_n1395_n562#" "rstring_mux_0/avdd" 5.25717
+cap "rstring_mux_0/avdd" "rstring_mux_0/sky130_fd_sc_hvl__inv_1_1/VGND" 923.708
+cap "rstring_mux_0/sky130_fd_pr__pfet_g5v0d10v5_WY4TLZ_0/a_n919_n536#" "rstring_mux_0/sky130_fd_sc_hvl__inv_1_1/VGND" 10.3388
+cap "rstring_mux_0/sky130_fd_pr__pfet_g5v0d10v5_WY4TLZ_0/a_n1039_n562#" "rstring_mux_0/sky130_fd_sc_hvl__inv_1_1/VGND" 51.0833
+cap "rstring_mux_0/avdd" "rstring_mux_0/sky130_fd_pr__pfet_g5v0d10v5_WY4TLZ_0/a_n1039_n562#" 3.34142
+cap "rstring_mux_0/sky130_fd_pr__res_xhigh_po_1p41_CZUCEE_0/a_3261_1744#" "rstring_mux_0/sky130_fd_sc_hvl__inv_1_1/VGND" 8.42428
+cap "rstring_mux_0/sky130_fd_pr__nfet_g5v0d10v5_K8JYEQ_0/a_n4034_n531#" "rstring_mux_0/sky130_fd_sc_hvl__inv_1_1/VGND" 14.1598
+cap "rstring_mux_0/avdd" "rstring_mux_0/sky130_fd_pr__nfet_g5v0d10v5_K8JYEQ_0/a_n4034_n531#" -0.857851
+cap "rstring_mux_0/sky130_fd_pr__res_xhigh_po_1p41_CZUCEE_0/a_4017_1744#" "rstring_mux_0/sky130_fd_sc_hvl__inv_1_1/VGND" 0.587656
+cap "rstring_mux_0/vtrip1" "rstring_mux_0/sky130_fd_sc_hvl__inv_1_1/VGND" -1.13687e-13
+cap "rstring_mux_0/sky130_fd_sc_hvl__inv_1_1/VGND" "rstring_mux_0/sky130_fd_pr__res_xhigh_po_1p41_CZUCEE_0/a_3261_1744#" 1.61694
+cap "rstring_mux_0/avdd" "rstring_mux_0/sky130_fd_sc_hvl__inv_1_1/VGND" 31.2255
+cap "rstring_mux_0/vtrip1" "rstring_mux_0/avss" -1.13687e-13
+cap "rstring_mux_0/sky130_fd_pr__nfet_g5v0d10v5_K8JYEQ_0/a_n2966_n531#" "rstring_mux_0/avss" -1.13687e-13
+cap "m1_35387_n10577#" "rstring_mux_0/vtop" 2.04299
+cap "rstring_mux_0/sky130_fd_pr__pfet_g5v0d10v5_WY4TLZ_0/a_n1395_n562#" "rstring_mux_0/vtop" -0.106827
+cap "rstring_mux_0/sky130_fd_pr__pfet_g5v0d10v5_WY4TLZ_0/a_n1395_n562#" "m1_35387_n10321#" 5.09776
+cap "rstring_mux_0/vtop" "m1_35387_n10321#" 4.54314
+cap "rstring_mux_0/vtop" "rstring_mux_0/sky130_fd_pr__res_xhigh_po_1p41_CZUCEE_0/a_n19927_n2306#" -0.86335
+cap "rstring_mux_0/sky130_fd_pr__pfet_g5v0d10v5_WY4TLZ_0/w_n1653_n762#" "m1_35387_n10577#" 0.875489
+cap "rstring_mux_0/sky130_fd_pr__pfet_g5v0d10v5_WY4TLZ_0/w_n1653_n762#" "rstring_mux_0/vtop" -0.173958
+cap "rstring_mux_0/sky130_fd_pr__pfet_g5v0d10v5_WY4TLZ_0/w_n1653_n762#" "m1_35387_n10321#" 4.98156
+cap "rstring_mux_0/sky130_fd_sc_hvl__inv_1_1/VPWR" "rstring_mux_0/avss" 2.75342
+cap "rstring_mux_0/vtop" "rstring_mux_0/sky130_fd_sc_hvl__inv_1_1/VPWR" 9.69591
+cap "rstring_mux_0/vtop" "rstring_mux_0/avss" 15.9916
+cap "rstring_mux_0/avss" "rstring_mux_0/sky130_fd_sc_hvl__inv_1_1/Y" 13.1267
+cap "rstring_mux_0/avss" "rstring_mux_0/sky130_fd_sc_hvl__inv_1_1/Y" 8.36812
+cap "rstring_mux_0/avss" "rstring_mux_0/sky130_fd_pr__pfet_g5v0d10v5_WY4TLZ_0/a_n919_n536#" 8.54572
+cap "rstring_mux_0/avss" "rstring_mux_0/sky130_fd_sc_hvl__inv_1_1/VPWR" 10.9343
+cap "rstring_mux_0/avss" "rstring_mux_0/ena" 0.19722
+cap "rstring_mux_0/sky130_fd_sc_hvl__inv_1_1/Y" "rstring_mux_0/sky130_fd_sc_hvl__inv_1_1/VPWR" 0.00439816
+cap "rstring_mux_0/vout" "rstring_mux_0/sky130_fd_sc_hvl__inv_1_1/VPWR" 0.133262
+cap "rstring_mux_0/sky130_fd_sc_hvl__inv_1_1/VPWR" "rstring_mux_0/sky130_fd_pr__pfet_g5v0d10v5_WY4TLZ_0/a_n919_n536#" 5.08161
+cap "rstring_mux_0/sky130_fd_pr__nfet_g5v0d10v5_K8JYEQ_0/a_n4154_n557#" "rstring_mux_0/vout" 0.120723
+cap "rstring_mux_0/avss" "rstring_mux_0/sky130_fd_sc_hvl__inv_1_1/VPWR" -2.01977
+cap "rstring_mux_0/avss" "rstring_mux_0/vout" 0.804372
+cap "rstring_mux_0/sky130_fd_sc_hvl__inv_1_1/VPWR" "rstring_mux_0/vout" 22.3062
+cap "rstring_mux_0/vout" "rstring_mux_0/avss" -4.54747e-13
+cap "rstring_mux_0/vout" "rstring_mux_0/avdd" 167.432
+cap "rstring_mux_0/sky130_fd_sc_hvl__inv_1_1/Y" "rstring_mux_0/ena" 45.6533
+cap "rstring_mux_0/avdd" "rstring_mux_0/avss" -23.672
+cap "rstring_mux_0/otrip_decoded_avdd[0]" "rstring_mux_0/avdd" 12.8326
+cap "rstring_mux_0/avdd" "rstring_mux_0/ena" 179.998
+cap "rstring_mux_0/avdd" "rstring_mux_0/otrip_decoded_avdd[2]" 0.224243
+cap "rstring_mux_0/otrip_decoded_avdd[1]" "rstring_mux_0/avdd" 0.318226
+cap "rstring_mux_0/vout" "rstring_mux_0/avss" 22.6432
+cap "rstring_mux_0/sky130_fd_sc_hvl__inv_1_1/Y" "rstring_mux_0/avdd" -8.42676
+cap "rstring_mux_0/otrip_decoded_avdd[0]" "rstring_mux_0/vout" -9.73684
+cap "rstring_mux_0/vout" "rstring_mux_0/ena" 1.5371
+cap "rstring_mux_0/ena" "rstring_mux_0/avss" 16.444
+cap "rstring_mux_0/otrip_decoded_avdd[0]" "rstring_mux_0/ena" -1.80791
+cap "rstring_mux_0/sky130_fd_sc_hvl__inv_1_1/Y" "rstring_mux_0/vout" 0.421748
+cap "rstring_mux_0/sky130_fd_sc_hvl__inv_1_1/Y" "rstring_mux_0/avss" -0.810133
+cap "rstring_mux_0/avdd" "m2_42376_n6671#" 0.16642
+cap "rstring_mux_0/sky130_fd_sc_hvl__inv_1_1/Y" "rstring_mux_0/otrip_decoded_avdd[0]" -3.50393
+cap "rstring_mux_0/otrip_decoded_avdd[2]" "rstring_mux_0/avss" 0.300207
+cap "rstring_mux_0/vout" "rstring_mux_0/avdd" 278.506
+cap "rstring_mux_0/vout" "rstring_mux_0/sky130_fd_sc_hvl__inv_1_1/Y" 0.287841
+cap "rstring_mux_0/otrip_decoded_avdd[0]" "rstring_mux_0/ena" -2.87234
+cap "rstring_mux_0/otrip_decoded_avdd[0]" "rstring_mux_0/avss" -41.6419
+cap "rstring_mux_0/sky130_fd_sc_hvl__inv_1_0[1]/Y" "rstring_mux_0/avss" 1.42109e-14
+cap "rstring_mux_0/otrip_decoded_avdd[2]" "rstring_mux_0/sky130_fd_sc_hvl__inv_1_0[0]/Y" 0.107147
+cap "rstring_mux_0/vout" "rstring_mux_0/otrip_decoded_avdd[2]" 0.0652351
+cap "rstring_mux_0/otrip_decoded_avdd[3]" "rstring_mux_0/sky130_fd_sc_hvl__inv_1_0[1]/Y" 0.00253582
+cap "rstring_mux_0/sky130_fd_pr__nfet_g5v0d10v5_K8JYEQ_0/a_n4034_n531#" "rstring_mux_0/avss" -0.320675
+cap "rstring_mux_0/otrip_decoded_avdd[2]" "rstring_mux_0/avdd" 0.358005
+cap "rstring_mux_0/vout" "rstring_mux_0/otrip_decoded_avdd[0]" 316.41
+cap "rstring_mux_0/otrip_decoded_avdd[4]" "rstring_mux_0/avdd" 0.0126644
+cap "rstring_mux_0/vout" "rstring_mux_0/sky130_fd_sc_hvl__inv_1_0[1]/Y" 1.21593
+cap "rstring_mux_0/sky130_fd_sc_hvl__inv_1_0[0]/Y" "rstring_mux_0/avss" -2.24707
+cap "rstring_mux_0/otrip_decoded_avdd[1]" "rstring_mux_0/avss" 0.255123
+cap "rstring_mux_0/otrip_decoded_avdd[0]" "rstring_mux_0/avdd" -6.75456
+cap "rstring_mux_0/otrip_decoded_avdd[0]" "rstring_mux_0/sky130_fd_sc_hvl__inv_1_1/Y" -4.115
+cap "rstring_mux_0/vout" "rstring_mux_0/ena" 1.2996
+cap "rstring_mux_0/vout" "rstring_mux_0/avss" 477.581
+cap "rstring_mux_0/otrip_decoded_avdd[3]" "rstring_mux_0/sky130_fd_sc_hvl__inv_1_0[0]/Y" 0.00253582
+cap "rstring_mux_0/avss" "rstring_mux_0/avdd" -25.6261
+cap "rstring_mux_0/vout" "rstring_mux_0/sky130_fd_pr__nfet_g5v0d10v5_K8JYEQ_0/a_n4034_n531#" 33.6773
+cap "rstring_mux_0/vout" "rstring_mux_0/otrip_decoded_avdd[3]" -0.00164327
+cap "rstring_mux_0/otrip_decoded_avdd[1]" "rstring_mux_0/sky130_fd_sc_hvl__inv_1_0[0]/Y" 0.132133
+cap "rstring_mux_0/otrip_decoded_avdd[3]" "rstring_mux_0/avdd" 0.0808508
+cap "rstring_mux_0/vout" "rstring_mux_0/sky130_fd_sc_hvl__inv_1_0[0]/Y" 73.7512
+cap "rstring_mux_0/vout" "rstring_mux_0/otrip_decoded_avdd[1]" 0.201719
+cap "rstring_mux_0/otrip_decoded_avdd[2]" "rstring_mux_0/sky130_fd_sc_hvl__inv_1_0[1]/Y" 0.107147
+cap "rstring_mux_0/vout" "rstring_mux_0/sky130_fd_sc_hvl__inv_1_0[2]/Y" 0.527534
+cap "rstring_mux_0/otrip_decoded_avdd[1]" "rstring_mux_0/avdd" 0.397177
+cap "rstring_mux_0/otrip_decoded_avdd[4]" "rstring_mux_0/sky130_fd_sc_hvl__inv_1_0[3]/Y" 0.0238763
+cap "rstring_mux_0/otrip_decoded_avdd[2]" "rstring_mux_0/avss" 0.0408282
+cap "rstring_mux_0/vout" "rstring_mux_0/otrip_decoded_avdd[4]" -0.0150372
+cap "rstring_mux_0/avss" "rstring_mux_0/sky130_fd_sc_hvl__inv_1_0[2]/Y" 1.42109e-14
+cap "rstring_mux_0/otrip_decoded_avdd[4]" "rstring_mux_0/sky130_fd_sc_hvl__inv_1_0[0]/VPWR" 0.072722
+cap "rstring_mux_0/otrip_decoded_avdd[3]" "rstring_mux_0/sky130_fd_sc_hvl__inv_1_0[2]/Y" 0.00253582
+cap "rstring_mux_0/otrip_decoded_avdd[2]" "rstring_mux_0/vout" -0.00826408
+cap "rstring_mux_0/otrip_decoded_avdd[2]" "rstring_mux_0/sky130_fd_sc_hvl__inv_1_0[0]/VPWR" 0.0287877
+cap "rstring_mux_0/otrip_decoded_avdd[4]" "rstring_mux_0/sky130_fd_sc_hvl__inv_1_0[2]/Y" 0.0238763
+cap "rstring_mux_0/sky130_fd_sc_hvl__inv_1_0[4]/Y" "rstring_mux_0/avss" 1.42109e-14
+cap "rstring_mux_0/avss" "rstring_mux_0/sky130_fd_sc_hvl__inv_1_0[3]/Y" 1.42109e-14
+cap "rstring_mux_0/otrip_decoded_avdd[3]" "rstring_mux_0/vout" -0.0161622
+cap "rstring_mux_0/otrip_decoded_avdd[3]" "rstring_mux_0/sky130_fd_sc_hvl__inv_1_0[0]/VPWR" 0.0175426
+cap "rstring_mux_0/otrip_decoded_avdd[7]" "rstring_mux_0/sky130_fd_pr__nfet_g5v0d10v5_K8JYEQ_0/a_n3322_n531#" -0.00233233
+cap "rstring_mux_0/otrip_decoded_avdd[7]" "rstring_mux_0/sky130_fd_pr__pfet_g5v0d10v5_4Z8MHY_0/w_n4412_n762#" 0.111535
+cap "rstring_mux_0/sky130_fd_sc_hvl__inv_1_0[2]/VGND" "rstring_mux_0/otrip_decoded_avdd[6]" 0.117937
+cap "rstring_mux_0/otrip_decoded_avdd[7]" "rstring_mux_0/sky130_fd_sc_hvl__inv_1_0[2]/VGND" 0.185781
+cap "rstring_mux_0/otrip_decoded_avdd[7]" "rstring_mux_0/sky130_fd_sc_hvl__inv_1_0[6]/Y" 0.126113
+cap "rstring_mux_0/sky130_fd_pr__nfet_g5v0d10v5_K8JYEQ_0/a_n3322_n531#" "rstring_mux_0/sky130_fd_sc_hvl__inv_1_0[2]/VPWR" -0.204985
+cap "rstring_mux_0/sky130_fd_pr__nfet_g5v0d10v5_K8JYEQ_0/a_n3322_n531#" "rstring_mux_0/otrip_decoded_avdd[5]" -0.00604797
+cap "rstring_mux_0/sky130_fd_pr__pfet_g5v0d10v5_4Z8MHY_0/w_n4412_n762#" "rstring_mux_0/otrip_decoded_avdd[5]" 0.00175178
+cap "rstring_mux_0/sky130_fd_sc_hvl__inv_1_0[5]/Y" "rstring_mux_0/otrip_decoded_avdd[6]" 0.0213452
+cap "rstring_mux_0/sky130_fd_pr__nfet_g5v0d10v5_K8JYEQ_0/a_n3322_n531#" "rstring_mux_0/sky130_fd_pr__pfet_g5v0d10v5_4Z8MHY_0/w_n4412_n762#" 1.13687e-13
+cap "rstring_mux_0/sky130_fd_pr__nfet_g5v0d10v5_K8JYEQ_0/a_n3322_n531#" "rstring_mux_0/otrip_decoded_avdd[6]" 1.22404
+cap "rstring_mux_0/sky130_fd_pr__pfet_g5v0d10v5_4Z8MHY_0/w_n4412_n762#" "rstring_mux_0/otrip_decoded_avdd[6]" 0.15154
+cap "rstring_mux_0/sky130_fd_pr__nfet_g5v0d10v5_K8JYEQ_0/a_n1720_n531#" "rstring_mux_0/otrip_decoded_avdd[8]" -0.00933807
+cap "rstring_mux_0/sky130_fd_pr__pfet_g5v0d10v5_4Z8MHY_0/w_n4412_n762#" "rstring_mux_0/otrip_decoded_avdd[9]" 0.0183666
+cap "rstring_mux_0/sky130_fd_pr__nfet_g5v0d10v5_K8JYEQ_0/a_n1720_n531#" "rstring_mux_0/otrip_decoded_avdd[9]" -0.00720913
+cap "rstring_mux_0/sky130_fd_pr__pfet_g5v0d10v5_4Z8MHY_0/w_n4412_n762#" "rstring_mux_0/otrip_decoded_avdd[10]" 0.00333937
+cap "rstring_mux_0/sky130_fd_pr__nfet_g5v0d10v5_K8JYEQ_0/a_n474_n531#" "rstring_mux_0/otrip_decoded_avdd[10]" -0.0023787
+cap "rstring_mux_0/sky130_fd_pr__pfet_g5v0d10v5_4Z8MHY_0/w_n4412_n762#" "rstring_mux_0/otrip_decoded_avdd[12]" 0.00946313
+cap "rstring_mux_0/sky130_fd_pr__pfet_g5v0d10v5_4Z8MHY_0/w_n4412_n762#" "rstring_mux_0/otrip_decoded_avdd[11]" 0.0120319
+cap "rstring_mux_0/sky130_fd_pr__nfet_g5v0d10v5_K8JYEQ_0/a_n474_n531#" "rstring_mux_0/otrip_decoded_avdd[12]" -0.00158359
+cap "rstring_mux_0/sky130_fd_pr__nfet_g5v0d10v5_K8JYEQ_0/a_n474_n531#" "rstring_mux_0/otrip_decoded_avdd[11]" -0.00369986
+cap "rstring_mux_0/vout" "rstring_mux_0/otrip_decoded_avdd[13]" -0.0138348
+cap "rstring_mux_0/sky130_fd_sc_hvl__inv_1_0[10]/VPWR" "rstring_mux_0/otrip_decoded_avdd[14]" 0.00285011
+cap "rstring_mux_0/vout" "rstring_mux_0/otrip_decoded_avdd[14]" -0.00320293
+cap "rstring_mux_0/sky130_fd_sc_hvl__inv_1_0[10]/VPWR" "rstring_mux_0/otrip_decoded_avdd[15]" 0.00665025
+cap "rstring_mux_0/vout" "rstring_mux_0/otrip_decoded_avdd[15]" -0.0024227
+cap "rstring_mux_0/vout" "rstring_mux_0/sky130_fd_sc_hvl__inv_1_0[15]/Y" 0.0319047
+cap "rstring_mux_0/vout" "rstring_mux_0/otrip_decoded_avdd[15]" -0.000780228
+cap "m2_42376_n6671#" "rstring_mux_0/avdd" 28.9827
+cap "rstring_mux_0/avdd" "rstring_mux_0/otrip_decoded_avdd[0]" 74.0365
+cap "rstring_mux_0/avdd" "rstring_mux_0/otrip_decoded_avdd[1]" 34.3921
+cap "rstring_mux_0/vout" "rstring_mux_0/avdd" 0.0616106
+cap "rstring_mux_0/avdd" "rstring_mux_0/avss" 55.0333
+cap "rstring_mux_0/vout" "rstring_mux_0/otrip_decoded_avdd[0]" -9.73684
+cap "rstring_mux_0/otrip_decoded_avdd[2]" "rstring_mux_0/avdd" 35.9141
+cap "rstring_mux_0/sky130_fd_sc_hvl__inv_1_0[1]/Y" "rstring_mux_0/otrip_decoded_avdd[2]" 30.9581
+cap "rstring_mux_0/otrip_decoded_avdd[0]" "rstring_mux_0/otrip_decoded_avdd[1]" 8.31122
+cap "rstring_mux_0/avss" "rstring_mux_0/avdd" 386.353
+cap "rstring_mux_0/sky130_fd_sc_hvl__inv_1_0[2]/Y" "rstring_mux_0/otrip_decoded_avdd[0]" 0.101956
+cap "rstring_mux_0/sky130_fd_sc_hvl__inv_1_0[1]/Y" "rstring_mux_0/otrip_decoded_avdd[1]" 8.4001
+cap "rstring_mux_0/avss" "rstring_mux_0/otrip_decoded_avdd[0]" 77.1215
+cap "rstring_mux_0/otrip_decoded_avdd[1]" "rstring_mux_0/sky130_fd_pr__pfet_g5v0d10v5_4Z8MHY_0/a_n4034_n536#" 1.45204
+cap "rstring_mux_0/sky130_fd_sc_hvl__inv_1_0[1]/Y" "rstring_mux_0/avss" 0.535673
+cap "rstring_mux_0/vout" "rstring_mux_0/avdd" 0.00473928
+cap "rstring_mux_0/sky130_fd_sc_hvl__inv_1_0[0]/Y" "rstring_mux_0/otrip_decoded_avdd[0]" 3.51691
+cap "rstring_mux_0/vout" "rstring_mux_0/otrip_decoded_avdd[0]" -14.1983
+cap "rstring_mux_0/otrip_decoded_avdd[4]" "rstring_mux_0/avss" 0.209466
+cap "rstring_mux_0/avdd" "rstring_mux_0/otrip_decoded_avdd[3]" 140.931
+cap "rstring_mux_0/sky130_fd_sc_hvl__inv_1_0[3]/Y" "rstring_mux_0/otrip_decoded_avdd[1]" 0.222852
+cap "rstring_mux_0/otrip_decoded_avdd[1]" "rstring_mux_0/otrip_decoded_avdd[2]" 7.7643
+cap "rstring_mux_0/otrip_decoded_avdd[0]" "rstring_mux_0/otrip_decoded_avdd[3]" 0.533774
+cap "rstring_mux_0/sky130_fd_sc_hvl__inv_1_0[1]/Y" "rstring_mux_0/otrip_decoded_avdd[3]" 1.01597
+cap "rstring_mux_0/otrip_decoded_avdd[4]" "rstring_mux_0/vout" 0.102049
+cap "rstring_mux_0/avss" "rstring_mux_0/otrip_decoded_avdd[2]" 11.6556
+cap "rstring_mux_0/sky130_fd_sc_hvl__inv_1_0[2]/Y" "rstring_mux_0/otrip_decoded_avdd[1]" 0.557048
+cap "rstring_mux_0/sky130_fd_pr__pfet_g5v0d10v5_4Z8MHY_0/a_n3500_n536#" "rstring_mux_0/otrip_decoded_avdd[2]" 1.03031
+cap "rstring_mux_0/sky130_fd_sc_hvl__inv_1_0[0]/Y" "rstring_mux_0/otrip_decoded_avdd[2]" 8.55665
+cap "rstring_mux_0/avss" "rstring_mux_0/otrip_decoded_avdd[1]" 19.6176
+cap "rstring_mux_0/avdd" "rstring_mux_0/otrip_decoded_avdd[0]" 28.8083
+cap "rstring_mux_0/sky130_fd_sc_hvl__inv_1_0[2]/Y" "rstring_mux_0/avss" 0.0215845
+cap "rstring_mux_0/vout" "rstring_mux_0/otrip_decoded_avdd[2]" 1.03031
+cap "rstring_mux_0/sky130_fd_sc_hvl__inv_1_0[0]/Y" "rstring_mux_0/otrip_decoded_avdd[1]" 45.2864
+cap "rstring_mux_0/sky130_fd_sc_hvl__inv_1_0[1]/Y" "rstring_mux_0/otrip_decoded_avdd[0]" 0.295997
+cap "rstring_mux_0/sky130_fd_sc_hvl__inv_1_0[0]/Y" "rstring_mux_0/avss" 6.74342
+cap "rstring_mux_0/otrip_decoded_avdd[4]" "rstring_mux_0/avdd" 16.583
+cap "rstring_mux_0/vout" "rstring_mux_0/otrip_decoded_avdd[1]" 1.55445
+cap "rstring_mux_0/otrip_decoded_avdd[1]" "rstring_mux_0/otrip_decoded_avdd[3]" 0.857038
+cap "rstring_mux_0/avdd" "rstring_mux_0/otrip_decoded_avdd[2]" 117.2
+cap "rstring_mux_0/otrip_decoded_avdd[0]" "rstring_mux_0/otrip_decoded_avdd[2]" 4.67457
+cap "rstring_mux_0/sky130_fd_sc_hvl__inv_1_0[0]/Y" "rstring_mux_0/otrip_decoded_avdd[3]" 1.01597
+cap "rstring_mux_0/avdd" "rstring_mux_0/otrip_decoded_avdd[1]" 98.7257
+cap "rstring_mux_0/sky130_fd_sc_hvl__inv_1_0[0]/Y" "rstring_mux_0/otrip_decoded_avdd[3]" 0.0221521
+cap "rstring_mux_0/otrip_decoded_avdd[3]" "rstring_mux_0/sky130_fd_sc_hvl__inv_1_0[2]/Y" 24.8712
+cap "rstring_mux_0/otrip_decoded_avdd[3]" "rstring_mux_0/sky130_fd_sc_hvl__inv_1_0[0]/VPWR" 284.412
+cap "rstring_mux_0/otrip_decoded_avdd[3]" "rstring_mux_0/sky130_fd_sc_hvl__inv_1_0[3]/Y" 10.9292
+cap "rstring_mux_0/avss" "rstring_mux_0/otrip_decoded_avdd[3]" 8.66507
+cap "rstring_mux_0/otrip_decoded_avdd[1]" "rstring_mux_0/otrip_decoded_avdd[2]" -0.345763
+cap "rstring_mux_0/otrip_decoded_avdd[2]" "rstring_mux_0/sky130_fd_sc_hvl__inv_1_0[0]/Y" 0.50726
+cap "rstring_mux_0/otrip_decoded_avdd[2]" "rstring_mux_0/sky130_fd_sc_hvl__inv_1_0[2]/Y" 12.1116
+cap "rstring_mux_0/otrip_decoded_avdd[2]" "rstring_mux_0/otrip_decoded_avdd[3]" 6.10575
+cap "rstring_mux_0/otrip_decoded_avdd[2]" "rstring_mux_0/sky130_fd_sc_hvl__inv_1_0[0]/VPWR" 98.2326
+cap "rstring_mux_0/otrip_decoded_avdd[2]" "rstring_mux_0/sky130_fd_sc_hvl__inv_1_0[3]/Y" 0.546103
+cap "rstring_mux_0/otrip_decoded_avdd[2]" "rstring_mux_0/avss" 2.95644
+cap "rstring_mux_0/otrip_decoded_avdd[5]" "rstring_mux_0/otrip_decoded_avdd[3]" -2.77556e-17
+cap "rstring_mux_0/otrip_decoded_avdd[4]" "rstring_mux_0/sky130_fd_sc_hvl__inv_1_0[2]/Y" 0.0836373
+cap "rstring_mux_0/otrip_decoded_avdd[3]" "rstring_mux_0/vout" 0.733968
+cap "rstring_mux_0/otrip_decoded_avdd[3]" "rstring_mux_0/otrip_decoded_avdd[4]" 4.08663
+cap "rstring_mux_0/otrip_decoded_avdd[3]" "rstring_mux_0/otrip_decoded_avdd[0]" 0.0192843
+cap "rstring_mux_0/otrip_decoded_avdd[4]" "rstring_mux_0/sky130_fd_sc_hvl__inv_1_0[0]/VPWR" 294.444
+cap "rstring_mux_0/otrip_decoded_avdd[4]" "rstring_mux_0/sky130_fd_sc_hvl__inv_1_0[3]/Y" 17.6523
+cap "rstring_mux_0/avss" "rstring_mux_0/otrip_decoded_avdd[4]" 6.41309
+cap "rstring_mux_0/otrip_decoded_avdd[3]" "rstring_mux_0/sky130_fd_sc_hvl__inv_1_0[1]/Y" 0.0546372
+cap "rstring_mux_0/avss" "rstring_mux_0/sky130_fd_sc_hvl__inv_1_0[4]/Y" 5.68434e-14
+cap "rstring_mux_0/sky130_fd_pr__pfet_g5v0d10v5_4Z8MHY_0/a_n2432_n536#" "rstring_mux_0/otrip_decoded_avdd[4]" 0.373782
+cap "rstring_mux_0/otrip_decoded_avdd[2]" "rstring_mux_0/vout" 0.0281558
+cap "rstring_mux_0/otrip_decoded_avdd[2]" "rstring_mux_0/otrip_decoded_avdd[4]" 0.486391
+cap "rstring_mux_0/otrip_decoded_avdd[2]" "rstring_mux_0/otrip_decoded_avdd[0]" 0.406944
+cap "rstring_mux_0/otrip_decoded_avdd[2]" "rstring_mux_0/sky130_fd_sc_hvl__inv_1_0[4]/Y" 0.219652
+cap "rstring_mux_0/sky130_fd_pr__pfet_g5v0d10v5_4Z8MHY_0/a_n2966_n536#" "rstring_mux_0/otrip_decoded_avdd[3]" 0.695118
+cap "rstring_mux_0/otrip_decoded_avdd[5]" "rstring_mux_0/otrip_decoded_avdd[4]" -3.13045
+cap "rstring_mux_0/otrip_decoded_avdd[1]" "rstring_mux_0/otrip_decoded_avdd[3]" 0.043013
+cap "rstring_mux_0/otrip_decoded_avdd[4]" "rstring_mux_0/vout" 0.397185
+cap "rstring_mux_0/otrip_decoded_avdd[2]" "rstring_mux_0/sky130_fd_sc_hvl__inv_1_0[1]/Y" 4.74999
+cap "rstring_mux_0/otrip_decoded_avdd[5]" "rstring_mux_0/sky130_fd_sc_hvl__inv_1_0[4]/Y" 0.300728
+cap "rstring_mux_0/otrip_decoded_avdd[4]" "rstring_mux_0/sky130_fd_sc_hvl__inv_1_0[4]/Y" 10.9588
+cap "rstring_mux_0/otrip_decoded_avdd[6]" "rstring_mux_0/sky130_fd_sc_hvl__inv_1_0[2]/VGND" 12.242
+cap "rstring_mux_0/otrip_decoded_avdd[5]" "rstring_mux_0/sky130_fd_sc_hvl__inv_1_0[2]/VPWR" 193.903
+cap "rstring_mux_0/otrip_decoded_avdd[7]" "rstring_mux_0/otrip_decoded_avdd[9]" 0.405612
+cap "rstring_mux_0/otrip_decoded_avdd[7]" "rstring_mux_0/otrip_decoded_avdd[4]" 0.586505
+cap "rstring_mux_0/otrip_decoded_avdd[7]" "rstring_mux_0/sky130_fd_sc_hvl__inv_1_0[7]/Y" 8.6048
+cap "rstring_mux_0/sky130_fd_sc_hvl__inv_1_0[2]/VGND" "rstring_mux_0/otrip_decoded_avdd[7]" 18.0119
+cap "rstring_mux_0/otrip_decoded_avdd[6]" "rstring_mux_0/otrip_decoded_avdd[7]" 18.5376
+cap "rstring_mux_0/otrip_decoded_avdd[6]" "rstring_mux_0/sky130_fd_pr__pfet_g5v0d10v5_4Z8MHY_0/a_n3322_n536#" 2.02956
+cap "rstring_mux_0/otrip_decoded_avdd[7]" "rstring_mux_0/sky130_fd_pr__pfet_g5v0d10v5_4Z8MHY_0/a_n3322_n536#" 1.47858
+cap "rstring_mux_0/otrip_decoded_avdd[5]" "rstring_mux_0/sky130_fd_pr__pfet_g5v0d10v5_4Z8MHY_0/w_n4412_n762#" 0.0767144
+cap "rstring_mux_0/sky130_fd_sc_hvl__inv_1_0[5]/Y" "rstring_mux_0/otrip_decoded_avdd[6]" 23.3333
+cap "rstring_mux_0/sky130_fd_sc_hvl__inv_1_0[5]/Y" "rstring_mux_0/otrip_decoded_avdd[7]" 1.20153
+cap "rstring_mux_0/sky130_fd_sc_hvl__inv_1_0[8]/Y" "rstring_mux_0/otrip_decoded_avdd[7]" 0.579033
+cap "rstring_mux_0/sky130_fd_sc_hvl__inv_1_0[4]/Y" "rstring_mux_0/otrip_decoded_avdd[5]" 4.66125
+cap "rstring_mux_0/sky130_fd_sc_hvl__inv_1_0[2]/VPWR" "rstring_mux_0/otrip_decoded_avdd[7]" 299.737
+cap "rstring_mux_0/otrip_decoded_avdd[6]" "rstring_mux_0/sky130_fd_sc_hvl__inv_1_0[2]/VPWR" 172.986
+cap "rstring_mux_0/otrip_decoded_avdd[7]" "rstring_mux_0/otrip_decoded_avdd[8]" -2.37726
+cap "rstring_mux_0/sky130_fd_pr__pfet_g5v0d10v5_4Z8MHY_0/w_n4412_n762#" "rstring_mux_0/otrip_decoded_avdd[7]" 18.6957
+cap "rstring_mux_0/otrip_decoded_avdd[6]" "rstring_mux_0/sky130_fd_pr__pfet_g5v0d10v5_4Z8MHY_0/w_n4412_n762#" 7.89747
+cap "rstring_mux_0/otrip_decoded_avdd[5]" "rstring_mux_0/sky130_fd_sc_hvl__inv_1_0[2]/VGND" 0.577693
+cap "rstring_mux_0/otrip_decoded_avdd[6]" "rstring_mux_0/sky130_fd_sc_hvl__inv_1_0[6]/Y" 3.20445
+cap "rstring_mux_0/otrip_decoded_avdd[5]" "rstring_mux_0/otrip_decoded_avdd[4]" -0.200131
+cap "rstring_mux_0/sky130_fd_pr__pfet_g5v0d10v5_4Z8MHY_0/a_n830_n536#" "rstring_mux_0/otrip_decoded_avdd[7]" 1.35141
+cap "rstring_mux_0/otrip_decoded_avdd[7]" "rstring_mux_0/otrip_decoded_avdd[3]" 0.302312
+cap "rstring_mux_0/otrip_decoded_avdd[7]" "rstring_mux_0/sky130_fd_sc_hvl__inv_1_0[6]/Y" 48.6632
+cap "rstring_mux_0/otrip_decoded_avdd[5]" "rstring_mux_0/otrip_decoded_avdd[6]" -3.38007
+cap "rstring_mux_0/otrip_decoded_avdd[5]" "rstring_mux_0/sky130_fd_pr__pfet_g5v0d10v5_4Z8MHY_0/a_n3322_n536#" 0.0042231
+cap "rstring_mux_0/otrip_decoded_avdd[5]" "rstring_mux_0/otrip_decoded_avdd[7]" 0.891656
+cap "rstring_mux_0/sky130_fd_sc_hvl__inv_1_0[9]/Y" "rstring_mux_0/otrip_decoded_avdd[7]" 0.221564
+cap "rstring_mux_0/sky130_fd_sc_hvl__inv_1_0[5]/Y" "rstring_mux_0/otrip_decoded_avdd[5]" 12.2901
+cap "rstring_mux_0/sky130_fd_sc_hvl__inv_1_0[4]/Y" "rstring_mux_0/otrip_decoded_avdd[7]" 0.418256
+cap "rstring_mux_0/sky130_fd_sc_hvl__inv_1_0[3]/Y" "rstring_mux_0/otrip_decoded_avdd[7]" 0.186895
+cap "rstring_mux_0/otrip_decoded_avdd[10]" "rstring_mux_0/sky130_fd_sc_hvl__inv_1_0[9]/Y" 0.296665
+cap "rstring_mux_0/otrip_decoded_avdd[9]" "rstring_mux_0/sky130_fd_sc_hvl__inv_1_0[8]/Y" 5.22333
+cap "rstring_mux_0/sky130_fd_sc_hvl__inv_1_0[8]/Y" "rstring_mux_0/otrip_decoded_avdd[8]" 13.0266
+cap "rstring_mux_0/otrip_decoded_avdd[11]" "rstring_mux_0/otrip_decoded_avdd[9]" -0.819288
+cap "rstring_mux_0/otrip_decoded_avdd[11]" "rstring_mux_0/otrip_decoded_avdd[8]" -0.110132
+cap "rstring_mux_0/otrip_decoded_avdd[9]" "rstring_mux_0/otrip_decoded_avdd[10]" -1.22293
+cap "rstring_mux_0/otrip_decoded_avdd[9]" "rstring_mux_0/sky130_fd_sc_hvl__inv_1_0[4]/VPWR" 205.272
+cap "rstring_mux_0/otrip_decoded_avdd[8]" "rstring_mux_0/sky130_fd_sc_hvl__inv_1_0[4]/VPWR" 215.195
+cap "rstring_mux_0/sky130_fd_sc_hvl__inv_1_0[6]/Y" "rstring_mux_0/otrip_decoded_avdd[8]" 0.429752
+cap "rstring_mux_0/sky130_fd_sc_hvl__inv_1_0[7]/Y" "rstring_mux_0/otrip_decoded_avdd[7]" 0.732224
+cap "rstring_mux_0/otrip_decoded_avdd[7]" "rstring_mux_0/otrip_decoded_avdd[8]" -0.261945
+cap "rstring_mux_0/otrip_decoded_avdd[6]" "rstring_mux_0/otrip_decoded_avdd[8]" 0.340367
+cap "rstring_mux_0/otrip_decoded_avdd[9]" "rstring_mux_0/sky130_fd_pr__pfet_g5v0d10v5_4Z8MHY_0/w_n4412_n762#" 0.337266
+cap "rstring_mux_0/sky130_fd_pr__pfet_g5v0d10v5_4Z8MHY_0/w_n4412_n762#" "rstring_mux_0/otrip_decoded_avdd[8]" 0.131579
+cap "rstring_mux_0/sky130_fd_pr__pfet_g5v0d10v5_4Z8MHY_0/a_n1720_n536#" "rstring_mux_0/otrip_decoded_avdd[9]" 0.00239942
+cap "rstring_mux_0/sky130_fd_pr__pfet_g5v0d10v5_4Z8MHY_0/a_n1720_n536#" "rstring_mux_0/otrip_decoded_avdd[8]" 0.00604509
+cap "rstring_mux_0/otrip_decoded_avdd[9]" "rstring_mux_0/sky130_fd_sc_hvl__inv_1_0[9]/Y" 11.0995
+cap "rstring_mux_0/sky130_fd_sc_hvl__inv_1_0[7]/Y" "rstring_mux_0/otrip_decoded_avdd[8]" 4.90661
+cap "rstring_mux_0/otrip_decoded_avdd[9]" "rstring_mux_0/otrip_decoded_avdd[8]" -3.06385
+cap "rstring_mux_0/otrip_decoded_avdd[9]" "rstring_mux_0/sky130_fd_sc_hvl__inv_1_0[4]/VGND" 0.804352
+cap "rstring_mux_0/otrip_decoded_avdd[8]" "rstring_mux_0/sky130_fd_sc_hvl__inv_1_0[4]/VGND" 0.985051
+cap "rstring_mux_0/otrip_decoded_avdd[12]" "rstring_mux_0/sky130_fd_sc_hvl__inv_1_0[7]/VGND" 0.10522
+cap "rstring_mux_0/otrip_decoded_avdd[12]" "rstring_mux_0/otrip_decoded_avdd[11]" -3.63149
+cap "rstring_mux_0/sky130_fd_pr__pfet_g5v0d10v5_4Z8MHY_0/w_n4412_n762#" "rstring_mux_0/otrip_decoded_avdd[10]" 0.0515696
+cap "rstring_mux_0/sky130_fd_sc_hvl__inv_1_0[7]/VGND" "rstring_mux_0/otrip_decoded_avdd[11]" 0.317391
+cap "rstring_mux_0/sky130_fd_sc_hvl__inv_1_0[7]/VPWR" "rstring_mux_0/otrip_decoded_avdd[10]" 205.448
+cap "rstring_mux_0/otrip_decoded_avdd[12]" "rstring_mux_0/sky130_fd_pr__pfet_g5v0d10v5_4Z8MHY_0/a_n474_n536#" 0.00235136
+cap "rstring_mux_0/sky130_fd_sc_hvl__inv_1_0[11]/Y" "rstring_mux_0/otrip_decoded_avdd[12]" 5.06949
+cap "rstring_mux_0/sky130_fd_sc_hvl__inv_1_0[10]/Y" "rstring_mux_0/otrip_decoded_avdd[11]" 5.11178
+cap "rstring_mux_0/sky130_fd_pr__pfet_g5v0d10v5_4Z8MHY_0/a_n474_n536#" "rstring_mux_0/otrip_decoded_avdd[11]" 0.00144138
+cap "rstring_mux_0/sky130_fd_sc_hvl__inv_1_0[11]/Y" "rstring_mux_0/otrip_decoded_avdd[11]" 11.2542
+cap "rstring_mux_0/otrip_decoded_avdd[9]" "rstring_mux_0/otrip_decoded_avdd[11]" -0.819288
+cap "rstring_mux_0/sky130_fd_sc_hvl__inv_1_0[9]/Y" "rstring_mux_0/otrip_decoded_avdd[10]" 4.67565
+cap "rstring_mux_0/otrip_decoded_avdd[12]" "rstring_mux_0/otrip_decoded_avdd[13]" -3.55477
+cap "rstring_mux_0/sky130_fd_pr__pfet_g5v0d10v5_4Z8MHY_0/w_n4412_n762#" "rstring_mux_0/otrip_decoded_avdd[12]" 0.0117691
+cap "rstring_mux_0/otrip_decoded_avdd[12]" "rstring_mux_0/sky130_fd_sc_hvl__inv_1_0[7]/VPWR" 206.722
+cap "rstring_mux_0/sky130_fd_pr__pfet_g5v0d10v5_4Z8MHY_0/w_n4412_n762#" "rstring_mux_0/otrip_decoded_avdd[11]" 0.119914
+cap "rstring_mux_0/sky130_fd_sc_hvl__inv_1_0[7]/VPWR" "rstring_mux_0/otrip_decoded_avdd[11]" 204.881
+cap "rstring_mux_0/sky130_fd_sc_hvl__inv_1_0[12]/Y" "rstring_mux_0/otrip_decoded_avdd[12]" 11.4184
+cap "rstring_mux_0/sky130_fd_sc_hvl__inv_1_0[7]/VGND" "rstring_mux_0/otrip_decoded_avdd[10]" 0.337447
+cap "rstring_mux_0/otrip_decoded_avdd[10]" "rstring_mux_0/otrip_decoded_avdd[11]" 0.354943
+cap "rstring_mux_0/sky130_fd_pr__pfet_g5v0d10v5_4Z8MHY_0/a_n474_n536#" "rstring_mux_0/otrip_decoded_avdd[10]" 0.00167482
+cap "rstring_mux_0/sky130_fd_sc_hvl__inv_1_0[10]/Y" "rstring_mux_0/otrip_decoded_avdd[10]" 11.6681
+cap "rstring_mux_0/otrip_decoded_avdd[8]" "rstring_mux_0/otrip_decoded_avdd[11]" -0.110132
+cap "rstring_mux_0/otrip_decoded_avdd[9]" "rstring_mux_0/otrip_decoded_avdd[10]" 1.66913
+cap "rstring_mux_0/otrip_decoded_avdd[14]" "rstring_mux_0/otrip_decoded_avdd[15]" -2.28938
+cap "rstring_mux_0/otrip_decoded_avdd[14]" "rstring_mux_0/sky130_fd_sc_hvl__inv_1_0[10]/VPWR" 98.0642
+cap "rstring_mux_0/sky130_fd_sc_hvl__inv_1_0[11]/Y" "rstring_mux_0/otrip_decoded_avdd[14]" 0.161882
+cap "rstring_mux_0/sky130_fd_sc_hvl__inv_1_0[12]/Y" "rstring_mux_0/otrip_decoded_avdd[13]" 4.91543
+cap "rstring_mux_0/otrip_decoded_avdd[14]" "rstring_mux_0/vout" 0.0478018
+cap "rstring_mux_0/otrip_decoded_avdd[13]" "rstring_mux_0/sky130_fd_sc_hvl__inv_1_0[13]/Y" 14.1522
+cap "rstring_mux_0/sky130_fd_sc_hvl__inv_1_0[12]/Y" "rstring_mux_0/otrip_decoded_avdd[15]" 0.162704
+cap "rstring_mux_0/otrip_decoded_avdd[12]" "rstring_mux_0/otrip_decoded_avdd[14]" 0.506959
+cap "rstring_mux_0/otrip_decoded_avdd[15]" "rstring_mux_0/sky130_fd_sc_hvl__inv_1_0[13]/Y" 0.360774
+cap "rstring_mux_0/otrip_decoded_avdd[14]" "rstring_mux_0/sky130_fd_sc_hvl__inv_1_0[10]/VGND" 0.700661
+cap "rstring_mux_0/otrip_decoded_avdd[13]" "rstring_mux_0/sky130_fd_sc_hvl__inv_1_0[15]/Y" -0.453048
+cap "rstring_mux_0/sky130_fd_sc_hvl__inv_1_0[12]/Y" "rstring_mux_0/otrip_decoded_avdd[14]" 0.358262
+cap "rstring_mux_0/otrip_decoded_avdd[13]" "rstring_mux_0/otrip_decoded_avdd[15]" 0.509722
+cap "rstring_mux_0/otrip_decoded_avdd[14]" "rstring_mux_0/sky130_fd_sc_hvl__inv_1_0[13]/Y" 6.01567
+cap "rstring_mux_0/otrip_decoded_avdd[13]" "rstring_mux_0/sky130_fd_sc_hvl__inv_1_0[10]/VPWR" 218.432
+cap "rstring_mux_0/otrip_decoded_avdd[15]" "rstring_mux_0/sky130_fd_sc_hvl__inv_1_0[14]/Y" 3.855
+cap "rstring_mux_0/otrip_decoded_avdd[15]" "rstring_mux_0/sky130_fd_sc_hvl__inv_1_0[10]/VPWR" 23.2914
+cap "rstring_mux_0/otrip_decoded_avdd[11]" "rstring_mux_0/otrip_decoded_avdd[14]" 0.262866
+cap "rstring_mux_0/otrip_decoded_avdd[13]" "rstring_mux_0/vout" 0.0216833
+cap "rstring_mux_0/otrip_decoded_avdd[12]" "rstring_mux_0/otrip_decoded_avdd[13]" -0.737889
+cap "rstring_mux_0/otrip_decoded_avdd[15]" "rstring_mux_0/vout" 0.0334052
+cap "rstring_mux_0/otrip_decoded_avdd[12]" "rstring_mux_0/otrip_decoded_avdd[15]" 0.264025
+cap "rstring_mux_0/otrip_decoded_avdd[13]" "rstring_mux_0/sky130_fd_sc_hvl__inv_1_0[10]/VGND" 1.59693
+cap "rstring_mux_0/otrip_decoded_avdd[14]" "rstring_mux_0/sky130_fd_sc_hvl__inv_1_0[15]/Y" 0.963495
+cap "rstring_mux_0/otrip_decoded_avdd[15]" "rstring_mux_0/sky130_fd_sc_hvl__inv_1_0[10]/VGND" 0.815837
+cap "rstring_mux_0/otrip_decoded_avdd[13]" "rstring_mux_0/otrip_decoded_avdd[14]" -2.0973
+cap "rstring_mux_0/otrip_decoded_avdd[14]" "rstring_mux_0/sky130_fd_sc_hvl__inv_1_0[14]/Y" 12.1711
+cap "rstring_mux_0/sky130_fd_sc_hvl__inv_1_0[15]/Y" "rstring_mux_0/vout" 0.0487013
+cap "rstring_mux_0/sky130_fd_sc_hvl__inv_1_0[12]/VGND" "rstring_mux_0/otrip_decoded_avdd[15]" 0.0610212
+cap "rstring_mux_0/sky130_fd_sc_hvl__inv_1_0[15]/Y" "rstring_mux_0/otrip_decoded_avdd[15]" -12.1491
+cap "rstring_mux_0/sky130_fd_sc_hvl__inv_1_0[15]/Y" "rstring_mux_0/sky130_fd_sc_hvl__inv_1_0[12]/VGND" 0.202983
+cap "rstring_mux_0/sky130_fd_sc_hvl__inv_1_0[12]/VPWR" "rstring_mux_0/otrip_decoded_avdd[14]" 0.127117
+cap "rstring_mux_0/otrip_decoded_avdd[15]" "rstring_mux_0/sky130_fd_sc_hvl__inv_1_0[12]/VPWR" 18.5157
+cap "rstring_mux_0/sky130_fd_sc_hvl__inv_1_0[15]/Y" "rstring_mux_0/otrip_decoded_avdd[13]" -0.453048
+cap "rstring_mux_0/sky130_fd_sc_hvl__inv_1_0[15]/Y" "rstring_mux_0/sky130_fd_pr__pfet_g5v0d10v5_4Z8MHY_0/a_3976_n536#" 0.0336058
+cap "rstring_mux_0/otrip_decoded_avdd[15]" "rstring_mux_0/vout" 0.0325257
+cap "rstring_mux_0/sky130_fd_sc_hvl__inv_1_0[15]/Y" "rstring_mux_0/sky130_fd_sc_hvl__inv_1_0[12]/VPWR" 2.70307
+merge "rstring_mux_0/ena" "m2_39906_n8077#" -133.686 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1922 -186 0 0 0 0 0 0 0 0
+merge "rstring_mux_0/sky130_fd_sc_hvl__inv_1_1/VGND" "m1_40420_n6997#" -1671.63 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -60912 -1400 0 0 0 0 0 0 0 0 0 0
+merge "m1_40420_n6997#" "rstring_mux_0/avss"
+merge "rstring_mux_0/avss" "m1_35387_n10321#"
+merge "rstring_mux_0/VSUBS" "VSUBS" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "rstring_mux_0/otrip_decoded_avdd[4]" "m2_41703_n6080#" -217.243 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3650 -246 0 0 0 0 0 0 0 0
+merge "rstring_mux_0/otrip_decoded_avdd[0]" "m2_40782_n6664#" -188.401 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3264 -230 0 0 0 0 0 0 0 0
+merge "rstring_mux_0/otrip_decoded_avdd[7]" "m2_43974_n6492#" -267.981 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4872 -284 0 0 0 0 0 0 0 0
+merge "rstring_mux_0/otrip_decoded_avdd[5]" "m2_43461_n6671#" -119.941 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4232 -262 0 0 0 0 0 0 0 0
+merge "rstring_mux_0/vout" "m3_48718_n8259#" -742.601 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -11100 -610 0 0 0 0 0 0
+merge "m3_48718_n8259#" "m2_40604_n8259#"
+merge "rstring_mux_0/otrip_decoded_avdd[9]" "m2_45587_n6664#" -134.126 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3712 -244 0 0 0 0 0 0 0 0
+merge "rstring_mux_0/sky130_fd_sc_hvl__inv_1_1/VPWR" "rstring_mux_0/avdd" -1209.21 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -40000 -800 0 0 0 0 0 0 0 0 0 0
+merge "rstring_mux_0/avdd" "m1_35387_n10577#"
+merge "rstring_mux_0/otrip_decoded_avdd[8]" "m2_45066_n6671#" -147.716 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4033 -256 0 0 0 0 0 0 0 0
+merge "rstring_mux_0/otrip_decoded_avdd[3]" "m2_42376_n6671#" -341.88 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3579 -244 -16512 -580 0 0 0 0 0 0
+merge "rstring_mux_0/sky130_fd_sc_hvl__inv_1_0[15]/Y" "m2_48955_n6687#" -50.1999 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4941 -284 0 0 0 0 0 0 0 0
+merge "rstring_mux_0/otrip_decoded_avdd[6]" "m2_43815_n6664#" -127.808 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4096 -256 0 0 0 0 0 0 0 0
+merge "rstring_mux_0/otrip_decoded_avdd[15]" "m2_48795_n6665#" -80.7626 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4024 -254 0 0 0 0 0 0 0 0
+merge "rstring_mux_0/otrip_decoded_avdd[13]" "m2_47737_n6687#" -163.954 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4826 -286 0 0 0 0 0 0 0 0
+merge "rstring_mux_0/otrip_decoded_avdd[10]" "m2_46130_n6629#" -126.081 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1769 -180 0 0 0 0 0 0 0 0
+merge "rstring_mux_0/otrip_decoded_avdd[11]" "m2_46659_n6672#" -136.518 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4416 -268 0 0 0 0 0 0 0 0
+merge "rstring_mux_0/otrip_decoded_avdd[2]" "m2_41848_n6679#" -222.088 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4413 -272 0 0 0 0 0 0 0 0
+merge "rstring_mux_0/otrip_decoded_avdd[1]" "m2_41324_n6668#" -170.883 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4128 -258 0 0 0 0 0 0 0 0
+merge "rstring_mux_0/sky130_fd_sc_hvl__inv_1_0[12]/A" "rstring_mux_0/otrip_decoded_avdd[12]" -138.874 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4936 -286 0 0 0 0 0 0 0 0
+merge "rstring_mux_0/otrip_decoded_avdd[12]" "m2_47195_n6679#"
+merge "rstring_mux_0/otrip_decoded_avdd[14]" "m2_48265_n6665#" -120.116 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4024 -254 0 0 0 0 0 0 0 0

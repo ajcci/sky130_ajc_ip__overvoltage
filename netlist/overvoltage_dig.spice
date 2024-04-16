@@ -1,0 +1,7 @@
+** sch_path: /home/rtsang/chipalooza/sky130_ajc_ip__overvoltage/xschem/overvoltage_dig.sch
+.subckt overvoltage_dig dvdd otrip_decoded[15] otrip_decoded[14] otrip_decoded[13] otrip_decoded[12] otrip_decoded[11]
++ otrip_decoded[10] otrip_decoded[9] otrip_decoded[8] otrip_decoded[7] otrip_decoded[6] otrip_decoded[5] otrip_decoded[4] otrip_decoded[3]
++ otrip_decoded[2] otrip_decoded[1] otrip_decoded[0] dvss otrip[3] otrip[2] otrip[1] otrip[0]
+*.PININFO dvdd:I dvss:I otrip[3:0]:I otrip_decoded[15:0]:O
+.ends
+.end

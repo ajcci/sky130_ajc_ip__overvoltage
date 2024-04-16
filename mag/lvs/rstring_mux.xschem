@@ -1,0 +1,167 @@
+** sch_path: /home/rtsang/chipalooza/sky130_ajc_ip__overvoltage/xschem/rstring_mux.sch
+**.subckt rstring_mux avdd vout ena
+*+ otrip_decoded_avdd[15],otrip_decoded_avdd[14],otrip_decoded_avdd[13],otrip_decoded_avdd[12],otrip_decoded_avdd[11],otrip_decoded_avdd[10],otrip_decoded_avdd[9],otrip_decoded_avdd[8],otrip_decoded_avdd[7],otrip_decoded_avdd[6],otrip_decoded_avdd[5],otrip_decoded_avdd[4],otrip_decoded_avdd[3],otrip_decoded_avdd[2],otrip_decoded_avdd[1],otrip_decoded_avdd[0] avss
+*.opin vout
+*.ipin
+*+ otrip_decoded_avdd[15],otrip_decoded_avdd[14],otrip_decoded_avdd[13],otrip_decoded_avdd[12],otrip_decoded_avdd[11],otrip_decoded_avdd[10],otrip_decoded_avdd[9],otrip_decoded_avdd[8],otrip_decoded_avdd[7],otrip_decoded_avdd[6],otrip_decoded_avdd[5],otrip_decoded_avdd[4],otrip_decoded_avdd[3],otrip_decoded_avdd[2],otrip_decoded_avdd[1],otrip_decoded_avdd[0]
+*.ipin avdd
+*.ipin avss
+*.ipin ena
+XR1 net2 net3 avss sky130_fd_pr__res_xhigh_po_1p41 L=1.76e-05 m=1
+XR2 net3 net4 avss sky130_fd_pr__res_xhigh_po_1p41 L=1.76e-05 m=1
+XR3 net4 net5 avss sky130_fd_pr__res_xhigh_po_1p41 L=1.76e-05 m=1
+XR4 net5 net6 avss sky130_fd_pr__res_xhigh_po_1p41 L=1.76e-05 m=1
+XR5 net6 net7 avss sky130_fd_pr__res_xhigh_po_1p41 L=1.76e-05 m=1
+XR6 net7 net8 avss sky130_fd_pr__res_xhigh_po_1p41 L=1.76e-05 m=1
+XR7 net8 net9 avss sky130_fd_pr__res_xhigh_po_1p41 L=1.76e-05 m=1
+XR8 net9 net10 avss sky130_fd_pr__res_xhigh_po_1p41 L=1.76e-05 m=1
+XR9 net10 net11 avss sky130_fd_pr__res_xhigh_po_1p41 L=1.76e-05 m=1
+XR10 net11 net12 avss sky130_fd_pr__res_xhigh_po_1p41 L=1.76e-05 m=1
+XR11 net12 net13 avss sky130_fd_pr__res_xhigh_po_1p41 L=1.76e-05 m=1
+XR12 net13 net14 avss sky130_fd_pr__res_xhigh_po_1p41 L=1.76e-05 m=1
+XR13 net14 net15 avss sky130_fd_pr__res_xhigh_po_1p41 L=1.76e-05 m=1
+XR14 net15 net16 avss sky130_fd_pr__res_xhigh_po_1p41 L=1.76e-05 m=1
+XR15 net16 net17 avss sky130_fd_pr__res_xhigh_po_1p41 L=1.76e-05 m=1
+XR16 net17 net18 avss sky130_fd_pr__res_xhigh_po_1p41 L=1.76e-05 m=1
+XR17 net18 net19 avss sky130_fd_pr__res_xhigh_po_1p41 L=1.76e-05 m=1
+XR18 net19 net20 avss sky130_fd_pr__res_xhigh_po_1p41 L=1.76e-05 m=1
+XR19 net20 net21 avss sky130_fd_pr__res_xhigh_po_1p41 L=1.76e-05 m=1
+XR20 net21 net22 avss sky130_fd_pr__res_xhigh_po_1p41 L=1.76e-05 m=1
+XR21 net22 net23 avss sky130_fd_pr__res_xhigh_po_1p41 L=1.76e-05 m=1
+XR22 net23 vtrip15 avss sky130_fd_pr__res_xhigh_po_1p41 L=1.76e-05 m=1
+XR23 vtrip15 vtrip14 avss sky130_fd_pr__res_xhigh_po_1p41 L=1.76e-05 m=1
+XR24 vtrip14 vtrip13 avss sky130_fd_pr__res_xhigh_po_1p41 L=1.76e-05 m=1
+XR25 vtrip13 vtrip12 avss sky130_fd_pr__res_xhigh_po_1p41 L=1.76e-05 m=1
+XR26 vtrip12 vtrip11 avss sky130_fd_pr__res_xhigh_po_1p41 L=1.76e-05 m=1
+XR27 vtrip11 vtrip10 avss sky130_fd_pr__res_xhigh_po_1p41 L=1.76e-05 m=1
+XR28 vtrip10 vtrip9 avss sky130_fd_pr__res_xhigh_po_1p41 L=1.76e-05 m=1
+XR29 vtrip9 vtrip8 avss sky130_fd_pr__res_xhigh_po_1p41 L=1.76e-05 m=1
+XR30 vtrip8 vtrip7 avss sky130_fd_pr__res_xhigh_po_1p41 L=1.76e-05 m=1
+XR31 vtrip7 vtrip6 avss sky130_fd_pr__res_xhigh_po_1p41 L=1.76e-05 m=1
+XR32 vtrip6 vtrip5 avss sky130_fd_pr__res_xhigh_po_1p41 L=1.76e-05 m=1
+XR33 vtrip5 vtrip4 avss sky130_fd_pr__res_xhigh_po_1p41 L=1.76e-05 m=1
+XR34 vtrip4 vtrip3 avss sky130_fd_pr__res_xhigh_po_1p41 L=1.76e-05 m=1
+XR35 vtrip3 vtrip2 avss sky130_fd_pr__res_xhigh_po_1p41 L=1.76e-05 m=1
+XR36 vtrip2 vtrip1 avss sky130_fd_pr__res_xhigh_po_1p41 L=1.76e-05 m=1
+XR37 vtrip1 vtrip0 avss sky130_fd_pr__res_xhigh_po_1p41 L=1.76e-05 m=1
+XR38 vtrip0 net24 avss sky130_fd_pr__res_xhigh_po_1p41 L=1.76e-05 m=1
+XR39 net24 net25 avss sky130_fd_pr__res_xhigh_po_1p41 L=1.76e-05 m=1
+XR40 net25 net26 avss sky130_fd_pr__res_xhigh_po_1p41 L=1.76e-05 m=1
+XR41 net26 net27 avss sky130_fd_pr__res_xhigh_po_1p41 L=1.76e-05 m=1
+XR42 net27 net28 avss sky130_fd_pr__res_xhigh_po_1p41 L=1.76e-05 m=1
+XR43 net28 net29 avss sky130_fd_pr__res_xhigh_po_1p41 L=1.76e-05 m=1
+XR44 net29 net30 avss sky130_fd_pr__res_xhigh_po_1p41 L=1.76e-05 m=1
+XR45 net30 net31 avss sky130_fd_pr__res_xhigh_po_1p41 L=1.76e-05 m=1
+XR46 net31 net32 avss sky130_fd_pr__res_xhigh_po_1p41 L=1.76e-05 m=1
+XR47 net32 net33 avss sky130_fd_pr__res_xhigh_po_1p41 L=1.76e-05 m=1
+XR48 net33 net34 avss sky130_fd_pr__res_xhigh_po_1p41 L=1.76e-05 m=1
+XR49 net34 net35 avss sky130_fd_pr__res_xhigh_po_1p41 L=1.76e-05 m=1
+XR50 net35 net36 avss sky130_fd_pr__res_xhigh_po_1p41 L=1.76e-05 m=1
+XR51 net36 net37 avss sky130_fd_pr__res_xhigh_po_1p41 L=1.76e-05 m=1
+XR52 net37 net38 avss sky130_fd_pr__res_xhigh_po_1p41 L=1.76e-05 m=1
+XR53 net38 net39 avss sky130_fd_pr__res_xhigh_po_1p41 L=1.76e-05 m=1
+XR54 net39 net40 avss sky130_fd_pr__res_xhigh_po_1p41 L=1.76e-05 m=1
+XR55 net40 net41 avss sky130_fd_pr__res_xhigh_po_1p41 L=1.76e-05 m=1
+XR56 net41 net42 avss sky130_fd_pr__res_xhigh_po_1p41 L=1.76e-05 m=1
+XR57 net42 net43 avss sky130_fd_pr__res_xhigh_po_1p41 L=1.76e-05 m=1
+XR58 net43 net44 avss sky130_fd_pr__res_xhigh_po_1p41 L=1.76e-05 m=1
+XR59 net44 net45 avss sky130_fd_pr__res_xhigh_po_1p41 L=1.76e-05 m=1
+XR60 net45 net46 avss sky130_fd_pr__res_xhigh_po_1p41 L=1.76e-05 m=1
+XR61 net46 net47 avss sky130_fd_pr__res_xhigh_po_1p41 L=1.76e-05 m=1
+XR62 net47 net48 avss sky130_fd_pr__res_xhigh_po_1p41 L=1.76e-05 m=1
+XR63 net48 net49 avss sky130_fd_pr__res_xhigh_po_1p41 L=1.76e-05 m=1
+XR64 net49 net50 avss sky130_fd_pr__res_xhigh_po_1p41 L=1.76e-05 m=1
+XR65 net50 net51 avss sky130_fd_pr__res_xhigh_po_1p41 L=1.76e-05 m=1
+XR66 net51 net52 avss sky130_fd_pr__res_xhigh_po_1p41 L=1.76e-05 m=1
+XR67 net52 net53 avss sky130_fd_pr__res_xhigh_po_1p41 L=1.76e-05 m=1
+XR68 net53 net54 avss sky130_fd_pr__res_xhigh_po_1p41 L=1.76e-05 m=1
+XR69 net54 net55 avss sky130_fd_pr__res_xhigh_po_1p41 L=1.76e-05 m=1
+XMtp[15] vtrip15 otrip_decoded_b_avdd[15] vout avdd sky130_fd_pr__pfet_g5v0d10v5 L=6e-07 W=5e-06 m=2 
+XMtp[14] vtrip14 otrip_decoded_b_avdd[14] vout avdd sky130_fd_pr__pfet_g5v0d10v5 L=6e-07 W=5e-06 m=2 
+XMtp[13] vtrip13 otrip_decoded_b_avdd[13] vout avdd sky130_fd_pr__pfet_g5v0d10v5 L=6e-07 W=5e-06 m=2 
+XMtp[12] vtrip12 otrip_decoded_b_avdd[12] vout avdd sky130_fd_pr__pfet_g5v0d10v5 L=6e-07 W=5e-06 m=2 
+XMtp[11] vtrip11 otrip_decoded_b_avdd[11] vout avdd sky130_fd_pr__pfet_g5v0d10v5 L=6e-07 W=5e-06 m=2 
+XMtp[10] vtrip10 otrip_decoded_b_avdd[10] vout avdd sky130_fd_pr__pfet_g5v0d10v5 L=6e-07 W=5e-06 m=2 
+XMtp[9] vtrip9 otrip_decoded_b_avdd[9] vout avdd sky130_fd_pr__pfet_g5v0d10v5 L=6e-07 W=5e-06 m=2 
+XMtp[8] vtrip8 otrip_decoded_b_avdd[8] vout avdd sky130_fd_pr__pfet_g5v0d10v5 L=6e-07 W=5e-06 m=2 
+XMtp[7] vtrip7 otrip_decoded_b_avdd[7] vout avdd sky130_fd_pr__pfet_g5v0d10v5 L=6e-07 W=5e-06 m=2 
+XMtp[6] vtrip6 otrip_decoded_b_avdd[6] vout avdd sky130_fd_pr__pfet_g5v0d10v5 L=6e-07 W=5e-06 m=2 
+XMtp[5] vtrip5 otrip_decoded_b_avdd[5] vout avdd sky130_fd_pr__pfet_g5v0d10v5 L=6e-07 W=5e-06 m=2 
+XMtp[4] vtrip4 otrip_decoded_b_avdd[4] vout avdd sky130_fd_pr__pfet_g5v0d10v5 L=6e-07 W=5e-06 m=2 
+XMtp[3] vtrip3 otrip_decoded_b_avdd[3] vout avdd sky130_fd_pr__pfet_g5v0d10v5 L=6e-07 W=5e-06 m=2 
+XMtp[2] vtrip2 otrip_decoded_b_avdd[2] vout avdd sky130_fd_pr__pfet_g5v0d10v5 L=6e-07 W=5e-06 m=2 
+XMtp[1] vtrip1 otrip_decoded_b_avdd[1] vout avdd sky130_fd_pr__pfet_g5v0d10v5 L=6e-07 W=5e-06 m=2 
+XMtp[0] vtrip0 otrip_decoded_b_avdd[0] vout avdd sky130_fd_pr__pfet_g5v0d10v5 L=6e-07 W=5e-06 m=2 
+XMtn[15] vout otrip_decoded_avdd[15] vtrip15 avss sky130_fd_pr__nfet_g5v0d10v5 L=6e-07 W=5e-06 m=2 
+XMtn[14] vout otrip_decoded_avdd[14] vtrip14 avss sky130_fd_pr__nfet_g5v0d10v5 L=6e-07 W=5e-06 m=2 
+XMtn[13] vout otrip_decoded_avdd[13] vtrip13 avss sky130_fd_pr__nfet_g5v0d10v5 L=6e-07 W=5e-06 m=2 
+XMtn[12] vout otrip_decoded_avdd[12] vtrip12 avss sky130_fd_pr__nfet_g5v0d10v5 L=6e-07 W=5e-06 m=2 
+XMtn[11] vout otrip_decoded_avdd[11] vtrip11 avss sky130_fd_pr__nfet_g5v0d10v5 L=6e-07 W=5e-06 m=2 
+XMtn[10] vout otrip_decoded_avdd[10] vtrip10 avss sky130_fd_pr__nfet_g5v0d10v5 L=6e-07 W=5e-06 m=2 
+XMtn[9] vout otrip_decoded_avdd[9] vtrip9 avss sky130_fd_pr__nfet_g5v0d10v5 L=6e-07 W=5e-06 m=2 
+XMtn[8] vout otrip_decoded_avdd[8] vtrip8 avss sky130_fd_pr__nfet_g5v0d10v5 L=6e-07 W=5e-06 m=2 
+XMtn[7] vout otrip_decoded_avdd[7] vtrip7 avss sky130_fd_pr__nfet_g5v0d10v5 L=6e-07 W=5e-06 m=2 
+XMtn[6] vout otrip_decoded_avdd[6] vtrip6 avss sky130_fd_pr__nfet_g5v0d10v5 L=6e-07 W=5e-06 m=2 
+XMtn[5] vout otrip_decoded_avdd[5] vtrip5 avss sky130_fd_pr__nfet_g5v0d10v5 L=6e-07 W=5e-06 m=2 
+XMtn[4] vout otrip_decoded_avdd[4] vtrip4 avss sky130_fd_pr__nfet_g5v0d10v5 L=6e-07 W=5e-06 m=2 
+XMtn[3] vout otrip_decoded_avdd[3] vtrip3 avss sky130_fd_pr__nfet_g5v0d10v5 L=6e-07 W=5e-06 m=2 
+XMtn[2] vout otrip_decoded_avdd[2] vtrip2 avss sky130_fd_pr__nfet_g5v0d10v5 L=6e-07 W=5e-06 m=2 
+XMtn[1] vout otrip_decoded_avdd[1] vtrip1 avss sky130_fd_pr__nfet_g5v0d10v5 L=6e-07 W=5e-06 m=2 
+XMtn[0] vout otrip_decoded_avdd[0] vtrip0 avss sky130_fd_pr__nfet_g5v0d10v5 L=6e-07 W=5e-06 m=2 
+XR70 net55 net1 avss sky130_fd_pr__res_xhigh_po_1p41 L=1.76e-05 m=1
+XR71 net1 net56 avss sky130_fd_pr__res_xhigh_po_1p41 L=1.76e-05 m=1
+XR72 net56 net57 avss sky130_fd_pr__res_xhigh_po_1p41 L=1.76e-05 m=1
+XR73 net57 net58 avss sky130_fd_pr__res_xhigh_po_1p41 L=1.76e-05 m=1
+XR74 net58 net59 avss sky130_fd_pr__res_xhigh_po_1p41 L=1.76e-05 m=1
+XR75 net59 net60 avss sky130_fd_pr__res_xhigh_po_1p41 L=1.76e-05 m=1
+XR76 net60 net61 avss sky130_fd_pr__res_xhigh_po_1p41 L=1.76e-05 m=1
+XR77 net61 net62 avss sky130_fd_pr__res_xhigh_po_1p41 L=1.76e-05 m=1
+XR78 net62 net63 avss sky130_fd_pr__res_xhigh_po_1p41 L=1.76e-05 m=1
+XR79 net63 net64 avss sky130_fd_pr__res_xhigh_po_1p41 L=1.76e-05 m=1
+XR80 net64 net65 avss sky130_fd_pr__res_xhigh_po_1p41 L=1.76e-05 m=1
+XR81 net65 net66 avss sky130_fd_pr__res_xhigh_po_1p41 L=1.76e-05 m=1
+XR82 net66 net67 avss sky130_fd_pr__res_xhigh_po_1p41 L=1.76e-05 m=1
+XR83 net67 net68 avss sky130_fd_pr__res_xhigh_po_1p41 L=1.76e-05 m=1
+XR84 net68 net69 avss sky130_fd_pr__res_xhigh_po_1p41 L=1.76e-05 m=1
+XR85 net69 net70 avss sky130_fd_pr__res_xhigh_po_1p41 L=1.76e-05 m=1
+XR86 net70 net71 avss sky130_fd_pr__res_xhigh_po_1p41 L=1.76e-05 m=1
+XR87 net71 net72 avss sky130_fd_pr__res_xhigh_po_1p41 L=1.76e-05 m=1
+XR88 net72 net73 avss sky130_fd_pr__res_xhigh_po_1p41 L=1.76e-05 m=1
+XR89 net73 net74 avss sky130_fd_pr__res_xhigh_po_1p41 L=1.76e-05 m=1
+XR90 net74 net75 avss sky130_fd_pr__res_xhigh_po_1p41 L=1.76e-05 m=1
+XR91 net75 net76 avss sky130_fd_pr__res_xhigh_po_1p41 L=1.76e-05 m=1
+XR92 net76 net77 avss sky130_fd_pr__res_xhigh_po_1p41 L=1.76e-05 m=1
+XR93 net77 net78 avss sky130_fd_pr__res_xhigh_po_1p41 L=1.76e-05 m=1
+XR94 net78 net79 avss sky130_fd_pr__res_xhigh_po_1p41 L=1.76e-05 m=1
+XR95 net79 net80 avss sky130_fd_pr__res_xhigh_po_1p41 L=1.76e-05 m=1
+XR96 net80 net81 avss sky130_fd_pr__res_xhigh_po_1p41 L=1.76e-05 m=1
+XR97 net81 net82 avss sky130_fd_pr__res_xhigh_po_1p41 L=1.76e-05 m=1
+XR98 net82 net83 avss sky130_fd_pr__res_xhigh_po_1p41 L=1.76e-05 m=1
+XR99 net83 net84 avss sky130_fd_pr__res_xhigh_po_1p41 L=1.76e-05 m=1
+XR100 net84 net85 avss sky130_fd_pr__res_xhigh_po_1p41 L=1.76e-05 m=1
+XR101 net85 net86 avss sky130_fd_pr__res_xhigh_po_1p41 L=1.76e-05 m=1
+XR102 net86 net87 avss sky130_fd_pr__res_xhigh_po_1p41 L=1.76e-05 m=1
+XR103 net87 net88 avss sky130_fd_pr__res_xhigh_po_1p41 L=1.76e-05 m=1
+xIinv[15] otrip_decoded_avdd[15] avss avss avdd avdd otrip_decoded_b_avdd[15] sky130_fd_sc_hvl__inv_1
+xIinv[14] otrip_decoded_avdd[14] avss avss avdd avdd otrip_decoded_b_avdd[14] sky130_fd_sc_hvl__inv_1
+xIinv[13] otrip_decoded_avdd[13] avss avss avdd avdd otrip_decoded_b_avdd[13] sky130_fd_sc_hvl__inv_1
+xIinv[12] otrip_decoded_avdd[12] avss avss avdd avdd otrip_decoded_b_avdd[12] sky130_fd_sc_hvl__inv_1
+xIinv[11] otrip_decoded_avdd[11] avss avss avdd avdd otrip_decoded_b_avdd[11] sky130_fd_sc_hvl__inv_1
+xIinv[10] otrip_decoded_avdd[10] avss avss avdd avdd otrip_decoded_b_avdd[10] sky130_fd_sc_hvl__inv_1
+xIinv[9] otrip_decoded_avdd[9] avss avss avdd avdd otrip_decoded_b_avdd[9] sky130_fd_sc_hvl__inv_1
+xIinv[8] otrip_decoded_avdd[8] avss avss avdd avdd otrip_decoded_b_avdd[8] sky130_fd_sc_hvl__inv_1
+xIinv[7] otrip_decoded_avdd[7] avss avss avdd avdd otrip_decoded_b_avdd[7] sky130_fd_sc_hvl__inv_1
+xIinv[6] otrip_decoded_avdd[6] avss avss avdd avdd otrip_decoded_b_avdd[6] sky130_fd_sc_hvl__inv_1
+xIinv[5] otrip_decoded_avdd[5] avss avss avdd avdd otrip_decoded_b_avdd[5] sky130_fd_sc_hvl__inv_1
+xIinv[4] otrip_decoded_avdd[4] avss avss avdd avdd otrip_decoded_b_avdd[4] sky130_fd_sc_hvl__inv_1
+xIinv[3] otrip_decoded_avdd[3] avss avss avdd avdd otrip_decoded_b_avdd[3] sky130_fd_sc_hvl__inv_1
+xIinv[2] otrip_decoded_avdd[2] avss avss avdd avdd otrip_decoded_b_avdd[2] sky130_fd_sc_hvl__inv_1
+xIinv[1] otrip_decoded_avdd[1] avss avss avdd avdd otrip_decoded_b_avdd[1] sky130_fd_sc_hvl__inv_1
+xIinv[0] otrip_decoded_avdd[0] avss avss avdd avdd otrip_decoded_b_avdd[0] sky130_fd_sc_hvl__inv_1
+XR0 avss net2 avss sky130_fd_pr__res_xhigh_po_1p41 L=1.76e-05 m=1
+XR104 net88 vtop avss sky130_fd_pr__res_xhigh_po_1p41 L=1.76e-05 m=1
+XMpdn vtop ena_b avss avss sky130_fd_pr__nfet_g5v0d10v5 L=1e-06 W=1e-06 m=1 
+XMpdp avdd ena_b vtop avdd sky130_fd_pr__pfet_g5v0d10v5 L=6e-07 W=5e-06 m=16 
+xIinv1 ena avss avss avdd avdd ena_b sky130_fd_sc_hvl__inv_1
+**.ends
+.end

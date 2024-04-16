@@ -1,0 +1,4 @@
+** sch_path: /home/rtsang/chipalooza/sky130_ajc_ip__overvoltage/xschem/comparator.sch
+.subckt comparator avdd ibias out ena vinn vinp avss
+.ends
+*.end

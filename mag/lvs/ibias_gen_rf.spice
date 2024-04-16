@@ -1,0 +1,25 @@
+* SPICE3 file created from ibias_gen.ext - technology: sky130A
+
+*.subckt ibias_gen avss
+X0 m1_3787_7518# m1_3409_119# avss sky130_fd_pr__res_xhigh_po_1p41 l=3.5e-05
+X1 m1_6811_7518# m1_7189_119# avss sky130_fd_pr__res_xhigh_po_1p41 l=3.5e-05
+X2 m1_6055_7518# m1_6433_119# avss sky130_fd_pr__res_xhigh_po_1p41 l=3.5e-05
+X3 m1_3031_7518# m1_2653_119# avss sky130_fd_pr__res_xhigh_po_1p41 l=3.5e-05
+X4 m1_763_7518# m1_385_119# avss sky130_fd_pr__res_xhigh_po_1p41 l=3.5e-05
+X5 m1_1519_7518# m1_1897_119# avss sky130_fd_pr__res_xhigh_po_1p41 l=3.5e-05
+X6 m1_6055_7518# m1_5677_119# avss sky130_fd_pr__res_xhigh_po_1p41 l=3.5e-05
+X7 m1_6811_7518# m1_6433_119# avss sky130_fd_pr__res_xhigh_po_1p41 l=3.5e-05
+X8 m1_5299_7518# m1_5677_119# avss sky130_fd_pr__res_xhigh_po_1p41 l=3.5e-05
+X9 m1_763_7518# m1_1141_119# avss sky130_fd_pr__res_xhigh_po_1p41 l=3.5e-05
+X10 m1_3787_7518# m1_4165_119# avss sky130_fd_pr__res_xhigh_po_1p41 l=3.5e-05
+X11 m1_2275_7518# m1_1897_119# avss sky130_fd_pr__res_xhigh_po_1p41 l=3.5e-05
+X12 m1_4543_7518# m1_4921_119# avss sky130_fd_pr__res_xhigh_po_1p41 l=3.5e-05
+X13 m1_3031_7518# m1_3409_119# avss sky130_fd_pr__res_xhigh_po_1p41 l=3.5e-05
+X14 m1_5299_7518# m1_4921_119# avss sky130_fd_pr__res_xhigh_po_1p41 l=3.5e-05
+X15 m1_1519_7518# m1_1141_119# avss sky130_fd_pr__res_xhigh_po_1p41 l=3.5e-05
+X16 m1_7439_7811# m1_7189_119# avss sky130_fd_pr__res_xhigh_po_1p41 l=3.5e-05
+X17 avss m1_385_119# avss sky130_fd_pr__res_xhigh_po_1p41 l=3.5e-05
+X18 m1_2275_7518# m1_2653_119# avss sky130_fd_pr__res_xhigh_po_1p41 l=3.5e-05
+X19 m1_4543_7518# m1_4165_119# avss sky130_fd_pr__res_xhigh_po_1p41 l=3.5e-05
+Xsky130_fd_pr__rf_pnp_05v5_W0p68L0p68_0 avss avss sky130_fd_pr__rf_pnp_05v5_W0p68L0p68_0/Emitter sky130_fd_pr__rf_pnp_05v5_W0p68L0p68 m=1
+*.ends

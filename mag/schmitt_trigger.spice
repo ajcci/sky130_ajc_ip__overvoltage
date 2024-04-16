@@ -1,0 +1,38 @@
+* NGSPICE file created from schmitt_trigger.ext - technology: sky130A
+
+.subckt sky130_fd_pr__nfet_01v8_SCV3UK a_50_n131# a_n50_n157# a_n526_n243# a_n108_n131#
++ a_n266_n131# a_n424_n131# a_208_n131# a_108_n157# a_n208_n157# a_366_n131# a_266_n157#
++ a_n366_n157#
+X0 a_n108_n131# a_n208_n157# a_n266_n131# a_n526_n243# sky130_fd_pr__nfet_01v8 ad=0.145 pd=1.29 as=0.145 ps=1.29 w=1 l=0.5
+X1 a_208_n131# a_108_n157# a_50_n131# a_n526_n243# sky130_fd_pr__nfet_01v8 ad=0.145 pd=1.29 as=0.145 ps=1.29 w=1 l=0.5
+X2 a_n266_n131# a_n366_n157# a_n424_n131# a_n526_n243# sky130_fd_pr__nfet_01v8 ad=0.145 pd=1.29 as=0.29 ps=2.58 w=1 l=0.5
+X3 a_366_n131# a_266_n157# a_208_n131# a_n526_n243# sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.145 ps=1.29 w=1 l=0.5
+X4 a_50_n131# a_n50_n157# a_n108_n131# a_n526_n243# sky130_fd_pr__nfet_01v8 ad=0.145 pd=1.29 as=0.145 ps=1.29 w=1 l=0.5
+.ends
+
+.subckt sky130_fd_pr__pfet_01v8_BZXTE7 a_208_n64# a_n108_n64# a_998_n64# a_n898_n64#
++ a_108_n161# a_50_n64# a_n208_n161# a_266_n161# a_n424_n64# a_524_n64# a_898_n161#
++ a_n366_n161# a_424_n161# a_n998_n161# a_n266_n64# a_366_n64# a_n524_n161# a_582_n161#
++ a_n50_n161# a_840_n64# a_n740_n64# a_n682_n161# a_740_n161# a_682_n64# a_n582_n64#
++ a_n840_n161# w_n1194_n284# a_n1056_n64#
+X0 a_n898_n64# a_n998_n161# a_n1056_n64# w_n1194_n284# sky130_fd_pr__pfet_01v8 ad=0.145 pd=1.29 as=0.29 ps=2.58 w=1 l=0.5
+X1 a_n582_n64# a_n682_n161# a_n740_n64# w_n1194_n284# sky130_fd_pr__pfet_01v8 ad=0.145 pd=1.29 as=0.145 ps=1.29 w=1 l=0.5
+X2 a_50_n64# a_n50_n161# a_n108_n64# w_n1194_n284# sky130_fd_pr__pfet_01v8 ad=0.145 pd=1.29 as=0.145 ps=1.29 w=1 l=0.5
+X3 a_n740_n64# a_n840_n161# a_n898_n64# w_n1194_n284# sky130_fd_pr__pfet_01v8 ad=0.145 pd=1.29 as=0.145 ps=1.29 w=1 l=0.5
+X4 a_n266_n64# a_n366_n161# a_n424_n64# w_n1194_n284# sky130_fd_pr__pfet_01v8 ad=0.145 pd=1.29 as=0.145 ps=1.29 w=1 l=0.5
+X5 a_n424_n64# a_n524_n161# a_n582_n64# w_n1194_n284# sky130_fd_pr__pfet_01v8 ad=0.145 pd=1.29 as=0.145 ps=1.29 w=1 l=0.5
+X6 a_n108_n64# a_n208_n161# a_n266_n64# w_n1194_n284# sky130_fd_pr__pfet_01v8 ad=0.145 pd=1.29 as=0.145 ps=1.29 w=1 l=0.5
+X7 a_998_n64# a_898_n161# a_840_n64# w_n1194_n284# sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.58 as=0.145 ps=1.29 w=1 l=0.5
+X8 a_682_n64# a_582_n161# a_524_n64# w_n1194_n284# sky130_fd_pr__pfet_01v8 ad=0.145 pd=1.29 as=0.145 ps=1.29 w=1 l=0.5
+X9 a_840_n64# a_740_n161# a_682_n64# w_n1194_n284# sky130_fd_pr__pfet_01v8 ad=0.145 pd=1.29 as=0.145 ps=1.29 w=1 l=0.5
+X10 a_366_n64# a_266_n161# a_208_n64# w_n1194_n284# sky130_fd_pr__pfet_01v8 ad=0.145 pd=1.29 as=0.145 ps=1.29 w=1 l=0.5
+X11 a_524_n64# a_424_n161# a_366_n64# w_n1194_n284# sky130_fd_pr__pfet_01v8 ad=0.145 pd=1.29 as=0.145 ps=1.29 w=1 l=0.5
+X12 a_208_n64# a_108_n161# a_50_n64# w_n1194_n284# sky130_fd_pr__pfet_01v8 ad=0.145 pd=1.29 as=0.145 ps=1.29 w=1 l=0.5
+.ends
+
+.subckt schmitt_trigger dvdd in out dvss
+Xsky130_fd_pr__nfet_01v8_SCV3UK_1 m out dvss dvss m dvss dvss dvss in out m in sky130_fd_pr__nfet_01v8_SCV3UK
+Xsky130_fd_pr__pfet_01v8_BZXTE7_0 dvdd dvdd out m out m in out dvdd dvdd m in dvdd
++ in m m in m out dvdd dvdd in m out m in dvdd dvdd sky130_fd_pr__pfet_01v8_BZXTE7
+.ends
+
