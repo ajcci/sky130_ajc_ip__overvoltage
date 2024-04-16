@@ -74,11 +74,11 @@ Steps taken to perform LVS:
 2. Manually delete the bulk node 'avss' connection of the pnp device in the xschem netlist `sky130_ajc_ip__overvoltage_lvs.xschem`.
 
 Search for this line in the file:
-`XQ1 avss avss net8 avss sky130_fd_pr__pnp_05v5_W0p68L0p68 m=1`
+`XQ1 avss avss ve avss sky130_fd_pr__pnp_05v5_W0p68L0p68 m=1 mult=1`
 
 and change it to the following:
 
-`XQ1 avss avss net8 sky130_fd_pr__pnp_05v5_W0p68L0p68 m=1`
+`XQ1 avss avss ve sky130_fd_pr__pnp_05v5_W0p68L0p68 m=1 mult=1`
 
 This step is necessary because the 'combined' models of the sky130 pdk uses a 4-port connection to sky130_fd_pr__pnp_05v5_W0p68L0p68, but Magic only extracts 3 ports, so we manually delete the bulk node (4th port).
 
@@ -225,7 +225,7 @@ For comparison, run the same simulation with relaxed tolerances using the schema
 Schematic netlist with .options reltol=1e-3 abstol=1e-3
 
 ### Digital Route DRC & LVS
-DRC and LVS is performed by Openlane during synthesis.  It performs LVS by extracting the digital route using Magic, and then comparing it to the verilog file generated after fill-insersion.  Here >
+DRC and LVS is performed by Openlane during synthesis.  It performs LVS by extracting the digital route using Magic, and then comparing it to the verilog file generated after fill-insersion.  Here is the result:
 ![](overvoltage_openlane.png)
 
 
