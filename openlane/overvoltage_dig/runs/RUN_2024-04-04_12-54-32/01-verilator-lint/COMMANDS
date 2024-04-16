@@ -1,0 +1,1 @@
+verilator --lint-only --Wall --Wno-DECLFILENAME --Wno-EOFNEWLINE --top-module overvoltage_dig /home/rtsang/chipalooza/sky130_ajc_ip__overvoltage/openlane/overvoltage_dig/runs/RUN_2024-04-04_12-54-32/01-verilator-lint/bb.v /home/rtsang/chipalooza/sky130_ajc_ip__overvoltage/openlane/overvoltage_dig/overvoltage_dig.v --Wno-fatal --relative-includes --Werror-LATCH
