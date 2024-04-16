@@ -9,7 +9,7 @@ T {Copyright 2024 Ajacci, Ltd. Co.
 Apache License, Version 2.0 with Addendum, see NOTICE
 Date: 03/14/2024   Rev: 0
 Description: Overvoltage detection circuit (analog & digital sections)} -590 140 0 0 0.4 0.4 {}
-C {xschem/overvoltage_ana_rcx.sym} 0 -20 0 0 {name=xIana}
+C {xschem/overvoltage_ana.sym} 0 -20 0 0 {name=xIana}
 C {devices/code.sym} -580 -40 0 0 {name=overvoltage_dig only_toplevel=false value="
 
 *XSPICE CO-SIM netlist
