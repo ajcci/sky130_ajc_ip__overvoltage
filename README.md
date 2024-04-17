@@ -64,11 +64,10 @@ Run using Magic for layout-to-spice netlist extraction, and then Netgen for netl
 
 Steps taken to perform LVS:
 
-1. Created a blackbox for the digital block `overvoltage_dig` and replaced the xspice model of `overvoltage_dig` with the blackbox `overvoltage_dig`.  Save the new schematic as `sky130_ajc_ip__overvoltage_lvs`.  Netlist out `sky130_ajc_ip__overvoltage_lvs` in xschem and rename the netlist as `sky130_ajc_ip__overvoltage_lvs.xschem`.  Edit `sky130_ajc_ip__overvoltage_lvs.xschem` and add the following lines to the file (change $PDK_ROOT/$PDK to the location of your setup):
+1. Created a blackbox for the digital block `overvoltage_dig` and replaced the xspice model of `overvoltage_dig` with the blackbox `overvoltage_dig`.  In the symbol `overvoltage_dig.sym`, set `type=primitive`, so that when netlisting out, overvoltage_dig will be instantiated but not defined (i.e. no `subckt overvoltage_dig` is writting out).  This is important later for the Verilog gate-level netlist of overvoltage_dig to properly define the definition for overvoltage_dig.  Save the new top-level schematic as `sky130_ajc_ip__overvoltage_lvs`.  Netlist out `sky130_ajc_ip__overvoltage_lvs` in xschem and rename the netlist as `sky130_ajc_ip__overvoltage_lvs.xschem`.  Edit `sky130_ajc_ip__overvoltage_lvs.xschem` and add the following lines to the file (change $PDK_ROOT/$PDK to the location of your setup):
 
 ```
 .include $PDK_ROOT/$PDK/libs.ref/sky130_fd_sc_hvl/spice/sky130_fd_sc_hvl.spice
-.include $PDK_ROOT/$PDK/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
 ```
 
 2. Manually delete the bulk node 'avss' connection of the pnp device in the xschem netlist `sky130_ajc_ip__overvoltage_lvs.xschem`.
@@ -92,9 +91,25 @@ ext2spice
 
 Magic should generate a file named `sky130_ajc_ip__overvoltage.spice`
 
-4. Put the files in the same directory (mag/lvs) and run the following command in that directory:
+4. Locate the final gate-level Verilog netlist of overvoltage_dig.  In this case, it is located at
 
-```netgen -batch lvs "sky130_ajc_ip__overvoltage.spice sky130_ajc_ip__overvoltage" "sky130_ajc_ip__overvoltage_lvs.xschem sky130_ajc_ip__overvoltage_lvs" $PDK_ROOT/$PDK/libs.tech/netgen/sky130A_setup.tcl```
+`openlane/overvoltage_dig/runs/RUN_2024-04-04_12-54-32/46-openroad-fillinsertion/overvoltage_dig.pnl.v`
+
+5. Put the files `sky130_ajc_ip__overvoltage.spice` (Magic-extracted netlist), `sky130_ajc_ip__overvoltage_lvs.xschem` (xschem netlist), and `overvoltage_dig.pnl.v` in the same directory, in this case `mag/lvs`.
+
+6. Create a new run script for Netgen, in this case called `runlvs`, and put the following contents inside:
+
+```
+set layout [readnet spice "sky130_ajc_ip__overvoltage.spice"]
+set source [readnet spice "$env(PDK_ROOT)/$env(PDK)/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice"]
+readnet verilog overvoltage_dig.pnl.v $source
+readnet spice "sky130_ajc_ip__overvoltage_lvs.xschem" $source
+lvs "$layout sky130_ajc_ip__overvoltage" "$source sky130_ajc_ip__overvoltage_lvs" $env(PDK_ROOT)/$env(PDK)/libs.tech/netgen/$env(PDK)_setup.tcl lvs.report
+```
+
+7. Enter the following in the terminal to run LVS:
+
+`netgen -batch source runlvs`
 
 Netgen should produce the following output:
 
@@ -141,11 +156,177 @@ Circuit 1 contains 98 nets,    Circuit 2 contains 98 nets.
 Final result: 
 Circuits match uniquely.
 .
-Logging to file "comp.out" disabled
+Logging to file "lvs.report" disabled
 LVS Done.
 ```
 
-4. It is imporant to check the layout to ensure no wires crossover or short out any part of the digital route as that will not be checked by this LVS procedure.
+8. Optional step to check the file `lvs.report` shows that the Verilog gate-level netlist, which defines overvoltage_dig was indeed included in the LVS check:
+
+```
+Subcircuit summary:
+Circuit 1: overvoltage_ana                 |Circuit 2: overvoltage_ana                 
+-------------------------------------------|-------------------------------------------
+sky130_fd_sc_hvl__lsbufhv2lv_1 (1)         |sky130_fd_sc_hvl__lsbufhv2lv_1 (1)         
+sky130_fd_pr__nfet_g5v0d10v5 (123->33)     |sky130_fd_pr__nfet_g5v0d10v5 (123->33)     
+sky130_fd_pr__pfet_g5v0d10v5 (137->31)     |sky130_fd_pr__pfet_g5v0d10v5 (137->31)     
+sky130_fd_pr__res_xhigh_po_1p41 (37->18)   |sky130_fd_pr__res_xhigh_po_1p41 (18)       
+sky130_fd_sc_hvl__inv_1 (17)               |sky130_fd_sc_hvl__inv_1 (17)               
+sky130_fd_sc_hd__inv_4 (1)                 |sky130_fd_sc_hd__inv_4 (1)                 
+schmitt_trigger (1)                        |schmitt_trigger (1)                        
+sky130_fd_sc_hvl__lsbuflv2hv_1 (18)        |sky130_fd_sc_hvl__lsbuflv2hv_1 (18)        
+sky130_fd_pr__cap_mim_m3_2 (6->1)          |sky130_fd_pr__cap_mim_m3_2 (6->1)          
+ibias_gen (1)                              |ibias_gen (1)                              
+sky130_fd_pr__pnp_05v5_W0p68L0p68 (1)      |sky130_fd_pr__pnp_05v5_W0p68L0p68 (1)      
+sky130_fd_sc_hd__inv_16 (1)                |sky130_fd_sc_hd__inv_16 (1)                
+Number of devices: 124                     |Number of devices: 124                     
+Number of nets: 94                         |Number of nets: 94                         
+---------------------------------------------------------------------------------------
+Netlists match uniquely with port errors.
+
+Subcircuit pins:
+Circuit 1: overvoltage_ana                 |Circuit 2: overvoltage_ana                 
+-------------------------------------------|-------------------------------------------
+comparator_0/vt                            |(no matching pin)                          
+otrip_decoded[15]                          |otrip_decoded[15]                          
+otrip_decoded[14]                          |otrip_decoded[14]                          
+otrip_decoded[13]                          |otrip_decoded[13]                          
+otrip_decoded[12]                          |otrip_decoded[12]                          
+otrip_decoded[11]                          |otrip_decoded[11]                          
+otrip_decoded[10]                          |otrip_decoded[10]                          
+otrip_decoded[9]                           |otrip_decoded[9]                           
+otrip_decoded[8]                           |otrip_decoded[8]                           
+otrip_decoded[7]                           |otrip_decoded[7]                           
+otrip_decoded[6]                           |otrip_decoded[6]                           
+otrip_decoded[5]                           |otrip_decoded[5]                           
+otrip_decoded[4]                           |otrip_decoded[4]                           
+otrip_decoded[3]                           |otrip_decoded[3]                           
+otrip_decoded[2]                           |otrip_decoded[2]                           
+otrip_decoded[1]                           |otrip_decoded[1]                           
+otrip_decoded[0]                           |otrip_decoded[0]                           
+ena                                        |ena                                        
+isrc_sel                                   |isrc_sel                                   
+itest                                      |itest                                      
+ibg_200n                                   |ibg_200n                                   
+ovout                                      |ovout                                      
+avss                                       |avss                                       
+vin                                        |vin                                        
+vbg_1v2                                    |vbg_1v2                                    
+ibias_gen_0/ve                             |(no matching pin)                          
+avdd                                       |avdd                                       
+dvss                                       |dvss                                       
+dvdd                                       |dvdd                                       
+comparator_0/vt                            |(no matching pin)                          
+ibias_gen_0/ve                             |(no matching pin)                          
+---------------------------------------------------------------------------------------
+Cell pin lists for overvoltage_ana and overvoltage_ana altered to match.
+Device classes overvoltage_ana and overvoltage_ana are equivalent.
+  Flattening non-matched subcircuits overvoltage_ana overvoltage_ana
+
+Class overvoltage_dig (0):  Merged 141 parallel devices.
+Class overvoltage_dig (1):  Merged 141 parallel devices.
+Subcircuit summary:
+Circuit 1: overvoltage_dig                 |Circuit 2: overvoltage_dig                 
+-------------------------------------------|-------------------------------------------
+sky130_fd_sc_hd__decap_8 (10->1)           |sky130_fd_sc_hd__decap_8 (10->1)           
+sky130_ef_sc_hd__decap_12 (74->1)          |sky130_ef_sc_hd__decap_12 (74->1)          
+sky130_fd_sc_hd__buf_2 (16)                |sky130_fd_sc_hd__buf_2 (16)                
+sky130_fd_sc_hd__decap_3 (47->1)           |sky130_fd_sc_hd__decap_3 (47->1)           
+sky130_fd_sc_hd__decap_6 (11->1)           |sky130_fd_sc_hd__decap_6 (11->1)           
+sky130_fd_sc_hd__and4bb_1 (6)              |sky130_fd_sc_hd__and4bb_1 (6)              
+sky130_fd_sc_hd__nor4b_1 (4)               |sky130_fd_sc_hd__nor4b_1 (4)               
+sky130_fd_sc_hd__and4b_1 (4)               |sky130_fd_sc_hd__and4b_1 (4)               
+sky130_fd_sc_hd__decap_4 (4->1)            |sky130_fd_sc_hd__decap_4 (4->1)            
+sky130_fd_sc_hd__clkbuf_2 (4)              |sky130_fd_sc_hd__clkbuf_2 (4)              
+sky130_fd_sc_hd__buf_1 (4)                 |sky130_fd_sc_hd__buf_1 (4)                 
+sky130_fd_sc_hd__clkbuf_1 (4)              |sky130_fd_sc_hd__clkbuf_1 (4)              
+sky130_fd_sc_hd__nor4_1 (1)                |sky130_fd_sc_hd__nor4_1 (1)                
+sky130_fd_sc_hd__and4_1 (1)                |sky130_fd_sc_hd__and4_1 (1)                
+Number of devices: 49                      |Number of devices: 49                      
+Number of nets: 50                         |Number of nets: 50                         
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: overvoltage_dig                 |Circuit 2: overvoltage_dig                 
+-------------------------------------------|-------------------------------------------
+otrip[0]                                   |otrip[0]                                   
+otrip[1]                                   |otrip[1]                                   
+otrip[2]                                   |otrip[2]                                   
+otrip[3]                                   |otrip[3]                                   
+otrip_decoded[0]                           |otrip_decoded[0]                           
+otrip_decoded[8]                           |otrip_decoded[8]                           
+otrip_decoded[7]                           |otrip_decoded[7]                           
+otrip_decoded[1]                           |otrip_decoded[1]                           
+otrip_decoded[2]                           |otrip_decoded[2]                           
+otrip_decoded[4]                           |otrip_decoded[4]                           
+otrip_decoded[15]                          |otrip_decoded[15]                          
+otrip_decoded[10]                          |otrip_decoded[10]                          
+otrip_decoded[12]                          |otrip_decoded[12]                          
+otrip_decoded[3]                           |otrip_decoded[3]                           
+otrip_decoded[5]                           |otrip_decoded[5]                           
+otrip_decoded[6]                           |otrip_decoded[6]                           
+otrip_decoded[11]                          |otrip_decoded[11]                          
+otrip_decoded[13]                          |otrip_decoded[13]                          
+otrip_decoded[14]                          |otrip_decoded[14]                          
+otrip_decoded[9]                           |otrip_decoded[9]                           
+VGND                                       |VGND                                       
+VPWR                                       |VPWR                                       
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes overvoltage_dig and overvoltage_dig are equivalent.
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_D5N54F in circuit sky130_ajc_ip__overvoltage (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_53744R in circuit sky130_ajc_ip__overvoltage (0)(2 instances)
+
+Class sky130_ajc_ip__overvoltage (0):  Merged 6 parallel devices.
+Subcircuit summary:
+Circuit 1: sky130_ajc_ip__overvoltage      |Circuit 2: sky130_ajc_ip__overvoltage_lvs  
+-------------------------------------------|-------------------------------------------
+sky130_fd_sc_hvl__lsbufhv2lv_1 (1)         |sky130_fd_sc_hvl__lsbufhv2lv_1 (1)         
+sky130_fd_pr__nfet_g5v0d10v5 (123->33)     |sky130_fd_pr__nfet_g5v0d10v5 (123->33)     
+sky130_fd_pr__pfet_g5v0d10v5 (137->31)     |sky130_fd_pr__pfet_g5v0d10v5 (137->31)     
+sky130_fd_pr__res_xhigh_po_1p41 (18)       |sky130_fd_pr__res_xhigh_po_1p41 (18)       
+sky130_fd_sc_hvl__inv_1 (17)               |sky130_fd_sc_hvl__inv_1 (17)               
+sky130_fd_sc_hd__inv_4 (1)                 |sky130_fd_sc_hd__inv_4 (1)                 
+schmitt_trigger (1)                        |schmitt_trigger (1)                        
+sky130_fd_sc_hvl__lsbuflv2hv_1 (18)        |sky130_fd_sc_hvl__lsbuflv2hv_1 (18)        
+sky130_fd_pr__cap_mim_m3_2 (6->1)          |sky130_fd_pr__cap_mim_m3_2 (6->1)          
+ibias_gen (1)                              |ibias_gen (1)                              
+sky130_fd_pr__pnp_05v5_W0p68L0p68 (1)      |sky130_fd_pr__pnp_05v5_W0p68L0p68 (1)      
+sky130_fd_sc_hd__inv_16 (1)                |sky130_fd_sc_hd__inv_16 (1)                
+overvoltage_dig (1)                        |overvoltage_dig (1)                        
+sky130_fd_pr__nfet_01v8 (14->8)            |sky130_fd_pr__nfet_01v8 (14->8)            
+Number of devices: 133                     |Number of devices: 133                     
+Number of nets: 98                         |Number of nets: 98                         
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: sky130_ajc_ip__overvoltage      |Circuit 2: sky130_ajc_ip__overvoltage_lvs  
+-------------------------------------------|-------------------------------------------
+dvss                                       |dvss                                       
+avdd                                       |avdd                                       
+avss                                       |avss                                       
+vbg_1v2                                    |vbg_1v2                                    
+dvdd                                       |dvdd                                       
+vin                                        |vin                                        
+itest                                      |itest                                      
+ibg_200n                                   |ibg_200n                                   
+ovout                                      |ovout                                      
+ena                                        |ena                                        
+isrc_sel                                   |isrc_sel                                   
+otrip[3]                                   |otrip[3]                                   
+otrip[2]                                   |otrip[2]                                   
+otrip[1]                                   |otrip[1]                                   
+otrip[0]                                   |otrip[0]                                   
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_ajc_ip__overvoltage and sky130_ajc_ip__overvoltage_lvs are equivalent.
+
+Final result: Circuits match uniquely.
+.
+
+```
+Last part of lvs.report showing LVS match as well as Verilog gate-level netlist (which defines `overvoltage_dig`)  being included in the check.
 
 
 ## Parasitic Resistance and Capacitance Extraction (RCX)
