@@ -180,7 +180,7 @@ In order to use `overvoltage_ana_rcx` in a simulation, do the following:
 1. Create a blackbox schematic named `overvoltage_ana_rcx` with all the associated pins and pin-order exactly the same as `overvoltage_ana.sym`
 2. Create an accompanying symbol named `overvoltage_ana_rcx.sym`
 3. Within the schematic `overvoltage_ana_rcx.sch`, add a `devices/code.sym` block from the xschem library
-4. In the `code.sym` block, instantiate `overvoltage_ana_rcx` and include the extracted netlist subckt definition (in this case it is located at `mag/rcx/overvoltage_ana_rcx.spice`:
+4. In the `code.sym` block, instantiate `overvoltage_ana_rcx` and include the extracted netlist subckt definition (in this case it is located at `mag/rcx/overvoltage_ana_rcx.spice`):
 
 ```
 name=overvoltage_ana only_toplevel=false value="
