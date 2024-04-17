@@ -64,7 +64,7 @@ Run using Magic for layout-to-spice netlist extraction, and then Netgen for netl
 
 Steps taken to perform LVS:
 
-1. Created a blackbox for the digital block `overvoltage_dig` and replace the xspice model of `overvoltage_dig` with the blackbox `overvoltage_dig`.  Save the new schematic as `sky130_ajc_ip__overvoltage_lvs`.  Netlist out `sky130_ajc_ip__overvoltage_lvs` in xschem and rename the netlist as `sky130_ajc_ip__overvoltage_lvs.xschem`.  Edit `sky130_ajc_ip__overvoltage_lvs.xschem` and add the following lines to the file (change $PDK_ROOT/$PDK to the location of your setup):
+1. Created a blackbox for the digital block `overvoltage_dig` and replaced the xspice model of `overvoltage_dig` with the blackbox `overvoltage_dig`.  Save the new schematic as `sky130_ajc_ip__overvoltage_lvs`.  Netlist out `sky130_ajc_ip__overvoltage_lvs` in xschem and rename the netlist as `sky130_ajc_ip__overvoltage_lvs.xschem`.  Edit `sky130_ajc_ip__overvoltage_lvs.xschem` and add the following lines to the file (change $PDK_ROOT/$PDK to the location of your setup):
 
 ```
 .include $PDK_ROOT/$PDK/libs.ref/sky130_fd_sc_hvl/spice/sky130_fd_sc_hvl.spice
@@ -208,7 +208,7 @@ of the digital route and the digital route was not extracted from the layout for
 
 Without any changes to Ngspice parameters, the extracted netlist will run into __'Timestep too small'__ issues due to limitations of the simulator, and cause the simulation to quit prematurely.
 
-To make it run all the way through, add the following two options to reduce the tolerance of the simulation, albeit reduces accuray of the simulation results:
+To make it run all the way through, add the following two options to reduce the tolerance of the simulation, albeit reduces accuracy of the simulation results:
 
 ```
 .option reltol=1e-3
