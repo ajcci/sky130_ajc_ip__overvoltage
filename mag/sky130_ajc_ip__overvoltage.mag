@@ -1355,4 +1355,7 @@ flabel metal2 13085 28879 13085 28879 0 FreeSans 1280 0 0 0 ibg_200n
 port 15 nsew
 flabel metal3 894 -2390 894 -2390 0 FreeSans 1600 0 0 0 dvdd
 port 3 nsew
+<< properties >>
+string MASKHINTS_HVI 23983 8176 32808 9214 22191 6764 23497 7767 38650 11972 38886 14038
+string MASKHINTS_PSDM 38841 13489 40528 13680
 << end >>
